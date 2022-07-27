@@ -1,0 +1,89 @@
+{
+  "props": [
+    {
+      "name": "Dark Blue",
+      "type": "color",
+      "value": "#11253E",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "YwVAFL3GU"
+      }
+    },
+    {
+      "name": "Konceptiva Blue",
+      "type": "color",
+      "value": "#0F233C",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "SfoXLYV5r"
+      }
+    },
+    {
+      "name": "Konceptiva Yellow",
+      "type": "color",
+      "value": "#FEBE10",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "iLnjQLjs5"
+      }
+    },
+    {
+      "name": "Menu text",
+      "type": "color",
+      "value": "#3E7CB1",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "rAM-KXRql"
+      }
+    },
+    {
+      "name": "Trans",
+      "type": "color",
+      "value": "#53535300",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "rvM_-Zl8_"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken",
+      "type": "color",
+      "value": "#F5F6F6",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "jjDfppFjp"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 2",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "sUlnNNU8i"
+      }
+    },
+    {
+      "name": "White",
+      "type": "color",
+      "value": "#FFFFFFCC",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "y9I7gTw_Y"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}
