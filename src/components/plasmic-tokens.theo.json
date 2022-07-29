@@ -71,6 +71,16 @@
       }
     },
     {
+      "name": "UnnamedStyleToken 3",
+      "type": "color",
+      "value": "#335075",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "qI6S6iwmd"
+      }
+    },
+    {
       "name": "White",
       "type": "color",
       "value": "#FFFFFFCC",
@@ -78,6 +88,16 @@
       "meta": {
         "projectId": "uu5v5CefeBFWJ3g58RuWZW",
         "id": "y9I7gTw_Y"
+      }
+    },
+    {
+      "name": "caption blue",
+      "type": "color",
+      "value": "#335075",
+      "category": "color",
+      "meta": {
+        "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+        "id": "EiezZTnFA"
       }
     }
   ],

@@ -240,7 +240,7 @@ function PlasmicHomepage__RenderFunc(props) {
                             {"Do you already use Coach?"}
                           </span>
 
-                          <React.Fragment> </React.Fragment>
+                          <React.Fragment>{"  "}</React.Fragment>
 
                           {
                             <a
@@ -263,7 +263,7 @@ function PlasmicHomepage__RenderFunc(props) {
                             </a>
                           }
 
-                          <React.Fragment>{"\n"}</React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
                         </React.Fragment>
                       )}
                     </div>
@@ -272,6 +272,12 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
 
               <div className={classNames(projectcss.all, sty.column__h9Vh4)}>
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__w2HtN)}
+                  />
+                ) : null}
+
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -285,19 +291,13 @@ function PlasmicHomepage__RenderFunc(props) {
                     displayMaxWidth={"none"}
                     displayMinHeight={"320px"}
                     displayMinWidth={"0"}
-                    displayWidth={"95%"}
+                    displayWidth={"100%"}
                     src={{
                       src: bannerimg1PngKTx7QbCd7,
                       fullWidth: 1436,
                       fullHeight: 1410,
                       aspectRatio: undefined
                     }}
-                  />
-                ) : null}
-
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__w2HtN)}
                   />
                 ) : null}
               </div>
@@ -783,7 +783,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   className={"plasmic_default__all plasmic_default__span"}
                   style={{ color: "#3E7CB1" }}
                 >
-                  {"Transform the way knowledge is attained."}
+                  {"transform the way knowledge is attained."}
                 </span>
 
                 <React.Fragment>{""}</React.Fragment>
@@ -801,13 +801,17 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames(projectcss.all, sty.whoIsItFor)}
           >
             <div className={classNames(projectcss.all, sty.column__vodF)}>
-              <div className={classNames(projectcss.all, sty.freeBox___6NM8R)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___6NM8R)}
+              >
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__ccJbj)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
+                  displayMaxWidth={"90%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
@@ -840,17 +844,21 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>{"\n(HR, L&D, Training)"}</React.Fragment>
                   </React.Fragment>
                 </div>
-              </div>
+              </p.Stack>
             </div>
 
             <div className={classNames(projectcss.all, sty.column__vnlNh)}>
-              <div className={classNames(projectcss.all, sty.freeBox__dvsDu)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__dvsDu)}
+              >
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__hNnyv)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
+                  displayMaxWidth={"90%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
@@ -883,17 +891,21 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
-              </div>
+              </p.Stack>
             </div>
 
             <div className={classNames(projectcss.all, sty.column__vdyY)}>
-              <div className={classNames(projectcss.all, sty.freeBox__dh104)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__dh104)}
+              >
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__vDo23)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
+                  displayMaxWidth={"90%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
@@ -926,17 +938,21 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
-              </div>
+              </p.Stack>
             </div>
 
             <div className={classNames(projectcss.all, sty.column__aBaNx)}>
-              <div className={classNames(projectcss.all, sty.freeBox___6X3Zb)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___6X3Zb)}
+              >
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__tevHg)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
+                  displayMaxWidth={"90%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
@@ -969,7 +985,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
-              </div>
+              </p.Stack>
             </div>
           </p.Stack>
 
@@ -1061,7 +1077,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "125px"
-                      : "180px"
+                      : "200px"
                   }
                   loading={"lazy"}
                   src={{
@@ -1552,7 +1568,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"250px"}
+                  displayWidth={"270px"}
                   loading={"lazy"}
                   src={{
                     src: _287StartupFlatlinesvgD9Kazplxb,
