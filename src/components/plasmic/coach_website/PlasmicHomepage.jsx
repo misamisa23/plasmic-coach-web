@@ -814,198 +814,222 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames(projectcss.all, sty.whoIsItFor)}
           >
             <div className={classNames(projectcss.all, sty.column__vodF)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___6NM8R)}
-                role={""}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__ccJbj)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"90%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: coachManagerssvgRqDhaxaBv,
-                    fullWidth: 203,
-                    fullHeight: 150,
-                    aspectRatio: 1.354839
-                  }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__nhYDv
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>{"Coach for "}</React.Fragment>
-
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#11253E", fontWeight: 700 }}
-                    >
-                      {"Managers"}
-                    </span>
-
-                    <React.Fragment>{"\n(HR, L&D, Training)"}</React.Fragment>
-                  </React.Fragment>
-                </div>
-              </p.Stack>
-
               <a
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__sZrww
+                  sty.link__a0RcQ
                 )}
-                href={"https://www.plasmic.app/"}
+                href={"/who-is-it-for-managers"}
               >
-                {"Some link text"}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___6NM8R)}
+                  role={""}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__ccJbj)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"90%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: coachManagerssvgRqDhaxaBv,
+                      fullWidth: 203,
+                      fullHeight: 150,
+                      aspectRatio: 1.354839
+                    }}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__nhYDv
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{"Coach for "}</React.Fragment>
+
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#11253E", fontWeight: 700 }}
+                      >
+                        {"Managers"}
+                      </span>
+
+                      <React.Fragment>{"\n(HR, L&D, Training)"}</React.Fragment>
+                    </React.Fragment>
+                  </div>
+                </p.Stack>
               </a>
             </div>
 
             <div className={classNames(projectcss.all, sty.column__vnlNh)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__dvsDu)}
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__iZgE9
+                )}
+                href={"/who-is-it-for-ceos"}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__hNnyv)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"90%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: coachSeossvgXSpyNpbVc,
-                    fullWidth: 203,
-                    fullHeight: 150,
-                    aspectRatio: 1.354839
-                  }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__e0Bg
-                  )}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__dvsDu)}
                 >
-                  <React.Fragment>
-                    <React.Fragment>{"Coach for "}</React.Fragment>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__hNnyv)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"90%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: coachSeossvgXSpyNpbVc,
+                      fullWidth: 203,
+                      fullHeight: 150,
+                      aspectRatio: 1.354839
+                    }}
+                  />
 
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ fontWeight: 700 }}
-                    >
-                      {"CEO's"}
-                    </span>
-                  </React.Fragment>
-                </div>
-              </p.Stack>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__e0Bg
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{"Coach for "}</React.Fragment>
+
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"CEO's"}
+                      </span>
+                    </React.Fragment>
+                  </div>
+                </p.Stack>
+              </a>
             </div>
 
             <div className={classNames(projectcss.all, sty.column__vdyY)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__dh104)}
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__idXx
+                )}
+                href={"/who-is-it-for-instructional-designers"}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__vDo23)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"90%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: coachIdssvgXKnk6Mzl8,
-                    fullWidth: 203,
-                    fullHeight: 150,
-                    aspectRatio: 1.354839
-                  }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__qZ2Xx
-                  )}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__dh104)}
                 >
-                  <React.Fragment>
-                    <React.Fragment>{"Coach for "}</React.Fragment>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__vDo23)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"90%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: coachIdssvgXKnk6Mzl8,
+                      fullWidth: 203,
+                      fullHeight: 150,
+                      aspectRatio: 1.354839
+                    }}
+                  />
 
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ fontWeight: 700 }}
-                    >
-                      {"Instructional Designers"}
-                    </span>
-                  </React.Fragment>
-                </div>
-              </p.Stack>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__qZ2Xx
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{"Coach for "}</React.Fragment>
+
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"Instructional Designers"}
+                      </span>
+                    </React.Fragment>
+                  </div>
+                </p.Stack>
+              </a>
             </div>
 
             <div className={classNames(projectcss.all, sty.column__aBaNx)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___6X3Zb)}
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__tKuVd
+                )}
+                href={"/who-is-it-for-managers-2"}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__tevHg)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"90%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: coachEmployeessvgKtZvSgpX3,
-                    fullWidth: 203,
-                    fullHeight: 150,
-                    aspectRatio: 1.354839
-                  }}
-                />
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gEdD6
-                  )}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___6X3Zb)}
                 >
-                  <React.Fragment>
-                    <React.Fragment>{"Coach for "}</React.Fragment>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__tevHg)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"90%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: coachEmployeessvgKtZvSgpX3,
+                      fullWidth: 203,
+                      fullHeight: 150,
+                      aspectRatio: 1.354839
+                    }}
+                  />
 
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ fontWeight: 700 }}
-                    >
-                      {"Employees"}
-                    </span>
-                  </React.Fragment>
-                </div>
-              </p.Stack>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gEdD6
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{"Coach for "}</React.Fragment>
+
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"Employees"}
+                      </span>
+                    </React.Fragment>
+                  </div>
+                </p.Stack>
+              </a>
             </div>
           </p.Stack>
 
