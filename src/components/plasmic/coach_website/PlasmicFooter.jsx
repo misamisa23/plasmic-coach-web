@@ -21,9 +21,9 @@ import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: 0UCZXj9Zumd/css
-import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: SlK3sDjyJ9j/icon
-import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: y1mSuDyPtw9/icon
-import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: _6WWMFT1FeI/icon
+import FooterIconFbsvgIcon from "./icons/PlasmicIcon__FooterIconFbsvg"; // plasmic-import: NEB4z9XxWS/icon
+import FooterIconInstagramsvgIcon from "./icons/PlasmicIcon__FooterIconInstagramsvg"; // plasmic-import: amHUaBVUcW/icon
+import FooterIconLinkedinsvgIcon from "./icons/PlasmicIcon__FooterIconLinkedinsvg"; // plasmic-import: 5eo7YEJwcw/icon
 import coachlogoBlacksvgZ3Py0Ikf4 from "./images/coachlogoBlacksvg.svg"; // plasmic-import: Z3Py0ikf4/picture
 import appStoreI1SvgLi4XsSx9I from "./images/appStoreI1Svg.svg"; // plasmic-import: li4XsSX9I/picture
 import googlePlayI1SvgLcZljj7H3 from "./images/googlePlayI1Svg.svg"; // plasmic-import: LCZljj7H3/picture
@@ -69,82 +69,98 @@ function PlasmicFooter__RenderFunc(props) {
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox___5UfcT)}
           >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__gizOb)}
-              displayHeight={"40px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"none"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"130px"}
-              src={{
-                src: coachlogoBlacksvgZ3Py0Ikf4,
-                fullWidth: 300,
-                fullHeight: 99,
-                aspectRatio: 3.02439
-              }}
-            />
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text___7VHy
-              )}
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__vL0Jw)}
             >
-              {
-                "Coach helps you create and deliver\npersonalized reinforcement training, fast."
-              }
-            </div>
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__xCnOs
-              )}
-            >
-              {"GET OUR APP"}
-            </div>
-
-            <div className={classNames(projectcss.all, sty.freeBox__faLEs)}>
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__evmsG)}
-                displayHeight={"46px"}
+                className={classNames(sty.img__gizOb)}
+                displayHeight={"40px"}
                 displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
+                displayMaxWidth={"none"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
                 displayWidth={"130px"}
-                loading={"lazy"}
                 src={{
-                  src: appStoreI1SvgLi4XsSx9I,
+                  src: coachlogoBlacksvgZ3Py0Ikf4,
                   fullWidth: 300,
-                  fullHeight: 105,
-                  aspectRatio: 2.869565
+                  fullHeight: 99,
+                  aspectRatio: 3.02439
                 }}
               />
 
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__kUoz7)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"146px"}
-                loading={"lazy"}
-                src={{
-                  src: googlePlayI1SvgLcZljj7H3,
-                  fullWidth: 300,
-                  fullHeight: 94,
-                  aspectRatio: 3.195652
-                }}
-              />
-            </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___7VHy
+                )}
+              >
+                {
+                  "Coach helps you create and deliver\npersonalized reinforcement training, fast."
+                }
+              </div>
+            </p.Stack>
+
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__pdO)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__xCnOs
+                )}
+              >
+                {"GET OUR APP"}
+              </div>
+
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__faLEs)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__evmsG)}
+                  displayHeight={"45px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: appStoreI1SvgLi4XsSx9I,
+                    fullWidth: 300,
+                    fullHeight: 105,
+                    aspectRatio: 2.869565
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__kUoz7)}
+                  displayHeight={"45px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: googlePlayI1SvgLcZljj7H3,
+                    fullWidth: 300,
+                    fullHeight: 94,
+                    aspectRatio: 3.195652
+                  }}
+                />
+              </p.Stack>
+            </p.Stack>
 
             <p.Stack
               as={"div"}
@@ -166,17 +182,17 @@ function PlasmicFooter__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__ir31E)}
               >
-                <Icon3Icon
+                <FooterIconFbsvgIcon
                   className={classNames(projectcss.all, sty.svg__yKxZ)}
                   role={"img"}
                 />
 
-                <Icon4Icon
+                <FooterIconInstagramsvgIcon
                   className={classNames(projectcss.all, sty.svg__oaInP)}
                   role={"img"}
                 />
 
-                <Icon28Icon
+                <FooterIconLinkedinsvgIcon
                   className={classNames(projectcss.all, sty.svg__dWhCk)}
                   role={"img"}
                 />
@@ -200,10 +216,74 @@ function PlasmicFooter__RenderFunc(props) {
             >
               {"Product"}
             </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__n7J0
+              )}
+            >
+              {"App features"}
+            </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___9YHgs
+              )}
+            >
+              {"Admin panel"}
+            </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___3Pz
+              )}
+            >
+              {"For Managers"}
+            </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__qhDb6
+              )}
+            >
+              {"For IDs"}
+            </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__lHo0K
+              )}
+            >
+              {"For CEOs"}
+            </div>
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___3QGh
+              )}
+            >
+              {"For Employees"}
+            </div>
           </p.Stack>
         </div>
 
-        <div className={classNames(projectcss.all, sty.column___9ExuQ)}>
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.column___9ExuQ)}
+        >
           <p.Stack
             as={"div"}
             hasGap={true}
@@ -219,9 +299,63 @@ function PlasmicFooter__RenderFunc(props) {
               {"INDUSTRIES"}
             </div>
           </p.Stack>
-        </div>
 
-        <div className={classNames(projectcss.all, sty.column___7CksW)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__xH5Av
+            )}
+          >
+            {"Consumer Electronics"}
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__chaju
+            )}
+          >
+            {"Manufacturing"}
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__bEyT2
+            )}
+          >
+            {"Telecom"}
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___5NYv
+            )}
+          >
+            {"Pharmaceuticals"}
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__qWAb
+            )}
+          >
+            {"Luxury Goods"}
+          </div>
+        </p.Stack>
+
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.column___7CksW)}
+        >
           <p.Stack
             as={"div"}
             hasGap={true}
@@ -237,7 +371,67 @@ function PlasmicFooter__RenderFunc(props) {
               {"Company"}
             </div>
           </p.Stack>
-        </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__uKbY0
+            )}
+          >
+            {"Blog"}
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__czA2I
+            )}
+          >
+            {"Who We Are"}
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__xf1U1
+            )}
+          >
+            {"Press"}
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__q55N
+            )}
+          >
+            {"Careers"}
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__v5CeH
+            )}
+          >
+            {"Contact Us"}
+          </div>
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__voQl9
+            )}
+          >
+            {"FAQ"}
+          </div>
+        </p.Stack>
       </p.Stack>
     </div>
   );

@@ -25,6 +25,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicWhoIsItForEmployees.module.css"; // plasmic-import: rM_3tFwMIBc/css
 import coachEmployeessvgKtZvSgpX3 from "./images/coachEmployeessvg.svg"; // plasmic-import: ktZvSgpX3/picture
+import whoitsforBg1PngUn0YXaAyX from "./images/whoitsforBg1Png.png"; // plasmic-import: un0yXAAyX/picture
+import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
+import whoitsforBg2Png6Ezsola4F from "./images/whoitsforBg2Png.png"; // plasmic-import: 6Ezsola4F/picture
 import webEmployees1PngTw3RXaUv7 from "./images/webEmployees1Png.png"; // plasmic-import: Tw3rXaUv7/picture
 import webEmployees2Png3CSoMm4Uh from "./images/webEmployees2Png.png"; // plasmic-import: 3CSoMm4uh/picture
 import webEmployees3Png1RI9KuqTz from "./images/webEmployees3Png.png"; // plasmic-import: 1rI9KUQTz/picture
@@ -74,52 +77,6 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
             hasGap={true}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__b83L8
-              )}
-            >
-              {"COACH FOR EMPLOYEES"}
-            </div>
-
-            <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1
-              )}
-            >
-              {hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "The training tool \nthat helps you learn"
-                : "The training tool that\nactually helps you learn"}
-            </h1>
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__qDiun
-              )}
-            >
-              {"Try out Coach and make sure your manager knows about it!"}
-            </div>
-
-            <button
-              className={classNames(
-                projectcss.all,
-                projectcss.button,
-                projectcss.__wab_text,
-                sty.button__gWcRi
-              )}
-            >
-              {"GET STARTED"}
-            </button>
-
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img__ftMoO)}
@@ -128,7 +85,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"263px"}
+              displayWidth={"285px"}
               loading={"lazy"}
               src={{
                 src: coachEmployeessvgKtZvSgpX3,
@@ -137,40 +94,184 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                 aspectRatio: 1.354839
               }}
             />
-          </p.Stack>
 
-          <div className={classNames(projectcss.all, sty.freeBox__fGrf8)}>
-            <div className={classNames(projectcss.all, sty.freeBox___2Dx1B)}>
-              <div className={classNames(projectcss.all, sty.freeBox___24Dpq)}>
-                <div className={classNames(projectcss.all, sty.columns__vqh9E)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__jzYrX)}
+            <div className={classNames(projectcss.all, sty.columns__nli1K)}>
+              <div className={classNames(projectcss.all, sty.column__dG188)}>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__feGy6)}
+                  displayHeight={"280px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: whoitsforBg1PngUn0YXaAyX,
+                    fullWidth: 507,
+                    fullHeight: 667,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column__cXqkK)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___8Qujp)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__pyV4F)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__w38Wr
+                        sty.text__da3Au
                       )}
                     >
-                      {
-                        "With Coach, you’ll notice your knowledge improves right away - all while playing challenging games and having fun!"
-                      }
+                      {"COACH FOR EMPLOYEES"}
                     </div>
+
+                    <h1
+                      data-plasmic-name={"h1"}
+                      data-plasmic-override={overrides.h1}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "The training tool \nthat helps you learn"
+                        : "The training tool that\nactually helps you learn"}
+                    </h1>
+                  </p.Stack>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__wjpc6
+                    )}
+                  >
+                    {"Try out Coach and make sure your manager knows about it!"}
                   </div>
-                </div>
+
+                  <p.Stack
+                    as={"button"}
+                    hasGap={true}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      sty.button__jRstn
+                    )}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__oBr4U
+                      )}
+                    >
+                      {"GET STARTED"}
+                    </div>
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__ohJ0J)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"15px"}
+                      loading={"lazy"}
+                      src={{
+                        src: buttonCaretWhitesvg2S5Jbv6HmTb,
+                        fullWidth: 108,
+                        fullHeight: 150,
+                        aspectRatio: 0.722222
+                      }}
+                    />
+                  </p.Stack>
+                </p.Stack>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column___6BHmn)}>
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___8Jaki)}
+                  displayHeight={"280px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: whoitsforBg2Png6Ezsola4F,
+                    fullWidth: 482,
+                    fullHeight: 667,
+                    aspectRatio: undefined
+                  }}
+                />
               </div>
             </div>
-          </div>
+          </p.Stack>
 
           <div
             data-plasmic-name={"section2"}
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
-            <div className={classNames(projectcss.all, sty.columns__nx6Uk)}>
-              <div className={classNames(projectcss.all, sty.column__eDfK)}>
+            <div className={classNames(projectcss.all, sty.columns__vqh9E)}>
+              <div className={classNames(projectcss.all, sty.column__jzYrX)}>
                 <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__w38Wr
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>
+                      {"With Coach, you’ll notice "}
+                    </React.Fragment>
+
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"your knowledge improves"}
+                    </span>
+
+                    <React.Fragment>
+                      {
+                        " right away - all while playing challenging games and having fun!"
+                      }
+                    </React.Fragment>
+                  </React.Fragment>
+                </div>
+              </div>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.freeBox__krGFo)} />
+
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__nx6Uk)}
+            >
+              <div className={classNames(projectcss.all, sty.column__eDfK)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox___4Jw6D)}
                 >
                   <p.PlasmicImg
@@ -181,7 +282,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"auto"}
+                    displayWidth={"400px"}
                     loading={"lazy"}
                     src={{
                       src: webEmployees1PngTw3RXaUv7,
@@ -212,11 +313,19 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                       "Coach allows you to go through any type of training in your spare time, at your own pace, coaching you until the most important parts of the training remain in your long-term memory."
                     }
                   </div>
-                </div>
+                </p.Stack>
               </div>
 
-              <div className={classNames(projectcss.all, sty.column__k3H6F)}>
-                <div className={classNames(projectcss.all, sty.freeBox__rksZc)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__k3H6F)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__rksZc)}
+                >
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__i0FB)}
@@ -225,7 +334,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"auto"}
+                    displayWidth={"400px"}
                     loading={"lazy"}
                     src={{
                       src: webEmployees2Png3CSoMm4Uh,
@@ -242,7 +351,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                       sty.text__xQ1QJ
                     )}
                   >
-                    {"The games you can play at work"}
+                    {"The games you can play\nat work"}
                   </div>
 
                   <div
@@ -256,22 +365,30 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                       "Coach gives you 8 different games to play and learn. Real games for adults. With different levels. Like Sudoku - it can get really challenging, right? "
                     }
                   </div>
-                </div>
-              </div>
-            </div>
+                </p.Stack>
+              </p.Stack>
+            </p.Stack>
 
-            <div className={classNames(projectcss.all, sty.columns__ocUfE)}>
-              <div className={classNames(projectcss.all, sty.column___94YCe)}>
-                <div className={classNames(projectcss.all, sty.freeBox__oYy6I)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__twh2S)}
+            >
+              <div className={classNames(projectcss.all, sty.column__hf2Rw)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__v4JPk)}
+                >
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img__amAFk)}
+                    className={classNames(sty.img__xHPvA)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"auto"}
+                    displayWidth={"400px"}
                     loading={"lazy"}
                     src={{
                       src: webEmployees3Png1RI9KuqTz,
@@ -285,7 +402,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__bcoud
+                      sty.text__vrGgp
                     )}
                   >
                     {"Stay aware of your knowledge and the gaps"}
@@ -295,27 +412,35 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__riEhr
+                      sty.text__xNvLh
                     )}
                   >
                     {
                       "You don’t know what you don’t know, until a time comes to use that knowledge in practice. Coach helps you detect your knowledge gaps in a pile of various information - and pushes you to learn the parts that you don’t know - until you’ve mastered it all!"
                     }
                   </div>
-                </div>
+                </p.Stack>
               </div>
 
-              <div className={classNames(projectcss.all, sty.column__u5PWj)}>
-                <div className={classNames(projectcss.all, sty.freeBox__kRmG)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__yGiTe)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__o4UCi)}
+                >
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img___71Pau)}
+                    className={classNames(sty.img__jhX97)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"auto"}
+                    displayWidth={"400px"}
                     loading={"lazy"}
                     src={{
                       src: webEmployees4PngTQlJi9Cl3,
@@ -329,34 +454,38 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__uJhWh
+                      sty.text__sRatq
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "See where your knowledge stands vs your colleagues "
-                      : "See where your knowledge stands vs your colleagues "}
+                    {"See where your knowledge stands vs your colleagues"}
                   </div>
 
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__il2AA
+                      sty.text___3WNl4
                     )}
                   >
                     {
                       "A little competition forces us to do better. Now you are able to see how your knowledge progressed over the time and where you stand between your colleagues. PS: if you are the best in the biz, Coach makes sure the management notices this."
                     }
                   </div>
-                </div>
-              </div>
-            </div>
+                </p.Stack>
+              </p.Stack>
+            </p.Stack>
           </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__gfLfk)} />
 
           <div className={classNames(projectcss.all, sty.freeBox__okBjt)}>
             <div className={classNames(projectcss.all, sty.freeBox___4JzUp)}>
               <div className={classNames(projectcss.all, sty.columns__yjUEq)}>
-                <div className={classNames(projectcss.all, sty.column__ilMnm)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.column__ilMnm)}
+                >
                   <div
                     className={classNames(
                       projectcss.all,
@@ -376,7 +505,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Don’t just take our word.\nExperience the power of Coach yourself, and see the possibilities."
-                      : "Don’t just take our word for it\nExperience the power of Coach\nyourself, and see the possibilities."}
+                      : "Don’t just take our word for it -\nExperience the power of Coach\nyourself, and see the possibilities."}
                   </div>
 
                   <p.Stack
@@ -395,25 +524,52 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                       {"BOOK A DEMO"}
                     </button>
 
-                    <button
+                    <p.Stack
+                      as={"button"}
+                      hasGap={true}
                       className={classNames(
                         projectcss.all,
                         projectcss.button,
-                        projectcss.__wab_text,
-                        sty.button__xaOhz
+                        sty.button__qxdNh
                       )}
                     >
-                      {"GET STARTED"}
-                    </button>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ykdg4
+                        )}
+                      >
+                        {"GET STARTED"}
+                      </div>
+
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__kp1Yn)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"15px"}
+                        loading={"lazy"}
+                        src={{
+                          src: buttonCaretWhitesvg2S5Jbv6HmTb,
+                          fullWidth: 108,
+                          fullHeight: 150,
+                          aspectRatio: 0.722222
+                        }}
+                      />
+                    </p.Stack>
                   </p.Stack>
-                </div>
+                </p.Stack>
 
                 <div className={classNames(projectcss.all, sty.column__ehYbb)}>
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__jrUY)}
                     displayHeight={"100%"}
-                    displayMaxHeight={"370px"}
+                    displayMaxHeight={"100%"}
                     displayMaxWidth={"220px"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}

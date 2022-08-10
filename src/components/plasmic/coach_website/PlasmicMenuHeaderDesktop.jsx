@@ -156,7 +156,9 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     ? true
                     : true
                 ) ? (
-                  <div
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__tyGcR)}
                   >
                     <button
@@ -190,7 +192,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     >
                       {"REQUEST ACCESS"}
                     </button>
-                  </div>
+                  </p.Stack>
                 ) : null}
               </div>
             ) : null}

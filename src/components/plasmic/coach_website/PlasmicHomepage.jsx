@@ -19,7 +19,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import MenuHeaderDesktop from "../../MenuHeaderDesktop"; // plasmic-import: RhmfQLZ342T/component
-import YellowButton from "../../YellowButton"; // plasmic-import: BW02p9J3E9/component
 import Button from "../../Button"; // plasmic-import: i2u7Uturkgt/component
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
 import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
@@ -28,6 +27,7 @@ import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: 
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: nmfZ_w1bFQh4/css
 import CorrectsvgIcon from "./icons/PlasmicIcon__Correctsvg"; // plasmic-import: egZub56_e-/icon
 import DownArrowIcon from "./icons/PlasmicIcon__DownArrow"; // plasmic-import: jcu2bb0zp/icon
+import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import bannerimg1PngKTx7QbCd7 from "./images/bannerimg1Png.png"; // plasmic-import: KTx7QBCd7/picture
 import group926SvgNM1517Ao from "./images/group926Svg.svg"; // plasmic-import: n_m1517ao/picture
 import _1AddContentpngSG5QxGgnN from "./images/_1AddContentpng.png"; // plasmic-import: sG5QXGgnN/picture
@@ -157,17 +157,40 @@ function PlasmicHomepage__RenderFunc(props) {
                     </p.Stack>
 
                     <p.Stack
-                      as={"div"}
+                      as={"button"}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__swiwU)}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.button,
+                        sty.button__y1Ot5
+                      )}
                     >
-                      <YellowButton
-                        data-plasmic-name={"yellowButton"}
-                        data-plasmic-override={overrides.yellowButton}
+                      <div
                         className={classNames(
-                          "__wab_instance",
-                          sty.yellowButton
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__kP5MI
                         )}
+                      >
+                        {"GET STARTED"}
+                      </div>
+
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__sr62)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"15px"}
+                        loading={"lazy"}
+                        src={{
+                          src: buttonCaretWhitesvg2S5Jbv6HmTb,
+                          fullWidth: 108,
+                          fullHeight: 150,
+                          aspectRatio: 0.722222
+                        }}
                       />
                     </p.Stack>
 
@@ -180,8 +203,6 @@ function PlasmicHomepage__RenderFunc(props) {
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                         <React.Fragment>
-                          <React.Fragment>{""}</React.Fragment>
-
                           <span
                             className={
                               "plasmic_default__all plasmic_default__span"
@@ -229,8 +250,6 @@ function PlasmicHomepage__RenderFunc(props) {
                         </React.Fragment>
                       ) : (
                         <React.Fragment>
-                          <React.Fragment>{""}</React.Fragment>
-
                           <span
                             className={
                               "plasmic_default__all plasmic_default__span"
@@ -331,8 +350,6 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     {"with our powerful platform."}
                   </span>
-
-                  <React.Fragment>{""}</React.Fragment>
                 </React.Fragment>
               ) : (
                 <React.Fragment>
@@ -346,8 +363,6 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     {"with our powerful platform."}
                   </span>
-
-                  <React.Fragment>{""}</React.Fragment>
                 </React.Fragment>
               )}
             </h1>
@@ -785,8 +800,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 >
                   {"transform the way knowledge is attained."}
                 </span>
-
-                <React.Fragment>{""}</React.Fragment>
               </React.Fragment>
             </h1>
 
@@ -805,6 +818,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___6NM8R)}
+                role={""}
               >
                 <p.PlasmicImg
                   alt={""}
@@ -845,6 +859,18 @@ function PlasmicHomepage__RenderFunc(props) {
                   </React.Fragment>
                 </div>
               </p.Stack>
+
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__sZrww
+                )}
+                href={"https://www.plasmic.app/"}
+              >
+                {"Some link text"}
+              </a>
             </div>
 
             <div className={classNames(projectcss.all, sty.column__vnlNh)}>
@@ -887,8 +913,6 @@ function PlasmicHomepage__RenderFunc(props) {
                     >
                       {"CEO's"}
                     </span>
-
-                    <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
               </p.Stack>
@@ -934,8 +958,6 @@ function PlasmicHomepage__RenderFunc(props) {
                     >
                       {"Instructional Designers"}
                     </span>
-
-                    <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
               </p.Stack>
@@ -981,8 +1003,6 @@ function PlasmicHomepage__RenderFunc(props) {
                     >
                       {"Employees"}
                     </span>
-
-                    <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
               </p.Stack>
@@ -1148,8 +1168,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 >
                   {"range of industries"}
                 </span>
-
-                <React.Fragment>{""}</React.Fragment>
               </React.Fragment>
             </h1>
 
@@ -1350,6 +1368,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   projectcss.a,
                   sty.link__cDbsS
                 )}
+                href={"/industry-manufacturing"}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__jJmJi)}>
                   <p.Stack
@@ -1414,6 +1433,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   projectcss.a,
                   sty.link__mRtlk
                 )}
+                href={"/industry-pharmaceuticals"}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__kDBzA)}>
                   <p.Stack
@@ -1578,29 +1598,60 @@ function PlasmicHomepage__RenderFunc(props) {
                   }}
                 />
 
-                <div className={classNames(projectcss.all, sty.freeBox__j39Oy)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__j39Oy)}
+                >
                   <button
                     className={classNames(
                       projectcss.all,
                       projectcss.button,
                       projectcss.__wab_text,
-                      sty.button__qzP
+                      sty.button__bUtdJ
                     )}
                   >
                     {"BOOK A DEMO"}
                   </button>
 
-                  <button
+                  <p.Stack
+                    as={"button"}
+                    hasGap={true}
                     className={classNames(
                       projectcss.all,
                       projectcss.button,
-                      projectcss.__wab_text,
-                      sty.button__p3WIh
+                      sty.button__x0RG
                     )}
                   >
-                    {"GET STARTED"}
-                  </button>
-                </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___4KfLr
+                      )}
+                    >
+                      {"GET STARTED"}
+                    </div>
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___7YklO)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"15px"}
+                      loading={"lazy"}
+                      src={{
+                        src: buttonCaretWhitesvg2S5Jbv6HmTb,
+                        fullWidth: 108,
+                        fullHeight: 150,
+                        aspectRatio: 0.722222
+                      }}
+                    />
+                  </p.Stack>
+                </p.Stack>
               </p.Stack>
             </div>
 
@@ -1766,6 +1817,8 @@ function PlasmicHomepage__RenderFunc(props) {
             </div>
           </div>
 
+          <div className={classNames(projectcss.all, sty.freeBox__l7ZoV)} />
+
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -1783,7 +1836,6 @@ const PlasmicDescendants = {
     "menuHeaderDesktop",
     "section1",
     "copy",
-    "yellowButton",
     "section2",
     "section3",
     "section4",
@@ -1798,9 +1850,8 @@ const PlasmicDescendants = {
   ],
 
   menuHeaderDesktop: ["menuHeaderDesktop"],
-  section1: ["section1", "copy", "yellowButton"],
-  copy: ["copy", "yellowButton"],
-  yellowButton: ["yellowButton"],
+  section1: ["section1", "copy"],
+  copy: ["copy"],
   section2: ["section2"],
   section3: ["section3"],
   section4: ["section4"],
@@ -1851,7 +1902,6 @@ export const PlasmicHomepage = Object.assign(
     menuHeaderDesktop: makeNodeComponent("menuHeaderDesktop"),
     section1: makeNodeComponent("section1"),
     copy: makeNodeComponent("copy"),
-    yellowButton: makeNodeComponent("yellowButton"),
     section2: makeNodeComponent("section2"),
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),

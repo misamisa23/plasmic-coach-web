@@ -273,19 +273,6 @@
           "componentType": "component"
         },
         {
-          "id": "DlUpeRRY4J",
-          "name": "WhoIsItForManagers",
-          "type": "managed",
-          "projectId": "uu5v5CefeBFWJ3g58RuWZW",
-          "renderModuleFilePath": "plasmic/coach_website/PlasmicWhoIsItForManagers.jsx",
-          "importSpec": {
-            "modulePath": "WhoIsItForManagers.jsx"
-          },
-          "cssFilePath": "plasmic/coach_website/PlasmicWhoIsItForManagers.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "rM_3tFwMIBc",
           "name": "WhoIsItForEmployees",
           "type": "managed",
@@ -299,7 +286,46 @@
           "componentType": "page"
         },
         {
-          "id": "0UdrnE_GFOJ",
+          "id": "CslIQr77kIH",
+          "name": "WhoIsItForManagers",
+          "type": "managed",
+          "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+          "renderModuleFilePath": "plasmic/coach_website/PlasmicWhoIsItForManagers.jsx",
+          "importSpec": {
+            "modulePath": "WhoIsItForManagers.jsx"
+          },
+          "cssFilePath": "plasmic/coach_website/PlasmicWhoIsItForManagers.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "YL4LSeLth1y",
+          "name": "WhoIsItForInstructionalDesigners",
+          "type": "managed",
+          "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+          "renderModuleFilePath": "plasmic/coach_website/PlasmicWhoIsItForInstructionalDesigners.jsx",
+          "importSpec": {
+            "modulePath": "WhoIsItForInstructionalDesigners.jsx"
+          },
+          "cssFilePath": "plasmic/coach_website/PlasmicWhoIsItForInstructionalDesigners.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "teoAA_M6SM2",
+          "name": "WhoIsItForCeOs",
+          "type": "managed",
+          "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+          "renderModuleFilePath": "plasmic/coach_website/PlasmicWhoIsItForCeOs.jsx",
+          "importSpec": {
+            "modulePath": "WhoIsItForCeOs.jsx"
+          },
+          "cssFilePath": "plasmic/coach_website/PlasmicWhoIsItForCeOs.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "F-wbj2VstZH",
           "name": "IndustryPharmaceuticals",
           "type": "managed",
           "projectId": "uu5v5CefeBFWJ3g58RuWZW",
@@ -352,6 +378,21 @@
           "id": "egZub56_e-",
           "name": "CorrectsvgIcon",
           "moduleFilePath": "plasmic/coach_website/icons/PlasmicIcon__Correctsvg.jsx"
+        },
+        {
+          "id": "NEB4z9XxWS",
+          "name": "FooterIconFbsvgIcon",
+          "moduleFilePath": "plasmic/coach_website/icons/PlasmicIcon__FooterIconFbsvg.jsx"
+        },
+        {
+          "id": "amHUaBVUcW",
+          "name": "FooterIconInstagramsvgIcon",
+          "moduleFilePath": "plasmic/coach_website/icons/PlasmicIcon__FooterIconInstagramsvg.jsx"
+        },
+        {
+          "id": "5eo7YEJwcw",
+          "name": "FooterIconLinkedinsvgIcon",
+          "moduleFilePath": "plasmic/coach_website/icons/PlasmicIcon__FooterIconLinkedinsvg.jsx"
         }
       ],
       "images": [
@@ -629,6 +670,86 @@
           "id": "lgrA4Y9cy",
           "name": "web-bg-pattern1.png",
           "filePath": "plasmic/coach_website/images/webBgPattern1Png.png"
+        },
+        {
+          "id": "un0yXAAyX",
+          "name": "whoitsfor-bg1.png",
+          "filePath": "plasmic/coach_website/images/whoitsforBg1Png.png"
+        },
+        {
+          "id": "6Ezsola4F",
+          "name": "whoitsfor-bg2.png",
+          "filePath": "plasmic/coach_website/images/whoitsforBg2Png.png"
+        },
+        {
+          "id": "oJqnElDTGz",
+          "name": "button-caret-white.svg",
+          "filePath": "plasmic/coach_website/images/buttonCaretWhitesvg.svg"
+        },
+        {
+          "id": "S5jbv6HmTb",
+          "name": "button-caret-white.svg 2",
+          "filePath": "plasmic/coach_website/images/buttonCaretWhitesvg2.svg"
+        },
+        {
+          "id": "ioHbUnIPE",
+          "name": "phone-cut-ceos.png",
+          "filePath": "plasmic/coach_website/images/phoneCutCeospng.png"
+        },
+        {
+          "id": "dSxS101BD",
+          "name": "phone-cut-ids.png",
+          "filePath": "plasmic/coach_website/images/phoneCutIdspng.png"
+        },
+        {
+          "id": "7ag-onzeC",
+          "name": "web-ids-2.png",
+          "filePath": "plasmic/coach_website/images/webIds2Png.png"
+        },
+        {
+          "id": "aN3lM3Rqx",
+          "name": "web-ids-3.png",
+          "filePath": "plasmic/coach_website/images/webIds3Png.png"
+        },
+        {
+          "id": "X65pLRm6O",
+          "name": "web-ids-4.png",
+          "filePath": "plasmic/coach_website/images/webIds4Png.png"
+        },
+        {
+          "id": "SxlAKZLyQ",
+          "name": "web-ceos-1.png",
+          "filePath": "plasmic/coach_website/images/webCeos1Png.png"
+        },
+        {
+          "id": "Z_YDzHNqL",
+          "name": "web-ceos-2.png",
+          "filePath": "plasmic/coach_website/images/webCeos2Png.png"
+        },
+        {
+          "id": "vnpNHmRZV",
+          "name": "web-ceos-3.png",
+          "filePath": "plasmic/coach_website/images/webCeos3Png.png"
+        },
+        {
+          "id": "n3aKGPLXQ",
+          "name": "web-ceos-4.png",
+          "filePath": "plasmic/coach_website/images/webCeos4Png.png"
+        },
+        {
+          "id": "EuRzOul7D",
+          "name": "industry-icons-Artboard 3 copy 2.svg",
+          "filePath": "plasmic/coach_website/images/industryIconsArtboard3Copy2Svg.svg"
+        },
+        {
+          "id": "3G8mWcWudI",
+          "name": "industry-icons-manufacturing.svg",
+          "filePath": "plasmic/coach_website/images/industryIconsManufacturingsvg.svg"
+        },
+        {
+          "id": "9CD57NdIa",
+          "name": "web-pharma-safety.png",
+          "filePath": "plasmic/coach_website/images/webPharmaSafetypng.png"
         }
       ],
       "indirect": false,

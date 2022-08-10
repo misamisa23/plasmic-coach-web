@@ -21,7 +21,8 @@ import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicIndustryManufacturing.module.css"; // plasmic-import: Qi8fjVputO/css
-import industryIconsArtboard31SvgOy70P0DV5 from "./images/industryIconsArtboard31Svg.svg"; // plasmic-import: oy70P0dV5/picture
+import industryIconsManufacturingsvg3G8MWcWudI from "./images/industryIconsManufacturingsvg.svg"; // plasmic-import: 3G8mWcWudI/picture
+import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import illustrationBannerManufacturingpng9LdhmeRy from "./images/illustrationBannerManufacturingpng.png"; // plasmic-import: 9LDHME-Ry/picture
 import group1040SvgL9B60DvYf from "./images/group1040Svg.svg"; // plasmic-import: L9b60DVYf/picture
 import webOnboardingTrainingpng7WY11Mx3O from "./images/webOnboardingTrainingpng.png"; // plasmic-import: 7wY11MX3O/picture
@@ -74,49 +75,66 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__wihay)}
+                  className={classNames(projectcss.all, sty.freeBox___9A7SG)}
                 >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img___7Y3Od)}
-                    displayHeight={"35px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"35px"}
-                    loading={"lazy"}
-                    src={{
-                      src: industryIconsArtboard31SvgOy70P0DV5,
-                      fullWidth: 150,
-                      fullHeight: 150,
-                      aspectRatio: 1
-                    }}
-                  />
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__wihay)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___7Y3Od)}
+                      displayHeight={"35px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"35px"}
+                      loading={"lazy"}
+                      src={{
+                        src: industryIconsManufacturingsvg3G8MWcWudI,
+                        fullWidth: 150,
+                        fullHeight: 150,
+                        aspectRatio: 1
+                      }}
+                    />
 
-                  <div
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__yuq0H
+                      )}
+                    >
+                      {"COACH FOR MANUFACTURING"}
+                    </div>
+                  </p.Stack>
+
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
                     className={classNames(
                       projectcss.all,
+                      projectcss.h1,
                       projectcss.__wab_text,
-                      sty.text__yuq0H
+                      sty.h1
                     )}
                   >
-                    {"COACH FOR MANUFACTURING"}
-                  </div>
-                </p.Stack>
+                    <React.Fragment>
+                      <React.Fragment>
+                        {"Employee training in the\n"}
+                      </React.Fragment>
 
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1
-                  )}
-                >
-                  {"Employee training in the\nManufacturing sector"}
-                </h1>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#3E7CB1" }}
+                      >
+                        {"Manufacturing sector"}
+                      </span>
+                    </React.Fragment>
+                  </h1>
+                </p.Stack>
 
                 <div
                   className={classNames(
@@ -130,16 +148,43 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   }
                 </div>
 
-                <button
+                <p.Stack
+                  as={"button"}
+                  hasGap={true}
                   className={classNames(
                     projectcss.all,
                     projectcss.button,
-                    projectcss.__wab_text,
-                    sty.button__x25Vv
+                    sty.button__kt851
                   )}
                 >
-                  {"BOOK A DEMO"}
-                </button>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__mtpYb
+                    )}
+                  >
+                    {"BOOK A DEMO"}
+                  </div>
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__bniSs)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"15px"}
+                    loading={"lazy"}
+                    src={{
+                      src: buttonCaretWhitesvg2S5Jbv6HmTb,
+                      fullWidth: 108,
+                      fullHeight: 150,
+                      aspectRatio: 0.722222
+                    }}
+                  />
+                </p.Stack>
               </p.Stack>
 
               <div className={classNames(projectcss.all, sty.column__rGSa)}>
@@ -203,7 +248,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"auto"}
+                  displayWidth={"430px"}
                   loading={"lazy"}
                   src={{
                     src: group1040SvgL9B60DvYf,
@@ -231,7 +276,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"auto"}
+                  displayWidth={"450px"}
                   loading={"lazy"}
                   src={{
                     src: webOnboardingTrainingpng7WY11Mx3O,
@@ -301,7 +346,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Manufacturing training ensures that employees know how to carry out the critical functions of their role safely. This not only keeps the employee themselves safe on the job, but also keeps their coworkers safe as well. \nWith Coach, you can keep your employees safe on the job by teaching them best practices and creating a workforce of proactive safety advocates. You will ensure your employees know how to operate and repair equipment safely and accurately. \nAnd what’s even more important is that with Coach you can refresh their knowledge on a regular basis, as well as keep track of how well employees are aware of the safety rules. "
+                    "Manufacturing training ensures that employees know how to carry out the critical functions of their role safely. This not only keeps the employee themselves safe on the job, but also keeps their coworkers safe as well. \n\nWith Coach, you can keep your employees safe on the job by teaching them best practices and creating a workforce of proactive safety advocates. You will ensure your employees know how to operate and repair equipment safely and accurately. \n\nAnd what’s even more important is that with Coach you can refresh their knowledge on a regular basis, as well as keep track of how well employees are aware of the safety rules. "
                   }
                 </div>
               </p.Stack>
@@ -315,7 +360,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"auto"}
+                  displayWidth={"450px"}
                   loading={"lazy"}
                   src={{
                     src: webManufacturingSafetypngJ36Q0EyCx,
@@ -343,7 +388,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"auto"}
+                  displayWidth={"450px"}
                   loading={"lazy"}
                   src={{
                     src: webManufacturingProcedurespngKzfFzkAuT,
@@ -377,7 +422,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Process and equipment training provides manufacturing employees with the knowledge required to complete processes efficiently in their roles. With a more efficient workforce, organizations in manufacturing can increase their output and better meet the demands of their industry. \nWith Coach you will teach complex processes and allow for hands-on training that helps employees work at full capacity. On top of this, you will test employees knowledge through the Coach system to make sure that they are on top of what they must know to do their job well."
+                    "Process and equipment training provides manufacturing employees with the knowledge required to complete processes efficiently in their roles. With a more efficient workforce, organizations in manufacturing can increase their output and better meet the demands of their industry. \n\nWith Coach you will teach complex processes and allow for hands-on training that helps employees work at full capacity. On top of this, you will test employees knowledge through the Coach system to make sure that they are on top of what they must know to do their job well."
                   }
                 </div>
               </p.Stack>
@@ -416,29 +461,56 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___3ZcKw)}
+              className={classNames(projectcss.all, sty.freeBox__hzPBv)}
             >
               <button
                 className={classNames(
                   projectcss.all,
                   projectcss.button,
                   projectcss.__wab_text,
-                  sty.button__a3UCh
+                  sty.button__hgRyo
                 )}
               >
                 {"BOOK A DEMO"}
               </button>
 
-              <button
+              <p.Stack
+                as={"button"}
+                hasGap={true}
                 className={classNames(
                   projectcss.all,
                   projectcss.button,
-                  projectcss.__wab_text,
-                  sty.button__sDFn5
+                  sty.button__rOj0A
                 )}
               >
-                {"GET STARTED"}
-              </button>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__hj3Zl
+                  )}
+                >
+                  {"GET STARTED"}
+                </div>
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__vUtC)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"15px"}
+                  loading={"lazy"}
+                  src={{
+                    src: buttonCaretWhitesvg2S5Jbv6HmTb,
+                    fullWidth: 108,
+                    fullHeight: 150,
+                    aspectRatio: 0.722222
+                  }}
+                />
+              </p.Stack>
             </p.Stack>
           </p.Stack>
 
