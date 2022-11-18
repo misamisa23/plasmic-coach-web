@@ -5,7 +5,6 @@ import ShowcaseComponent from '../components/Showcase/ShowcaseComponent'
 
 registerComponent(ShowcaseComponent, {
   name: "ShowcaseComponent",
-  importPath: "./components/widgets/Showcase/ShowcaseComponent",
   props: {
     isLight: "boolean",
     
