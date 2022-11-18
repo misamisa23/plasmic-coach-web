@@ -1,13 +1,16 @@
-import React from "react";
-import Homepage from "./components/Homepage";
+import * as React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Homepage from './components/Homepage';
+import PlasmicCanvasHost from './pages/plasmic-host'
 
-
-function Index() {
+export default function AppRoot() {
   return (
-    <div style={{ width: "100%", padding:"0", margin:"0", alignContent: "left" }}>
-    <Homepage/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Your other routes... Some comment */}
+        <Route path="/" element={<Homepage />} />
+        <Route path="/plasmic-host" element={<PlasmicCanvasHost />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default Index;

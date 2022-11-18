@@ -36,11 +36,14 @@ function PlasmicFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
+  const currentUser = p.useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -452,7 +455,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicFooter__ArgProps,
           internalVariantPropNames: PlasmicFooter__VariantProps
         }),
-
       [props, nodeName]
     );
 

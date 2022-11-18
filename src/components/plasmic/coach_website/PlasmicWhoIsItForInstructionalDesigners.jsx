@@ -43,11 +43,14 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
+  const currentUser = p.useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -132,7 +135,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "The training tool \nthat helps you learn"
-                        : "Build trainings that employees (and CEOs) love, fast"}
+                        : "Build trainings that employees  love"}
                     </h1>
                   </p.Stack>
 
@@ -143,9 +146,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                       sty.text__hOkik
                     )}
                   >
-                    {
-                      "The all-in-one tool for microlearning, adaptive learning\nand spaced repetition!"
-                    }
+                    {"The all-in-one tool for learning!"}
                   </div>
 
                   <p.Stack
@@ -246,15 +247,13 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     <React.Fragment>
                       {"Instructional Designers say it’s their "}
                     </React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
-                      {"new\n ‘right-hand’ tool"}
+                      {"new ‘right-hand’ tool"}
                     </span>
-
-                    <React.Fragment>{" these days!"}</React.Fragment>
+                    <React.Fragment>{"!"}</React.Fragment>
                   </React.Fragment>
                 </div>
               </div>
@@ -618,7 +617,6 @@ function makeNodeComponent(nodeName) {
           internalVariantPropNames:
             PlasmicWhoIsItForInstructionalDesigners__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -649,7 +647,14 @@ export const PlasmicWhoIsItForInstructionalDesigners = Object.assign(
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicWhoIsItForInstructionalDesigners
     internalVariantProps: PlasmicWhoIsItForInstructionalDesigners__VariantProps,
-    internalArgProps: PlasmicWhoIsItForInstructionalDesigners__ArgProps
+    internalArgProps: PlasmicWhoIsItForInstructionalDesigners__ArgProps,
+    // Page metadata
+    pageMetadata: {
+      title: "",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 

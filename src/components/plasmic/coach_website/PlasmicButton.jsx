@@ -45,16 +45,18 @@ function PlasmicButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
+  const currentUser = p.useCurrentUser?.() || {};
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false
     });
-
   const triggers = {
     focusVisibleWithin_root: isRootFocusVisibleWithin
   };
-
   return (
     <p.Stack
       as={"button"}
@@ -503,7 +505,6 @@ function useBehavior(props, ref) {
         group: "showStartIcon",
         variant: "showStartIcon"
       },
-
       showEndIconVariant: { group: "showEndIcon", variant: "showEndIcon" },
       isDisabledVariant: { group: "isDisabled", variant: "isDisabled" },
       contentSlot: "children",
@@ -511,7 +512,6 @@ function useBehavior(props, ref) {
       endIconSlot: "endIcon",
       root: "root"
     },
-
     ref
   );
 
@@ -535,7 +535,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicButton__ArgProps,
           internalVariantPropNames: PlasmicButton__VariantProps
         }),
-
       [props, nodeName]
     );
 

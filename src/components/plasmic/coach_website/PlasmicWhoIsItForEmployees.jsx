@@ -42,11 +42,14 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
+  const currentUser = p.useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -243,14 +246,12 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     <React.Fragment>
                       {"With Coach, you’ll notice "}
                     </React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"your knowledge improves"}
                     </span>
-
                     <React.Fragment>
                       {
                         " right away - all while playing challenging games and having fun!"
@@ -617,7 +618,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicWhoIsItForEmployees__ArgProps,
           internalVariantPropNames: PlasmicWhoIsItForEmployees__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -648,7 +648,14 @@ export const PlasmicWhoIsItForEmployees = Object.assign(
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicWhoIsItForEmployees
     internalVariantProps: PlasmicWhoIsItForEmployees__VariantProps,
-    internalArgProps: PlasmicWhoIsItForEmployees__ArgProps
+    internalArgProps: PlasmicWhoIsItForEmployees__ArgProps,
+    // Page metadata
+    pageMetadata: {
+      title: "",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 

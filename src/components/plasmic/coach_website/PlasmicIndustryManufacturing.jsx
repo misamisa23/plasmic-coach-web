@@ -24,7 +24,7 @@ import sty from "./PlasmicIndustryManufacturing.module.css"; // plasmic-import: 
 import industryIconsManufacturingsvg3G8MWcWudI from "./images/industryIconsManufacturingsvg.svg"; // plasmic-import: 3G8mWcWudI/picture
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import illustrationBannerManufacturingpng9LdhmeRy from "./images/illustrationBannerManufacturingpng.png"; // plasmic-import: 9LDHME-Ry/picture
-import group1040SvgL9B60DvYf from "./images/group1040Svg.svg"; // plasmic-import: L9b60DVYf/picture
+import manufacturing1Png2ZraVek1O9 from "./images/manufacturing1Png2.png"; // plasmic-import: zraVek1o9/picture
 import webOnboardingTrainingpng7WY11Mx3O from "./images/webOnboardingTrainingpng.png"; // plasmic-import: 7wY11MX3O/picture
 import webManufacturingSafetypngJ36Q0EyCx from "./images/webManufacturingSafetypng.png"; // plasmic-import: J36q0EyCx/picture
 import webManufacturingProcedurespngKzfFzkAuT from "./images/webManufacturingProcedurespng.png"; // plasmic-import: KzfFzkAuT/picture
@@ -37,7 +37,11 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
+  const currentUser = p.useCurrentUser?.() || {};
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -125,7 +129,6 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                       <React.Fragment>
                         {"Employee training in the\n"}
                       </React.Fragment>
-
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
@@ -248,13 +251,13 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"430px"}
+                  displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: group1040SvgL9B60DvYf,
-                    fullWidth: 229,
-                    fullHeight: 150,
-                    aspectRatio: 1.524648
+                    src: manufacturing1Png2ZraVek1O9,
+                    fullWidth: 860,
+                    fullHeight: 601,
+                    aspectRatio: undefined
                   }}
                 />
               </div>
@@ -560,7 +563,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryManufacturing__ArgProps,
           internalVariantPropNames: PlasmicIndustryManufacturing__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -595,7 +597,14 @@ export const PlasmicIndustryManufacturing = Object.assign(
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicIndustryManufacturing
     internalVariantProps: PlasmicIndustryManufacturing__VariantProps,
-    internalArgProps: PlasmicIndustryManufacturing__ArgProps
+    internalArgProps: PlasmicIndustryManufacturing__ArgProps,
+    // Page metadata
+    pageMetadata: {
+      title: "",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 
