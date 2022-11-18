@@ -3,25 +3,25 @@ import React, { useEffect, useRef, useState } from 'react';
 import './ShowcaseComponent.css';
 import { ShowcaseItem } from './ShowcaseItem/ShowcaseItem';
 import Video from './Video/Video';
-import PlayIcon from '../../assets/icons/web-icon-play.svg';
-import ImproveIcon from '../../assets/icons/web-icon-improve.svg';
-import ReinforceIcon from '../../assets/icons/web-icon-reinforce.svg';
-import RewardsIcon from '../../assets/icons/web-icon-rewards.svg';
-import TrackIcon from '../../assets/icons/web-icon-track.svg';
+import PlayIcon from 'assets/icons/web-icon-play.svg';
+import ImproveIcon from 'assets/icons/web-icon-improve.svg';
+import ReinforceIcon from 'assets/icons/web-icon-reinforce.svg';
+import RewardsIcon from 'assets/icons/web-icon-rewards.svg';
+import TrackIcon from 'assets/icons/web-icon-track.svg';
 
-import PlayIconSelected from '../../assets/icons/web-icon-play-selected.svg';
-import ImproveIconSelected from '../../assets/icons/web-icon-improve-selected.svg';
-import ReinforceIconSelected from '../../assets/icons/web-icon-reinforce-selected.svg';
-import RewardsIconSelected from '../../assets/icons/web-icon-rewards-selected.svg';
-import TrackIconSelected from '../../assets/icons/web-icon-track-selected.svg';
+import PlayIconSelected from 'assets/icons/web-icon-play-selected.svg';
+import ImproveIconSelected from 'assets/icons/web-icon-improve-selected.svg';
+import ReinforceIconSelected from 'assets/icons/web-icon-reinforce-selected.svg';
+import RewardsIconSelected from 'assets/icons/web-icon-rewards-selected.svg';
+import TrackIconSelected from 'assets/icons/web-icon-track-selected.svg';
 
-import PlayVideo from '../../assets/videos/learn-by-playing.mp4';
-import RewardsVideo from '../../assets/videos/get-rewards.mp4';
-import ImproveYourKnowledgeVideo from '../../assets/videos/improve-your-knowledge.mp4';
-import PersonalizedVideo from '../../assets/videos/personalized-experience.mp4';
-import TrackPerformanceVideo from '../../assets/videos/track-performance.mp4';
+import PlayVideo from 'assets/videos/learn-by-playing.mp4';
+import RewardsVideo from 'assets/videos/get-rewards.mp4';
+import ImproveYourKnowledgeVideo from 'assets/videos/improve-your-knowledge.mp4';
+import PersonalizedVideo from 'assets/videos/personalized-experience.mp4';
+import TrackPerformanceVideo from 'assets/videos/track-performance.mp4';
 
-export default function ShowcaseComponent({ isLight }) {
+export function ShowcaseComponent({ isLight }) {
   const [index, setIndex] = useState(0);
 
   const [video, setVideo] = useState(0);
