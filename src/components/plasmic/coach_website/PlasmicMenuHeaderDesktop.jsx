@@ -27,7 +27,7 @@ import sty from "./PlasmicMenuHeaderDesktop.module.css"; // plasmic-import: Rhmf
 import coachlogoBlacksvgZ3Py0Ikf4 from "./images/coachlogoBlacksvg.svg"; // plasmic-import: Z3Py0ikf4/picture
 import icons8Menusvg9TKQ8Sy from "./images/icons8Menusvg.svg"; // plasmic-import: 9tK_q8Sy_/picture
 
-export const PlasmicMenuHeaderDesktop__VariantProps = new Array();
+export const PlasmicMenuHeaderDesktop__VariantProps = new Array("base2");
 
 export const PlasmicMenuHeaderDesktop__ArgProps = new Array();
 
@@ -35,11 +35,14 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
+  const currentUser = p.useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -58,51 +61,106 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__u8Yv1)}
+        className={classNames(projectcss.all, sty.freeBox__u8Yv1, {
+          [sty.freeBoxbase2__u8Yv1SkKnm]: hasVariant(variants, "base2", "base2")
+        })}
       >
-        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+        {(
+          hasVariant(variants, "base2", "base2")
+            ? true
+            : hasVariant(globalVariants, "screen", "mobileOnly")
+            ? true
+            : true
+        ) ? (
           <div
             data-plasmic-name={"columns"}
             data-plasmic-override={overrides.columns}
-            className={classNames(projectcss.all, sty.columns)}
+            className={classNames(projectcss.all, sty.columns, {
+              [sty.columnsbase2]: hasVariant(variants, "base2", "base2")
+            })}
           >
             {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              hasVariant(variants, "base2", "base2")
+                ? true
+                : hasVariant(globalVariants, "screen", "mobileOnly")
+                ? true
+                : true
             ) ? (
-              <div className={classNames(projectcss.all, sty.column__eklhN)}>
+              <div
+                className={classNames(projectcss.all, sty.column__eklhN, {
+                  [sty.columnbase2__eklhNSkKnm]: hasVariant(
+                    variants,
+                    "base2",
+                    "base2"
+                  )
+                })}
+              >
                 {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
+                  hasVariant(variants, "base2", "base2")
+                    ? true
+                    : hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
                     : true
                 ) ? (
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__krSpk)}
+                    className={classNames(projectcss.all, sty.freeBox__krSpk, {
+                      [sty.freeBoxbase2__krSpkSkKnm]: hasVariant(
+                        variants,
+                        "base2",
+                        "base2"
+                      )
+                    })}
                   >
-                    {(
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__m7H1L)}
-                        displayHeight={"39px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"none"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"123px"}
-                        src={{
-                          src: coachlogoBlacksvgZ3Py0Ikf4,
-                          fullWidth: 300,
-                          fullHeight: 99,
-                          aspectRatio: 3.02439
-                        }}
-                      />
+                    {(hasVariant(variants, "base2", "base2") ? true : true) ? (
+                      <a
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__eH6V,
+                          {
+                            [sty.linkbase2__eH6VSkKnm]: hasVariant(
+                              variants,
+                              "base2",
+                              "base2"
+                            )
+                          }
+                        )}
+                        href={`/`}
+                      >
+                        {(
+                          hasVariant(variants, "base2", "base2")
+                            ? true
+                            : hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__m7H1L, {
+                              [sty.imgbase2__m7H1LSkKnm]: hasVariant(
+                                variants,
+                                "base2",
+                                "base2"
+                              )
+                            })}
+                            displayHeight={"39px"}
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"none"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"123px"}
+                            src={{
+                              src: coachlogoBlacksvgZ3Py0Ikf4,
+                              fullWidth: 300,
+                              fullHeight: 99,
+                              aspectRatio: 3.02439
+                            }}
+                          />
+                        ) : null}
+                      </a>
                     ) : null}
-
                     {false ? (
                       <div
                         className={classNames(
@@ -146,11 +204,18 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                 ) : null}
               </div>
             ) : null}
-
             {(
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
             ) ? (
-              <div className={classNames(projectcss.all, sty.column__qeunp)}>
+              <div
+                className={classNames(projectcss.all, sty.column__qeunp, {
+                  [sty.columnbase2__qeunpSkKnm]: hasVariant(
+                    variants,
+                    "base2",
+                    "base2"
+                  )
+                })}
+              >
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -161,33 +226,43 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__tyGcR)}
                   >
+                    {true ? (
+                      <button
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.button,
+                          projectcss.__wab_text,
+                          sty.button__mwCo7
+                        )}
+                      >
+                        {"SIGN IN"}
+                      </button>
+                    ) : null}
+                    {true ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__hOJf
+                        )}
+                      >
+                        {"or"}
+                      </div>
+                    ) : null}
+
                     <button
                       className={classNames(
                         projectcss.all,
                         projectcss.button,
                         projectcss.__wab_text,
-                        sty.button__mwCo7
-                      )}
-                    >
-                      {"SIGN IN"}
-                    </button>
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__hOJf
-                      )}
-                    >
-                      {"or"}
-                    </div>
-
-                    <button
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.button,
-                        projectcss.__wab_text,
-                        sty.button__rCqCq
+                        sty.button__rCqCq,
+                        {
+                          [sty.buttonbase2__rCqCqSkKnm]: hasVariant(
+                            variants,
+                            "base2",
+                            "base2"
+                          )
+                        }
                       )}
                     >
                       {"REQUEST ACCESS"}
@@ -198,16 +273,15 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             ) : null}
           </div>
         ) : null}
-
         {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
           <NavigationBar
-            data-plasmic-name={"navigationBar"}
-            data-plasmic-override={overrides.navigationBar}
             brand={
               <a
-                data-plasmic-name={"link"}
-                data-plasmic-override={overrides.link}
-                className={classNames(projectcss.all, projectcss.a, sty.link)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__taZr4
+                )}
                 href={"#"}
               >
                 <p.PlasmicImg
@@ -228,11 +302,11 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                 />
               </a>
             }
-            className={classNames("__wab_instance", sty.navigationBar)}
+            className={classNames("__wab_instance", sty.navigationBar__wzCi7)}
             closeButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__vfW7I)}
+                className={classNames(sty.img__yvq8G)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -250,7 +324,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link___3BRu9
+                    sty.link___6YlKd
                   )}
                   href={"/"}
                 >
@@ -262,7 +336,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__jcKpe
+                    sty.link__dCqMa
                   )}
                   href={"/"}
                 >
@@ -274,7 +348,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__xdEk
+                    sty.link___1Zzc
                   )}
                   href={"/"}
                 >
@@ -305,16 +379,149 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             responsiveBreakpoint={768}
           />
         ) : null}
+        {(hasVariant(variants, "base2", "base2") ? true : true) ? (
+          <NavigationBar
+            brand={
+              <a
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__cgk1B
+                )}
+                href={"#"}
+              >
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__oey6J, {
+                      [sty.imgbase2__oey6JSkKnm]: hasVariant(
+                        variants,
+                        "base2",
+                        "base2"
+                      )
+                    })}
+                    displayHeight={"39px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"123px"}
+                    src={{
+                      src: coachlogoBlacksvgZ3Py0Ikf4,
+                      fullWidth: 300,
+                      fullHeight: 99,
+                      aspectRatio: 3.02439
+                    }}
+                  />
+                ) : null}
+              </a>
+            }
+            className={classNames("__wab_instance", sty.navigationBar__ehcn2, {
+              [sty.navigationBarbase2__ehcn2SkKnm]: hasVariant(
+                variants,
+                "base2",
+                "base2"
+              )
+            })}
+            closeButton={
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__rr7Xk)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={"https://static1.plasmic.app/close.svg"}
+              />
+            }
+            itemsGap={8}
+            menuItems={
+              <React.Fragment>
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__xgPPy
+                  )}
+                  href={"/"}
+                >
+                  {"Home"}
+                </a>
+
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__af3Ld
+                  )}
+                  href={"/"}
+                >
+                  {"About"}
+                </a>
+
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__cK0Jg
+                  )}
+                  href={"/"}
+                >
+                  {"Contact"}
+                </a>
+
+                <button
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.button,
+                    projectcss.__wab_text,
+                    sty.button__b1Kal,
+                    {
+                      [sty.buttonbase2__b1KalSkKnm]: hasVariant(
+                        variants,
+                        "base2",
+                        "base2"
+                      )
+                    }
+                  )}
+                >
+                  {"REQUEST ACCESS"}
+                </button>
+              </React.Fragment>
+            }
+            openButton={
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img___8AMa9)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={"https://static1.plasmic.app/menu.svg"}
+              />
+            }
+            responsiveBreakpoint={768}
+          />
+        ) : null}
       </p.Stack>
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "navigationBar", "link", "hamburgerMenu"],
+  root: ["root", "columns", "hamburgerMenu"],
   columns: ["columns"],
-  navigationBar: ["navigationBar", "link", "hamburgerMenu"],
-  link: ["link"],
   hamburgerMenu: ["hamburgerMenu"]
 };
 
@@ -328,7 +535,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicMenuHeaderDesktop__ArgProps,
           internalVariantPropNames: PlasmicMenuHeaderDesktop__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -353,8 +559,6 @@ export const PlasmicMenuHeaderDesktop = Object.assign(
   {
     // Helper components rendering sub-elements
     columns: makeNodeComponent("columns"),
-    navigationBar: makeNodeComponent("navigationBar"),
-    link: makeNodeComponent("link"),
     hamburgerMenu: makeNodeComponent("hamburgerMenu"),
     // Metadata about props expected for PlasmicMenuHeaderDesktop
     internalVariantProps: PlasmicMenuHeaderDesktop__VariantProps,

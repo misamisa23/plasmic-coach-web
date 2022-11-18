@@ -168,7 +168,7 @@
 .img__gizOb > picture > img {
   object-fit: cover;
 }
-.img__gizOb > .__wab_img-spacer > img {
+.img__gizOb > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text___7VHy {
@@ -254,7 +254,7 @@
 .img__evmsG > picture > img {
   object-fit: cover;
 }
-.img__evmsG > .__wab_img-spacer > img {
+.img__evmsG > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .img__kUoz7 {
@@ -266,7 +266,7 @@
 .img__kUoz7 > picture > img {
   object-fit: cover;
 }
-.img__kUoz7 > .__wab_img-spacer > img {
+.img__kUoz7 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .freeBox__pA {

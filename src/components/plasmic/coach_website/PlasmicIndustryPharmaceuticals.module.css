@@ -168,7 +168,7 @@
 .img___1RtX5 > picture > img {
   object-fit: cover;
 }
-.img___1RtX5 > .__wab_img-spacer > img {
+.img___1RtX5 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text__ybO7G {
@@ -269,7 +269,7 @@
 .img__j9D6Y > picture > img {
   object-fit: cover;
 }
-.img__j9D6Y > .__wab_img-spacer > img {
+.img__j9D6Y > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__fu4Ks {
@@ -292,7 +292,7 @@
 .img___5S0U3 > picture > img {
   object-fit: cover;
 }
-.img___5S0U3 > .__wab_img-spacer > img {
+.img___5S0U3 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .section1 {
@@ -405,7 +405,7 @@
 .img__yB6R3 > picture > img {
   object-fit: contain;
 }
-.img__yB6R3 > .__wab_img-spacer > img {
+.img__yB6R3 > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
 .section2 {
@@ -482,7 +482,7 @@
 .img__pUoEg > picture > img {
   object-fit: cover;
 }
-.img__pUoEg > .__wab_img-spacer > img {
+.img__pUoEg > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column___1KBRk {
@@ -664,7 +664,7 @@
 .img__xvxf2 > picture > img {
   object-fit: cover;
 }
-.img__xvxf2 > .__wab_img-spacer > img {
+.img__xvxf2 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .section4 {
@@ -740,7 +740,7 @@
 .img__iqcc6 > picture > img {
   object-fit: cover;
 }
-.img__iqcc6 > .__wab_img-spacer > img {
+.img__iqcc6 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__lAN {
@@ -922,7 +922,7 @@
 .img__ox7WS > picture > img {
   object-fit: cover;
 }
-.img__ox7WS > .__wab_img-spacer > img {
+.img__ox7WS > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .cta {
@@ -1088,7 +1088,7 @@
 .img__xdE1Y > picture > img {
   object-fit: cover;
 }
-.img__xdE1Y > .__wab_img-spacer > img {
+.img__xdE1Y > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .footer:global(.__wab_instance) {

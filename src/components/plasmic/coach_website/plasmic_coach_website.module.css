@@ -24,7 +24,7 @@
 }
 
 .plasmic_default_styles {
-  --mixin-3j67ygJ3FmAf_font-family: "Inter";
+  --mixin-3j67ygJ3FmAf_font-family: "Inter", sans-serif;
   --mixin-3j67ygJ3FmAf_font-size: 16px;
   --mixin-3j67ygJ3FmAf_font-weight: 400;
   --mixin-3j67ygJ3FmAf_font-style: normal;
@@ -43,7 +43,7 @@
   --mixin-hXzzAcz2s3DR_line-height: 1;
   --mixin-hXzzAcz2s3DR_letter-spacing: -4px;
   --mixin-hXzzAcz2s3DR_white-space: pre-wrap;
-  --mixin-KZWRM2N7ToOo_font-family: "Inter";
+  --mixin-KZWRM2N7ToOo_font-family: "Inter", sans-serif;
   --mixin-KZWRM2N7ToOo_color: #000000;
   --mixin-KZWRM2N7ToOo_font-size: 48px;
   --mixin-KZWRM2N7ToOo_font-weight: 700;
@@ -52,14 +52,14 @@
   --mixin-KZWRM2N7ToOo_white-space: pre-wrap;
   --mixin-fRD-rb1-On4W_color: #0070f3;
   --mixin-fRD-rb1-On4W_white-space: pre-wrap;
-  --mixin-NIEsgFKvYrNo_font-family: "Inter";
+  --mixin-NIEsgFKvYrNo_font-family: "Inter", sans-serif;
   --mixin-NIEsgFKvYrNo_color: #000000;
   --mixin-NIEsgFKvYrNo_font-size: 32px;
   --mixin-NIEsgFKvYrNo_font-weight: 600;
   --mixin-NIEsgFKvYrNo_letter-spacing: -0.8px;
   --mixin-NIEsgFKvYrNo_line-height: 1.2;
   --mixin-NIEsgFKvYrNo_white-space: pre-wrap;
-  --mixin-PslShqPTslso_font-family: "Inter";
+  --mixin-PslShqPTslso_font-family: "Inter", sans-serif;
   --mixin-PslShqPTslso_color: #000000;
   --mixin-PslShqPTslso_font-size: 24px;
   --mixin-PslShqPTslso_font-weight: 600;
@@ -136,14 +136,14 @@
   --mixin-LAo1zCpYa4nb_position: relative;
   --mixin-LAo1zCpYa4nb_list-style-type: decimal;
   --mixin-LAo1zCpYa4nb_white-space: pre-wrap;
-  --mixin-NRreftL7feSJD_font-family: "Inter";
+  --mixin-NRreftL7feSJD_font-family: "Inter", sans-serif;
   --mixin-NRreftL7feSJD_color: #000000;
   --mixin-NRreftL7feSJD_font-size: 20px;
   --mixin-NRreftL7feSJD_font-weight: 600;
   --mixin-NRreftL7feSJD_letter-spacing: -0.3px;
   --mixin-NRreftL7feSJD_line-height: 1.5;
   --mixin-NRreftL7feSJD_white-space: pre-wrap;
-  --mixin-C0i_VribrO0yy_font-family: "Inter";
+  --mixin-C0i_VribrO0yy_font-family: "Inter", sans-serif;
   --mixin-C0i_VribrO0yy_color: #000000;
   --mixin-C0i_VribrO0yy_font-size: 16px;
   --mixin-C0i_VribrO0yy_font-weight: 600;
@@ -476,7 +476,7 @@
 
 :where(.root_reset .plasmic_default__h1),
 :where(.root_reset .h1),
-:where(.root_reset .__wab_expr_html_text h1),
+:where(.root_reset :global(.__wab_expr_html_text) h1),
 :where(.root_reset.plasmic_default__h1) {
   color: var(--mixin-hXzzAcz2s3DR_color);
   font-weight: var(--mixin-hXzzAcz2s3DR_font-weight);
@@ -487,7 +487,7 @@
 
 :where(.root_reset .plasmic_default__h2),
 :where(.root_reset .h2),
-:where(.root_reset .__wab_expr_html_text h2),
+:where(.root_reset :global(.__wab_expr_html_text) h2),
 :where(.root_reset.plasmic_default__h2) {
   font-family: var(--mixin-KZWRM2N7ToOo_font-family);
   color: var(--mixin-KZWRM2N7ToOo_color);
@@ -499,14 +499,14 @@
 
 :where(.root_reset .plasmic_default__a),
 :where(.root_reset .a),
-:where(.root_reset .__wab_expr_html_text a),
+:where(.root_reset :global(.__wab_expr_html_text) a),
 :where(.root_reset.plasmic_default__a) {
   color: var(--mixin-fRD-rb1-On4W_color);
 }
 
 :where(.root_reset .plasmic_default__h3),
 :where(.root_reset .h3),
-:where(.root_reset .__wab_expr_html_text h3),
+:where(.root_reset :global(.__wab_expr_html_text) h3),
 :where(.root_reset.plasmic_default__h3) {
   font-family: var(--mixin-NIEsgFKvYrNo_font-family);
   color: var(--mixin-NIEsgFKvYrNo_color);
@@ -518,7 +518,7 @@
 
 :where(.root_reset .plasmic_default__h4),
 :where(.root_reset .h4),
-:where(.root_reset .__wab_expr_html_text h4),
+:where(.root_reset :global(.__wab_expr_html_text) h4),
 :where(.root_reset.plasmic_default__h4) {
   font-family: var(--mixin-PslShqPTslso_font-family);
   color: var(--mixin-PslShqPTslso_color);
@@ -530,9 +530,9 @@
 
 :where(.root_reset .plasmic_default__code),
 :where(.root_reset .code),
-:where(.root_reset .__wab_expr_html_text code),
+:where(.root_reset :global(.__wab_expr_html_text) code),
 :where(.root_reset.plasmic_default__code) {
-  background: var(--mixin-HgY6SKFA715x_background);
+  background: #f8f8f8;
   font-family: var(--mixin-HgY6SKFA715x_font-family);
   border-radius: var(--mixin-HgY6SKFA715x_border-top-left-radius)
     var(--mixin-HgY6SKFA715x_border-top-right-radius)
@@ -558,7 +558,7 @@
 
 :where(.root_reset .plasmic_default__blockquote),
 :where(.root_reset .blockquote),
-:where(.root_reset .__wab_expr_html_text blockquote),
+:where(.root_reset :global(.__wab_expr_html_text) blockquote),
 :where(.root_reset.plasmic_default__blockquote) {
   color: var(--mixin-Hs0Vmyt_MUAq_color);
   padding-left: var(--mixin-Hs0Vmyt_MUAq_padding-left);
@@ -569,9 +569,9 @@
 
 :where(.root_reset .plasmic_default__pre),
 :where(.root_reset .pre),
-:where(.root_reset .__wab_expr_html_text pre),
+:where(.root_reset :global(.__wab_expr_html_text) pre),
 :where(.root_reset.plasmic_default__pre) {
-  background: var(--mixin-fcwDDjCQawsn_background);
+  background: #f8f8f8;
   font-family: var(--mixin-fcwDDjCQawsn_font-family);
   border-radius: var(--mixin-fcwDDjCQawsn_border-top-left-radius)
     var(--mixin-fcwDDjCQawsn_border-top-right-radius)
@@ -597,7 +597,7 @@
 
 :where(.root_reset .plasmic_default__ul),
 :where(.root_reset .ul),
-:where(.root_reset .__wab_expr_html_text ul),
+:where(.root_reset :global(.__wab_expr_html_text) ul),
 :where(.root_reset.plasmic_default__ul) {
   display: var(--mixin-ey4svvFpVntR_display);
   flex-direction: var(--mixin-ey4svvFpVntR_flex-direction);
@@ -612,7 +612,7 @@
 
 :where(.root_reset .plasmic_default__ol),
 :where(.root_reset .ol),
-:where(.root_reset .__wab_expr_html_text ol),
+:where(.root_reset :global(.__wab_expr_html_text) ol),
 :where(.root_reset.plasmic_default__ol) {
   display: var(--mixin-LAo1zCpYa4nb_display);
   flex-direction: var(--mixin-LAo1zCpYa4nb_flex-direction);
@@ -627,7 +627,7 @@
 
 :where(.root_reset .plasmic_default__h5),
 :where(.root_reset .h5),
-:where(.root_reset .__wab_expr_html_text h5),
+:where(.root_reset :global(.__wab_expr_html_text) h5),
 :where(.root_reset.plasmic_default__h5) {
   font-family: var(--mixin-NRreftL7feSJD_font-family);
   color: var(--mixin-NRreftL7feSJD_color);
@@ -639,7 +639,7 @@
 
 :where(.root_reset .plasmic_default__h6),
 :where(.root_reset .h6),
-:where(.root_reset .__wab_expr_html_text h6),
+:where(.root_reset :global(.__wab_expr_html_text) h6),
 :where(.root_reset.plasmic_default__h6) {
   font-family: var(--mixin-C0i_VribrO0yy_font-family);
   color: var(--mixin-C0i_VribrO0yy_color);
@@ -650,7 +650,7 @@
 
 :where(.root_reset .plasmic_default__a:hover),
 :where(.root_reset .a:hover),
-:where(.root_reset .__wab_expr_html_text a:hover),
+:where(.root_reset :global(.__wab_expr_html_text) a:hover),
 :where(.root_reset.plasmic_default__a:hover) {
   color: var(--mixin-ESGuvHeUVN0sh_color);
 }

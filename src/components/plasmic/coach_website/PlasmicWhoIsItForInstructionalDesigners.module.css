@@ -102,7 +102,7 @@
 .img___48Sp8 > picture > img {
   object-fit: cover;
 }
-.img___48Sp8 > .__wab_img-spacer > img {
+.img___48Sp8 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column___0FDEq {
@@ -270,7 +270,7 @@
 .img__m2L2 > picture > img {
   object-fit: cover;
 }
-.img__m2L2 > .__wab_img-spacer > img {
+.img__m2L2 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__vViCg {
@@ -294,7 +294,7 @@
 .img__mwSd > picture > img {
   object-fit: cover;
 }
-.img__mwSd > .__wab_img-spacer > img {
+.img__mwSd > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .img__nFon2 {
@@ -302,14 +302,14 @@
   object-fit: cover;
   max-width: 100%;
   width: 285px;
-  left: 567px;
-  top: 485px;
+  left: 579px;
+  top: 355px;
   z-index: 3;
 }
 .img__nFon2 > picture > img {
   object-fit: cover;
 }
-.img__nFon2 > .__wab_img-spacer > img {
+.img__nFon2 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .section2 {
@@ -528,7 +528,7 @@
 .img___53TjB > picture > img {
   object-fit: cover;
 }
-.img___53TjB > .__wab_img-spacer > img {
+.img___53TjB > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text___11Rj {
@@ -629,7 +629,7 @@
 .img__eCuHm > picture > img {
   object-fit: cover;
 }
-.img__eCuHm > .__wab_img-spacer > img {
+.img__eCuHm > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text__w6BWf {
@@ -771,7 +771,7 @@
 .img___0SGWu > picture > img {
   object-fit: cover;
 }
-.img___0SGWu > .__wab_img-spacer > img {
+.img___0SGWu > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text__oOzPz {
@@ -872,7 +872,7 @@
 .img__ijHUp > picture > img {
   object-fit: cover;
 }
-.img__ijHUp > .__wab_img-spacer > img {
+.img__ijHUp > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text__nY6Vq {
@@ -1150,7 +1150,7 @@
 .img__e8Kij > picture > img {
   object-fit: cover;
 }
-.img__e8Kij > .__wab_img-spacer > img {
+.img__e8Kij > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__jKO9 {
@@ -1178,7 +1178,7 @@
 .img__ifSla > picture > img {
   object-fit: cover;
 }
-.img__ifSla > .__wab_img-spacer > img {
+.img__ifSla > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .footer:global(.__wab_instance) {

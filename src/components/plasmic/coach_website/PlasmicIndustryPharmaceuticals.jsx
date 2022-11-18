@@ -24,7 +24,7 @@ import sty from "./PlasmicIndustryPharmaceuticals.module.css"; // plasmic-import
 import industryIconsArtboard31SvgOy70P0DV5 from "./images/industryIconsArtboard31Svg.svg"; // plasmic-import: oy70P0dV5/picture
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import illustrationBannerPharmapng0KhpcwPYb from "./images/illustrationBannerPharmapng.png"; // plasmic-import: 0KhpcwPYb/picture
-import group1041SvgDaac1Uz from "./images/group1041Svg.svg"; // plasmic-import: Daac1-_Uz-/picture
+import pharma1Png2HgSa0M5Jw from "./images/pharma1Png2.png"; // plasmic-import: hgSA0m5jw/picture
 import webPharmaProductTrainingpngEvq4OZhow from "./images/webPharmaProductTrainingpng.png"; // plasmic-import: EVQ4oZHOW/picture
 import webPharmaSafetypng9Cd57NdIa from "./images/webPharmaSafetypng.png"; // plasmic-import: 9CD57NdIa/picture
 import webOnboardingTrainingpng7WY11Mx3O from "./images/webOnboardingTrainingpng.png"; // plasmic-import: 7wY11MX3O/picture
@@ -38,7 +38,11 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
+  const currentUser = p.useCurrentUser?.() || {};
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -126,7 +130,6 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                       <React.Fragment>
                         {"Employee training in\n"}
                       </React.Fragment>
-
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
@@ -252,10 +255,10 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: group1041SvgDaac1Uz,
-                    fullWidth: 263,
-                    fullHeight: 150,
-                    aspectRatio: 1.752941
+                    src: pharma1Png2HgSa0M5Jw,
+                    fullWidth: 860,
+                    fullHeight: 602,
+                    aspectRatio: undefined
                   }}
                 />
               </div>
@@ -316,14 +319,12 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                         "Pharmaceutical sales reps are the main link between pharmaceutical companies and physicians. This makes it even more important to ensure they have in-depth product knowledge that is up to date with FDA requirements, market demands, and legal guidelines at all times! \n\n\n"
                       }
                     </React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"Coach"}
                     </span>
-
                     <React.Fragment>
                       {
                         " lets you create and distribute training programs that can be used to keep your product knowledge up-to-date. The content creation tool lets you create lessons about specific products and deploy them easily. Create as many programs as you need for one position, specific departments, or the whole company!  "
@@ -369,14 +370,12 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                         "It’s critical for everyone to know all the safety standards set forth by the industry they work in and what’s required when working around these materials.\n\nThe problem with workplace safety training is that it gets quickly forgotten and it is not being refreshed enough for both new and current employees. (It is scientifically proven that 70% of the knowledge we learn, gets forgotten after a week).\n"
                       }
                     </React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"Coach"}
                     </span>
-
                     <React.Fragment>
                       {
                         "'s scientifically proven methods such as spaced repetition, combined with interactive games and gamification methods increase knowledge retention and battle the forgetting curve. Coach gets everyone be up to date with the latest safety standards, and lets them refresh their knowledge every week by spending short amounts of time playing fun games!"
@@ -653,7 +652,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryPharmaceuticals__ArgProps,
           internalVariantPropNames: PlasmicIndustryPharmaceuticals__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -689,7 +687,14 @@ export const PlasmicIndustryPharmaceuticals = Object.assign(
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicIndustryPharmaceuticals
     internalVariantProps: PlasmicIndustryPharmaceuticals__VariantProps,
-    internalArgProps: PlasmicIndustryPharmaceuticals__ArgProps
+    internalArgProps: PlasmicIndustryPharmaceuticals__ArgProps,
+    // Page metadata
+    pageMetadata: {
+      title: "",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 

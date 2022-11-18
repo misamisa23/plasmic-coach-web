@@ -9,6 +9,7 @@
 // Plasmic Project: uu5v5CefeBFWJ3g58RuWZW
 // Component: BW02p9J3E9
 import * as React from "react";
+import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
   classNames,
@@ -27,7 +28,11 @@ function PlasmicYellowButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-  const $props = args;
+  const $props = {
+    ...args,
+    ...variants
+  };
+  const currentUser = p.useCurrentUser?.() || {};
   return (
     <button
       data-plasmic-name={"getStartedButton"}
@@ -64,7 +69,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicYellowButton__ArgProps,
           internalVariantPropNames: PlasmicYellowButton__VariantProps
         }),
-
       [props, nodeName]
     );
 

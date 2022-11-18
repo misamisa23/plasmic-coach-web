@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.showcase--container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+}
+.showcase--item {
+  height: 70px;
+  width: 350px;
+  color: white;
+  padding: 10px 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: start;
+  overflow: hidden;
+  cursor: pointer;
+  transition: height 0.5s;
+}
+
+.showcase--item-light {
+  height: 50px;
+  width: 350px;
+  border: solid 1px rgba(169, 169, 169, 0.916);
+  color: rgba(122, 152, 181, 0.916);
+  margin-top: 10px;
+  padding: 10px 30px;
+  border-radius: 15px;
+  text-align: start;
+  overflow: hidden;
+  cursor: pointer;
+  transition: height 0.5s;
+}
+
+.showcase--item-light.selected {
+  height: 120px;
+  text-align: start;
+  background-color: white;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: black;
+  transition: height 0.5s;
+}
+
+.showcase--item.selected {
+  height: 120px;
+  text-align: start;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: black;
+  transition: height 0.5s;
+}
+.showcase--item-title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.showcase--item p {
+  padding-top: 15px;
+}
+.showcase--display {
+  width: 50vw;
+}

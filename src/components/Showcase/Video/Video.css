@@ -1,0 +1,33 @@
+.video-container {
+  position: relative;
+  height: 500px;
+  margin-left: 100px;
+  overflow: hidden;
+}
+
+.video-container-full {
+  position: relative;
+  height: 600px;
+  margin-left: 100px;
+  overflow: hidden;
+}
+
+.phone-mockup {
+  position: absolute;
+}
+
+.video-container-full video {
+  position: absolute;
+  bottom: 100px;
+  padding-left: 12px;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.video-container video {
+  position: absolute;
+  bottom: 0;
+  padding-left: 12px;
+  border-radius: 0;
+  z-index: 1;
+}

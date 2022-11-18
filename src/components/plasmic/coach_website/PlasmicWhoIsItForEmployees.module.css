@@ -59,7 +59,7 @@
 .img__ftMoO > picture > img {
   object-fit: cover;
 }
-.img__ftMoO > .__wab_img-spacer > img {
+.img__ftMoO > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .columns__nli1K {
@@ -117,7 +117,7 @@
 .img__feGy6 > picture > img {
   object-fit: cover;
 }
-.img__feGy6 > .__wab_img-spacer > img {
+.img__feGy6 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__cXqkK {
@@ -285,7 +285,7 @@
 .img__ohJ0J > picture > img {
   object-fit: cover;
 }
-.img__ohJ0J > .__wab_img-spacer > img {
+.img__ohJ0J > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column___6BHmn {
@@ -309,7 +309,7 @@
 .img___8Jaki > picture > img {
   object-fit: cover;
 }
-.img___8Jaki > .__wab_img-spacer > img {
+.img___8Jaki > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .section2 {
@@ -530,7 +530,7 @@
 .img__g0XA > picture > img {
   object-fit: cover;
 }
-.img__g0XA > .__wab_img-spacer > img {
+.img__g0XA > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text___8Ow3Z {
@@ -631,7 +631,7 @@
 .img__i0FB > picture > img {
   object-fit: cover;
 }
-.img__i0FB > .__wab_img-spacer > img {
+.img__i0FB > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text__xQ1QJ {
@@ -773,7 +773,7 @@
 .img__xHPvA > picture > img {
   object-fit: cover;
 }
-.img__xHPvA > .__wab_img-spacer > img {
+.img__xHPvA > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text__vrGgp {
@@ -874,7 +874,7 @@
 .img__jhX97 > picture > img {
   object-fit: cover;
 }
-.img__jhX97 > .__wab_img-spacer > img {
+.img__jhX97 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .text__sRatq {
@@ -1152,7 +1152,7 @@
 .img__kp1Yn > picture > img {
   object-fit: cover;
 }
-.img__kp1Yn > .__wab_img-spacer > img {
+.img__kp1Yn > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__ehYbb {
@@ -1180,7 +1180,7 @@
 .img__jrUY > picture > img {
   object-fit: cover;
 }
-.img__jrUY > .__wab_img-spacer > img {
+.img__jrUY > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .footer:global(.__wab_instance) {
