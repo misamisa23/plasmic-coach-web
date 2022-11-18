@@ -43,6 +43,24 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
     ...variants
   };
   const currentUser = p.useCurrentUser?.() || {};
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "noTitle",
+        type: "private",
+        initFunc: ($props, $state) => $props["noTitle"]
+      },
+      {
+        path: "isFirst",
+        type: "private",
+        initFunc: ($props, $state) => $props["isFirst"]
+      }
+    ],
+
+    [$props]
+  );
+
+  const $state = p.useDollarState(stateSpecs, $props);
   const superContexts = {
     Select: React.useContext(SUPER__PlasmicSelect.Context)
   };
@@ -61,29 +79,29 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
         sty.root
       )}
     >
-      {(hasVariant(variants, "isFirst", "isFirst") ? false : true) ? (
+      {(hasVariant($state, "isFirst", "isFirst") ? false : true) ? (
         <div
           data-plasmic-name={"separator"}
           data-plasmic-override={overrides.separator}
           className={classNames(projectcss.all, sty.separator, {
-            [sty.separatorisFirst]: hasVariant(variants, "isFirst", "isFirst"),
-            [sty.separatornoTitle]: hasVariant(variants, "noTitle", "noTitle")
+            [sty.separatorisFirst]: hasVariant($state, "isFirst", "isFirst"),
+            [sty.separatornoTitle]: hasVariant($state, "noTitle", "noTitle")
           })}
         />
       ) : null}
-      {(hasVariant(variants, "noTitle", "noTitle") ? false : true) ? (
+      {(hasVariant($state, "noTitle", "noTitle") ? false : true) ? (
         <div
           data-plasmic-name={"titleContainer"}
           data-plasmic-override={overrides.titleContainer}
           className={classNames(projectcss.all, sty.titleContainer, {
             [sty.titleContainerisFirst]: hasVariant(
-              variants,
+              $state,
               "isFirst",
               "isFirst"
             ),
 
             [sty.titleContainernoTitle]: hasVariant(
-              variants,
+              $state,
               "noTitle",
               "noTitle"
             )

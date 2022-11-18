@@ -984,6 +984,11 @@
           "id": "de9m9GIUkB",
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/data-sources"
+        },
+        {
+          "id": "yBETKiGCDw",
+          "name": "ShowcaseComponent",
+          "componentImportPath": "components/Showcase/ShowcaseComponent"
         }
       ]
     },

@@ -40,6 +40,19 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
     ...variants
   };
   const currentUser = p.useCurrentUser?.() || {};
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "base2",
+        type: "private",
+        initFunc: ($props, $state) => $props["base2"]
+      }
+    ],
+
+    [$props]
+  );
+
+  const $state = p.useDollarState(stateSpecs, $props);
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
@@ -62,11 +75,11 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__u8Yv1, {
-          [sty.freeBoxbase2__u8Yv1SkKnm]: hasVariant(variants, "base2", "base2")
+          [sty.freeBoxbase2__u8Yv1SkKnm]: hasVariant($state, "base2", "base2")
         })}
       >
         {(
-          hasVariant(variants, "base2", "base2")
+          hasVariant($state, "base2", "base2")
             ? true
             : hasVariant(globalVariants, "screen", "mobileOnly")
             ? true
@@ -76,11 +89,11 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             data-plasmic-name={"columns"}
             data-plasmic-override={overrides.columns}
             className={classNames(projectcss.all, sty.columns, {
-              [sty.columnsbase2]: hasVariant(variants, "base2", "base2")
+              [sty.columnsbase2]: hasVariant($state, "base2", "base2")
             })}
           >
             {(
-              hasVariant(variants, "base2", "base2")
+              hasVariant($state, "base2", "base2")
                 ? true
                 : hasVariant(globalVariants, "screen", "mobileOnly")
                 ? true
@@ -89,14 +102,14 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
               <div
                 className={classNames(projectcss.all, sty.column__eklhN, {
                   [sty.columnbase2__eklhNSkKnm]: hasVariant(
-                    variants,
+                    $state,
                     "base2",
                     "base2"
                   )
                 })}
               >
                 {(
-                  hasVariant(variants, "base2", "base2")
+                  hasVariant($state, "base2", "base2")
                     ? true
                     : hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -107,13 +120,13 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__krSpk, {
                       [sty.freeBoxbase2__krSpkSkKnm]: hasVariant(
-                        variants,
+                        $state,
                         "base2",
                         "base2"
                       )
                     })}
                   >
-                    {(hasVariant(variants, "base2", "base2") ? true : true) ? (
+                    {(hasVariant($state, "base2", "base2") ? true : true) ? (
                       <a
                         className={classNames(
                           projectcss.all,
@@ -121,7 +134,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                           sty.link__eH6V,
                           {
                             [sty.linkbase2__eH6VSkKnm]: hasVariant(
-                              variants,
+                              $state,
                               "base2",
                               "base2"
                             )
@@ -130,7 +143,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                         href={`/`}
                       >
                         {(
-                          hasVariant(variants, "base2", "base2")
+                          hasVariant($state, "base2", "base2")
                             ? true
                             : hasVariant(globalVariants, "screen", "mobileOnly")
                             ? true
@@ -140,7 +153,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                             alt={""}
                             className={classNames(sty.img__m7H1L, {
                               [sty.imgbase2__m7H1LSkKnm]: hasVariant(
-                                variants,
+                                $state,
                                 "base2",
                                 "base2"
                               )
@@ -210,7 +223,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
               <div
                 className={classNames(projectcss.all, sty.column__qeunp, {
                   [sty.columnbase2__qeunpSkKnm]: hasVariant(
-                    variants,
+                    $state,
                     "base2",
                     "base2"
                   )
@@ -258,7 +271,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                         sty.button__rCqCq,
                         {
                           [sty.buttonbase2__rCqCqSkKnm]: hasVariant(
-                            variants,
+                            $state,
                             "base2",
                             "base2"
                           )
@@ -379,7 +392,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             responsiveBreakpoint={768}
           />
         ) : null}
-        {(hasVariant(variants, "base2", "base2") ? true : true) ? (
+        {(hasVariant($state, "base2", "base2") ? true : true) ? (
           <NavigationBar
             brand={
               <a
@@ -399,7 +412,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     alt={""}
                     className={classNames(sty.img__oey6J, {
                       [sty.imgbase2__oey6JSkKnm]: hasVariant(
-                        variants,
+                        $state,
                         "base2",
                         "base2"
                       )
@@ -422,7 +435,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             }
             className={classNames("__wab_instance", sty.navigationBar__ehcn2, {
               [sty.navigationBarbase2__ehcn2SkKnm]: hasVariant(
-                variants,
+                $state,
                 "base2",
                 "base2"
               )
@@ -487,7 +500,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     sty.button__b1Kal,
                     {
                       [sty.buttonbase2__b1KalSkKnm]: hasVariant(
-                        variants,
+                        $state,
                         "base2",
                         "base2"
                       )

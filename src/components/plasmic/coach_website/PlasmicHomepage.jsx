@@ -20,6 +20,7 @@ import {
 } from "@plasmicapp/react-web";
 import MenuHeaderDesktop from "../../MenuHeaderDesktop"; // plasmic-import: RhmfQLZ342T/component
 import Button from "../../Button"; // plasmic-import: i2u7Uturkgt/component
+import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: yBETKiGCDw/codeComponent
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
 import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -850,7 +851,13 @@ function PlasmicHomepage__RenderFunc(props) {
               </p.Stack>
             </div>
 
-            <div className={classNames(projectcss.all, sty.freeBox__f8XUc)} />
+            <div className={classNames(projectcss.all, sty.freeBox__f8XUc)}>
+              <ShowcaseComponent
+                data-plasmic-name={"showcaseComponent"}
+                data-plasmic-override={overrides.showcaseComponent}
+                className={classNames("__wab_instance", sty.showcaseComponent)}
+              />
+            </div>
           </div>
 
           <p.Stack
@@ -1837,6 +1844,7 @@ const PlasmicDescendants = {
     "section4",
     "section5",
     "testimonial",
+    "showcaseComponent",
     "section7",
     "section2",
     "whoIsItFor",
@@ -1852,7 +1860,8 @@ const PlasmicDescendants = {
   section3: ["section3"],
   section4: ["section4"],
   section5: ["section5"],
-  testimonial: ["testimonial"],
+  testimonial: ["testimonial", "showcaseComponent"],
+  showcaseComponent: ["showcaseComponent"],
   section7: ["section7"],
   section2: ["section2"],
   whoIsItFor: ["whoIsItFor"],
@@ -1902,6 +1911,7 @@ export const PlasmicHomepage = Object.assign(
     section4: makeNodeComponent("section4"),
     section5: makeNodeComponent("section5"),
     testimonial: makeNodeComponent("testimonial"),
+    showcaseComponent: makeNodeComponent("showcaseComponent"),
     section7: makeNodeComponent("section7"),
     section2: makeNodeComponent("section2"),
     whoIsItFor: makeNodeComponent("whoIsItFor"),
