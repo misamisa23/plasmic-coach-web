@@ -54,42 +54,49 @@ function PlasmicSelect__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "showPlaceholder",
         type: "private",
-        initFunc: ($props, $state) => $props["showPlaceholder"]
+        initFunc: ($props, $state, $ctx) => $props.showPlaceholder
       },
+
       {
         path: "isOpen",
         type: "private",
-        initFunc: ($props, $state) => $props["isOpen"]
+        initFunc: ($props, $state, $ctx) => $props.isOpen
       },
+
       {
         path: "isDisabled",
         type: "private",
-        initFunc: ($props, $state) => $props["isDisabled"]
+        initFunc: ($props, $state, $ctx) => $props.isDisabled
       },
+
       {
         path: "color",
         type: "private",
-        initFunc: ($props, $state) => $props["color"]
+        initFunc: ($props, $state, $ctx) => $props.color
       }
     ],
 
-    [$props]
+    [$props, $ctx]
   );
 
-  const $state = p.useDollarState(stateSpecs, $props);
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+  const [$queries, setDollarQueries] = React.useState({});
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false
     });
+
   const triggers = {
     focusVisibleWithin_root: isRootFocusVisibleWithin
   };
+
   return (
     <PlasmicSelectContext.Provider value={{ variants, args }}>
       <div
@@ -548,6 +555,7 @@ function useBehavior(props, ref) {
         group: "showPlaceholder",
         variant: "showPlaceholder"
       },
+
       isDisabledVariant: { group: "isDisabled", variant: "isDisabled" },
       triggerContentSlot: "selectedContent",
       optionsSlot: "children",
@@ -557,6 +565,7 @@ function useBehavior(props, ref) {
       overlay: "overlay",
       optionsContainer: "optionsContainer"
     },
+
     ref
   );
 }
@@ -588,6 +597,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicSelect__ArgProps,
           internalVariantPropNames: PlasmicSelect__VariantProps
         }),
+
       [props, nodeName]
     );
 

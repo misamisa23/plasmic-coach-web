@@ -32,7 +32,9 @@ function PlasmicYellowButton__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
+  const [$queries, setDollarQueries] = React.useState({});
   return (
     <button
       data-plasmic-name={"getStartedButton"}
@@ -69,6 +71,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicYellowButton__ArgProps,
           internalVariantPropNames: PlasmicYellowButton__VariantProps
         }),
+
       [props, nodeName]
     );
 

@@ -1,0 +1,103 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+.freeBox___0KWwZ {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: 210px;
+  max-width: 100%;
+  background: #ffffff;
+  box-shadow: 2px 4px 13px 0px #c9c9c84d;
+  transition-property: all;
+  transition-duration: 0.2s;
+  flex-shrink: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  border-radius: 20px;
+  padding: 35px 20px 20px;
+}
+.freeBox___0KWwZ > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: calc(0px - 30px);
+  height: calc(100% + 30px);
+}
+.freeBox___0KWwZ > :global(.__wab_flex-container) > *,
+.freeBox___0KWwZ > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox___0KWwZ > :global(.__wab_flex-container) > picture > img,
+.freeBox___0KWwZ
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 30px;
+}
+.freeBoxconsumerElectronics___0KWwZ8BVqy > :global(.__wab_flex-container) {
+  margin-left: calc(0px - 0px);
+  width: calc(100% + 0px);
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.freeBoxconsumerElectronics___0KWwZ8BVqy > :global(.__wab_flex-container) > *,
+.freeBoxconsumerElectronics___0KWwZ8BVqy
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.freeBoxconsumerElectronics___0KWwZ8BVqy
+  > :global(.__wab_flex-container)
+  > picture
+  > img,
+.freeBoxconsumerElectronics___0KWwZ8BVqy
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 0px;
+  margin-top: 20px;
+}
+.root:hover .freeBox___0KWwZ {
+  background: var(--token-jjDfppFjp);
+  border: 2px solid var(--token-iLnjQLjs5);
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.freeBox__cIt9 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.text {
+  color: #11253e;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.root:hover .text {
+  font-weight: 600;
+}

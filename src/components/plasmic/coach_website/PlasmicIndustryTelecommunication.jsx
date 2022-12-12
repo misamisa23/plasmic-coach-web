@@ -42,7 +42,9 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
+  const [$queries, setDollarQueries] = React.useState({});
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -623,6 +625,7 @@ function makeNodeComponent(nodeName) {
           internalVariantPropNames:
             PlasmicIndustryTelecommunication__VariantProps
         }),
+
       [props, nodeName]
     );
 

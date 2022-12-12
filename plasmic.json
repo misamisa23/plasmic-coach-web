@@ -431,6 +431,32 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "lNCO1zQqfc",
+          "name": "IndustryCard",
+          "type": "managed",
+          "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+          "renderModuleFilePath": "plasmic/coach_website/PlasmicIndustryCard.jsx",
+          "importSpec": {
+            "modulePath": "IndustryCard.jsx"
+          },
+          "cssFilePath": "plasmic/coach_website/PlasmicIndustryCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "O4MESrAuYA",
+          "name": "Features",
+          "type": "managed",
+          "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+          "renderModuleFilePath": "plasmic/coach_website/PlasmicFeatures.jsx",
+          "importSpec": {
+            "modulePath": "Features.jsx"
+          },
+          "cssFilePath": "plasmic/coach_website/PlasmicFeatures.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -970,6 +996,106 @@
           "id": "LYWDOMcQp",
           "name": "industry-icons-consumerelectronics.png",
           "filePath": "plasmic/coach_website/images/industryIconsConsumerelectronicspng.png"
+        },
+        {
+          "id": "4Qm4RK40o",
+          "name": "KosaPozadina.png",
+          "filePath": "plasmic/coach_website/images/kosaPozadinapng.png"
+        },
+        {
+          "id": "MDmVmU8Tu",
+          "name": "Vector 1.png",
+          "filePath": "plasmic/coach_website/images/vector1Png.png"
+        },
+        {
+          "id": "ynATZ06bX",
+          "name": "Vector 2.png",
+          "filePath": "plasmic/coach_website/images/vector2Png.png"
+        },
+        {
+          "id": "y6rQnOtS6",
+          "name": "CrookedBg1.png",
+          "filePath": "plasmic/coach_website/images/crookedBg1Png.png"
+        },
+        {
+          "id": "-IQJWac94",
+          "name": "CrookedBg2.png",
+          "filePath": "plasmic/coach_website/images/crookedBg2Png.png"
+        },
+        {
+          "id": "ygd-qWRQC",
+          "name": "CrookedBg1.png 2",
+          "filePath": "plasmic/coach_website/images/crookedBg1Png2.png"
+        },
+        {
+          "id": "Px_wBGCZq",
+          "name": "CrookedBg1.svg",
+          "filePath": "plasmic/coach_website/images/crookedBg1Svg.svg"
+        },
+        {
+          "id": "TO3GciSrX",
+          "name": "CrookedBg1.svg 2",
+          "filePath": "plasmic/coach_website/images/crookedBg1Svg2.svg"
+        },
+        {
+          "id": "PCBs6Yr09",
+          "name": "CrookedBg2.svg",
+          "filePath": "plasmic/coach_website/images/crookedBg2Svg.svg"
+        },
+        {
+          "id": "7b4hyB2zy",
+          "name": "icon-industry-manufacturing.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryManufacturingsvg.svg"
+        },
+        {
+          "id": "rmXy9f9zy",
+          "name": "icon-industry-manufacturing-hover.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryManufacturingHoversvg.svg"
+        },
+        {
+          "id": "pGthreAtx",
+          "name": "icon-industry-consumer.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryConsumersvg.svg"
+        },
+        {
+          "id": "cp4JR48DW",
+          "name": "icon-industry-consumer-hover.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryConsumerHoversvg.svg"
+        },
+        {
+          "id": "N7vrsExKS",
+          "name": "icon-industry-pharma.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryPharmasvg.svg"
+        },
+        {
+          "id": "NFyBZNm0x6",
+          "name": "icon-industry-pharma-hover.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryPharmaHoversvg.svg"
+        },
+        {
+          "id": "vPzmcjeuGR",
+          "name": "icon-industry-pharma.svg 2",
+          "filePath": "plasmic/coach_website/images/iconIndustryPharmasvg2.svg"
+        },
+        {
+          "id": "y2Z-XgrBo6",
+          "name": "icon-industry-telecom.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryTelecomsvg.svg"
+        },
+        {
+          "id": "yTaBxBym6x",
+          "name": "icon-industry-telecom-hover.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryTelecomHoversvg.svg"
+        },
+        {
+          "id": "VCNSWNu8W",
+          "name": "icon-industry-luxury.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryLuxurysvg.svg"
+        },
+        {
+          "id": "FvdGeL2khg",
+          "name": "icon-industry-luxury-hover.svg",
+          "filePath": "plasmic/coach_website/images/iconIndustryLuxuryHoversvg.svg"
         }
       ],
       "indirect": false,
@@ -983,7 +1109,7 @@
         {
           "id": "de9m9GIUkB",
           "name": "Fetcher",
-          "componentImportPath": "@plasmicapp/data-sources"
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         },
         {
           "id": "yBETKiGCDw",
@@ -1011,6 +1137,25 @@
         }
       ],
       "jsBundleThemes": []
+    },
+    {
+      "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+      "projectApiToken": "eSFGpQaYCtO9sRbPuQ2Ll9dmLOg8I4oKhx6e1PuCrsfmUIVbFbSXcy32UrPTwF9zX2HVXA0xaIKJNhCMHvA",
+      "projectName": "react-slick",
+      "version": "3.6.0",
+      "cssFilePath": "plasmic/react_slick/plasmic_react_slick.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HOQUyOpClJ",
+          "name": "Slider",
+          "componentImportPath": "react-slick"
+        }
+      ]
     }
   ],
   "globalVariants": {
@@ -1024,6 +1169,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.187",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.187/dist/plasmic.schema.json"
+  "cliVersion": "0.1.189",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.189/dist/plasmic.schema.json"
 }
