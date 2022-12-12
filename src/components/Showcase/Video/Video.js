@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
-import PhoneMockup from '../../../assets/icons/phone-mockup.svg';
-import PhoneMockupDark from '../../../assets/icons/phone-mockup-dark.svg';
+import PhoneMockup from "../../../assets/icons/phone-mockup.svg";
+import PhoneMockupDark from "../../../assets/icons/phone-mockup-dark.svg";
 
-import './Video.css';
+import "./Video.css";
 
 export default function Video({
   videoLink,
@@ -11,6 +11,7 @@ export default function Video({
   setDelayVideo,
   onVideoEnd,
   isLight,
+  isWeb,
 }) {
   const videoRef = useRef();
 
@@ -28,21 +29,29 @@ export default function Video({
   };
 
   return (
-    <div className={`${isLight ? 'video-container-full' : 'video-container'}`}>
+    <div
+      className={`${
+        isWeb ? "" : isLight ? "video-container-full" : "video-container"
+      }`}
+    >
       <video
         src={videoLink}
         muted={true}
         onEnded={onVideoEnd}
         height={450}
+        className={isWeb ? "video-container-web" : ""}
         ref={videoRef}
         autoPlay={true}
         onPlay={onPlayHandler}
       ></video>
-      <img
-        src={isLight ? PhoneMockupDark : PhoneMockup}
-        className="phone-mockup"
-        height={550}
-      />
+      {isWeb && <div className={"video-container-border"}></div>}
+      {!isWeb && (
+        <img
+          src={isLight ? PhoneMockupDark : PhoneMockup}
+          className="phone-mockup"
+          height={550}
+        />
+      )}
     </div>
   );
 }

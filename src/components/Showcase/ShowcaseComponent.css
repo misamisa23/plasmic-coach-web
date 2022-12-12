@@ -3,17 +3,22 @@
   padding: 0;
 }
 p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .showcase--container {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 100px;
+  gap: 0px;
+  justify-content: start;
+}
+.showcase--items {
+  margin-top: 20px;
 }
 .showcase--item {
   height: 70px;
@@ -31,8 +36,9 @@ h5 {
 .showcase--item-light {
   height: 50px;
   width: 350px;
-  border: solid 1px rgba(169, 169, 169, 0.916);
-  color: rgba(122, 152, 181, 0.916);
+  background-color: white;
+  border: solid 1px #6495d359;
+  color: #58667f;
   margin-top: 10px;
   padding: 10px 30px;
   border-radius: 15px;
@@ -72,5 +78,5 @@ h5 {
   padding-top: 15px;
 }
 .showcase--display {
-  width: 50vw;
+  width: 60vw;
 }
