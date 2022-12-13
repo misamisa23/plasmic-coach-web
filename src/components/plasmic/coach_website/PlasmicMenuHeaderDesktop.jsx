@@ -39,23 +39,26 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "base2",
         type: "private",
-        initFunc: ($props, $state) => $props["base2"]
+        initFunc: ($props, $state, $ctx) => $props.base2
       }
     ],
 
-    [$props]
+    [$props, $ctx]
   );
 
-  const $state = p.useDollarState(stateSpecs, $props);
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+  const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -548,6 +551,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicMenuHeaderDesktop__ArgProps,
           internalVariantPropNames: PlasmicMenuHeaderDesktop__VariantProps
         }),
+
       [props, nodeName]
     );
 

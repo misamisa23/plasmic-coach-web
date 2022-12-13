@@ -49,52 +49,61 @@ function PlasmicButton__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "showStartIcon",
         type: "private",
-        initFunc: ($props, $state) => $props["showStartIcon"]
+        initFunc: ($props, $state, $ctx) => $props.showStartIcon
       },
+
       {
         path: "showEndIcon",
         type: "private",
-        initFunc: ($props, $state) => $props["showEndIcon"]
+        initFunc: ($props, $state, $ctx) => $props.showEndIcon
       },
+
       {
         path: "isDisabled",
         type: "private",
-        initFunc: ($props, $state) => $props["isDisabled"]
+        initFunc: ($props, $state, $ctx) => $props.isDisabled
       },
+
       {
         path: "shape",
         type: "private",
-        initFunc: ($props, $state) => $props["shape"]
+        initFunc: ($props, $state, $ctx) => $props.shape
       },
+
       {
         path: "size",
         type: "private",
-        initFunc: ($props, $state) => $props["size"]
+        initFunc: ($props, $state, $ctx) => $props.size
       },
+
       {
         path: "color",
         type: "private",
-        initFunc: ($props, $state) => $props["color"]
+        initFunc: ($props, $state, $ctx) => $props.color
       }
     ],
 
-    [$props]
+    [$props, $ctx]
   );
 
-  const $state = p.useDollarState(stateSpecs, $props);
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+  const [$queries, setDollarQueries] = React.useState({});
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false
     });
+
   const triggers = {
     focusVisibleWithin_root: isRootFocusVisibleWithin
   };
+
   return (
     <p.Stack
       as={"button"}
@@ -531,6 +540,7 @@ function useBehavior(props, ref) {
         group: "showStartIcon",
         variant: "showStartIcon"
       },
+
       showEndIconVariant: { group: "showEndIcon", variant: "showEndIcon" },
       isDisabledVariant: { group: "isDisabled", variant: "isDisabled" },
       contentSlot: "children",
@@ -538,6 +548,7 @@ function useBehavior(props, ref) {
       endIconSlot: "endIcon",
       root: "root"
     },
+
     ref
   );
 
@@ -561,6 +572,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicButton__ArgProps,
           internalVariantPropNames: PlasmicButton__VariantProps
         }),
+
       [props, nodeName]
     );
 

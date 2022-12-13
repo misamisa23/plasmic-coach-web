@@ -46,10 +46,13 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
+  const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -618,6 +621,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicWhoIsItForEmployees__ArgProps,
           internalVariantPropNames: PlasmicWhoIsItForEmployees__VariantProps
         }),
+
       [props, nodeName]
     );
 

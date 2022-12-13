@@ -42,7 +42,9 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
+  const [$queries, setDollarQueries] = React.useState({});
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -622,6 +624,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryLuxuryGoods__ArgProps,
           internalVariantPropNames: PlasmicIndustryLuxuryGoods__VariantProps
         }),
+
       [props, nodeName]
     );
 

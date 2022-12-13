@@ -24,8 +24,8 @@ export function ShowcaseItem({
         <div className="showcase--item-title">
           {icon && (
             <img
-              height={20}
-              width={20}
+              height={25}
+              width={25}
               src={index == itemIndex ? iconSelected : icon}
             ></img>
           )}

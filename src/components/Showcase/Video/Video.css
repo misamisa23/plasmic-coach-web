@@ -1,6 +1,7 @@
 .video-container {
   position: relative;
   height: 500px;
+  width: 450px;
   margin-left: 100px;
   overflow: hidden;
 }
@@ -8,7 +9,14 @@
 .video-container-full {
   position: relative;
   height: 600px;
+  width: 450px;
   margin-left: 100px;
+  overflow: hidden;
+}
+
+.video-container-web {
+  position: relative;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -30,4 +38,13 @@
   padding-left: 12px;
   border-radius: 0;
   z-index: 1;
+}
+.video-container-web {
+  margin: 20px 0;
+  left: -40px;
+  height: 450px;
+  width: 790px;
+  border: solid 2px black;
+  background-color: #f4f4f3;
+  border-radius: 10px;
 }
