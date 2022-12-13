@@ -1,25 +1,25 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
-import './ShowcaseComponent.css';
-import { ShowcaseItem } from './ShowcaseItem/ShowcaseItem';
-import Video from './Video/Video';
-import PlayIcon from 'assets/icons/web-icon-play.svg';
-import ImproveIcon from 'assets/icons/web-icon-improve.svg';
-import ReinforceIcon from 'assets/icons/web-icon-reinforce.svg';
-import RewardsIcon from 'assets/icons/web-icon-rewards.svg';
-import TrackIcon from 'assets/icons/web-icon-track.svg';
+import "./ShowcaseComponent.css";
+import { ShowcaseItem } from "./ShowcaseItem/ShowcaseItem";
+import Video from "./Video/Video";
+import PlayIcon from "assets/icons/web-icon-play.svg";
+import ImproveIcon from "assets/icons/web-icon-improve.svg";
+import ReinforceIcon from "assets/icons/web-icon-reinforce.svg";
+import RewardsIcon from "assets/icons/web-icon-rewards.svg";
+import TrackIcon from "assets/icons/web-icon-track.svg";
 
-import PlayIconSelected from 'assets/icons/web-icon-play-selected.svg';
-import ImproveIconSelected from 'assets/icons/web-icon-improve-selected.svg';
-import ReinforceIconSelected from 'assets/icons/web-icon-reinforce-selected.svg';
-import RewardsIconSelected from 'assets/icons/web-icon-rewards-selected.svg';
-import TrackIconSelected from 'assets/icons/web-icon-track-selected.svg';
+import PlayIconSelected from "assets/icons/web-icon-play-selected.svg";
+import ImproveIconSelected from "assets/icons/web-icon-improve-selected.svg";
+import ReinforceIconSelected from "assets/icons/web-icon-reinforce-selected.svg";
+import RewardsIconSelected from "assets/icons/web-icon-rewards-selected.svg";
+import TrackIconSelected from "assets/icons/web-icon-track-selected.svg";
 
-import PlayVideo from 'assets/videos/learn-by-playing.mp4';
-import RewardsVideo from 'assets/videos/get-rewards.mp4';
-import ImproveYourKnowledgeVideo from 'assets/videos/improve-your-knowledge.mp4';
-import PersonalizedVideo from 'assets/videos/personalized-experience.mp4';
-import TrackPerformanceVideo from 'assets/videos/track-performance.mp4';
+import PlayVideo from "assets/videos/learn-by-playing.mp4";
+import RewardsVideo from "assets/videos/get-rewards.mp4";
+import ImproveYourKnowledgeVideo from "assets/videos/improve-your-knowledge.mp4";
+import PersonalizedVideo from "assets/videos/personalized-experience.mp4";
+import TrackPerformanceVideo from "assets/videos/track-performance.mp4";
 
 export function ShowcaseComponent({ isLight }) {
   const [index, setIndex] = useState(0);
@@ -35,9 +35,9 @@ export function ShowcaseComponent({ isLight }) {
       <div className="showcase--items">
         <ShowcaseItem
           itemIndex={0}
-          title={'Learn by playing'}
+          title={"Learn by playing"}
           description={
-            'Play a variety of interactive games that let increase your knowledge in a fun & engaging way.'
+            "Play a variety of interactive games that increase your knowledge in a fun & engaging way."
           }
           icon={PlayIcon}
           iconSelected={PlayIconSelected}
@@ -50,9 +50,9 @@ export function ShowcaseComponent({ isLight }) {
 
         <ShowcaseItem
           itemIndex={1}
-          title={'Track performance'}
+          title={"Track performance"}
           description={
-            'Get real-time insights, and see your knowledge gaps before they hurt performance.'
+            "Get real-time insights, and detect your knowledge gaps before they hurt performance."
           }
           icon={TrackIcon}
           iconSelected={TrackIconSelected}
@@ -65,9 +65,9 @@ export function ShowcaseComponent({ isLight }) {
 
         <ShowcaseItem
           itemIndex={2}
-          title={'Personalized experience'}
+          title={"Personalized experience"}
           description={
-            'The personalization algorithm of Coach makes each experience unique, focusing on improving upon the your weak points.'
+            "Experience a personalized learning journey each time you train with Coach."
           }
           index={index}
           icon={ReinforceIcon}
@@ -79,9 +79,9 @@ export function ShowcaseComponent({ isLight }) {
         />
         <ShowcaseItem
           itemIndex={3}
-          title={'Improve your knowledge'}
+          title={"Improve your knowledge"}
           description={
-            'The dedicated learning section gives you access to learning materials to prepare for the training.'
+            "Improve your knowledge efficiently with lessons that will fix your knowledge gaps"
           }
           index={index}
           icon={ImproveIcon}
@@ -93,9 +93,9 @@ export function ShowcaseComponent({ isLight }) {
         />
         <ShowcaseItem
           itemIndex={4}
-          title={'Get rewards'}
+          title={"Challenge Yourself"}
           description={
-            'Compete against your colleagues to earn the #1 spot in your organization!'
+            "Get better with each game and earn the #1 spot in your company!"
           }
           icon={RewardsIcon}
           iconSelected={RewardsIconSelected}
