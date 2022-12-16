@@ -135,7 +135,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
                       >
-                        {"Manufacturing sector"}
+                        {"Manufacturing industry"}
                       </span>
                     </React.Fragment>
                   </h1>
@@ -229,7 +229,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   )}
                 >
                   {
-                    "The Manufacturing Sector is a fast-paced industry, with an immediate need for educated and adaptable workers. Emerging technologies have transformed the industry - but have also created a void of workers missing the necessary skills. Training workers is expensive but important to teach them the processes they need to excel at their jobs. \n\nUntrained staff members pose a number of costly and even dangerous problems: they work slower, they make mistakes and may cause accidents, or their work product might be subpar."
+                    "The Manufacturing Sector is a fast-paced industry, with an immediate need for educated and adaptable workers. \n\nEmerging technologies have transformed the industry - but have also created a void of workers missing the necessary skills. \n\nTraining workers is expensive but important to teach them the processes they need to excel at their jobs. \n\nUntrained staff members pose a number of costly and even dangerous problems: they work slower, they make mistakes and may cause accidents, or their work product might be subpar."
                   }
                 </div>
 
@@ -315,7 +315,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   )}
                 >
                   {
-                    "New employees who went through a structured onboarding program were 58% more likely to be with the organization after three years.\n\nA structured onboarding process can boost employee retention, and new hire productivity, and result in higher profits for your organization. With Coach, you will be able to set your employees up for success in their roles by introducing them to their organization and mapping out their responsibilities. "
+                    "New employees who went through a structured onboarding program were 58% more likely to be with the organization after three years.\n\nA structured onboarding process can boost employee retention, and new hire productivity, and result in higher profits for your organization. \n\nWith Coach, you will be able to set your employees up for success in their roles by introducing them to their organization and mapping out their responsibilities. "
                   }
                 </div>
               </p.Stack>
@@ -351,7 +351,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Manufacturing training ensures that employees know how to carry out the critical functions of their role safely. This not only keeps the employee themselves safe on the job, but also keeps their coworkers safe as well. \n\nWith Coach, you can keep your employees safe on the job by teaching them best practices and creating a workforce of proactive safety advocates. You will ensure your employees know how to operate and repair equipment safely and accurately. \n\nAnd what’s even more important is that with Coach you can refresh their knowledge on a regular basis, as well as keep track of how well employees are aware of the safety rules. "
+                    "Safety training ensures that employees know how to carry out the critical functions of their role safely. This not only keeps the employee themselves safe on the job, but also keeps their coworkers safe as well. \n\nWith Coach, you can keep your employees safe on the job by teaching them best practices and creating a workforce of proactive safety advocates. You will ensure your employees know how to operate and repair equipment safely and accurately. \n\nAnd what’s even more important is that with Coach you can refresh their knowledge on a regular basis, as well as keep track of how well employees are aware of the safety rules. "
                   }
                 </div>
               </p.Stack>
@@ -427,7 +427,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Process and equipment training provides manufacturing employees with the knowledge required to complete processes efficiently in their roles. With a more efficient workforce, organizations in manufacturing can increase their output and better meet the demands of their industry. \n\nWith Coach you will teach complex processes and allow for hands-on training that helps employees work at full capacity. On top of this, you will test employees knowledge through the Coach system to make sure that they are on top of what they must know to do their job well."
+                    "Process and equipment training provides manufacturing employees with the knowledge required to complete processes efficiently in their roles. \n\nWith a more efficient workforce, organizations in manufacturing can increase their output and better meet the demands of their industry. \n\nWith Coach you will teach complex processes and allow for hands-on training that helps employees work at full capacity. \n\nOn top of this, you will test employees knowledge through the Coach system to make sure that they are on top of what they must know to do their job well."
                   }
                 </div>
               </p.Stack>

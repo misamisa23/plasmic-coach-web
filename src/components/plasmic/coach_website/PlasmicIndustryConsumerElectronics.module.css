@@ -367,6 +367,9 @@
   color: #58667f;
   min-width: 0;
 }
+.h4 {
+  color: var(--token-SfoXLYV5r);
+}
 .text__sSuYi {
   position: relative;
   width: 100%;

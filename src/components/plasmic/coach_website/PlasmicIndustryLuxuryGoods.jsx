@@ -230,7 +230,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Luxury goods companies provide products that are highly desired by customers. In order to be successful, luxury goods companies need to deliver a high-quality product as well as excellent customer service. Having employees trained with proper etiquette and communication skills is a key component of success in the luxury goods industry."
+                    "Luxury goods companies provide products that are highly desired by customers. \n\nIn order to be successful, luxury goods companies must deliver a high-quality product as well as excellent customer service. \n\nHaving employees trained with proper etiquette and communication skills is a key component of success."
                   }
                 </div>
 
@@ -316,7 +316,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   )}
                 >
                   {
-                    "It is essential for employees to learn the proper way of providing customers with high-quality services. Coach provides training as well as assessment so that luxury goods companies can determine whether their employees are successful or not in sales. By using Coach in small bite-sized learning sessions, employees will be able to improve their skills and become more successful individuals overall."
+                    "It is essential for employees to learn the proper way of providing customers with high-quality services. \n\nCoach provides training as well as assessment so that luxury goods companies can provide their employees and make them successful. \n\nCoach uses small bite-sized learning sessions, to make sure employees are able to improve their skills and become more successful individuals overall, without spending too much time off their work."
                   }
                 </div>
               </p.Stack>
@@ -352,7 +352,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Knowing everything about the product you are selling is crucial for employees who want to be successful. By using Coach, each employee will be an expert regarding a certain product and provide customers with the correct information.\n\nCoach makes sure that product knowledge isn't forgotten and regularly refreshes the employee's knowledge. Coach functions as a quick and efficient way to ensure that you are always up-to-date with the newest products."
+                    "Knowing everything about the product you are selling is crucial if you want to position yourself as an expert. \n\nBy using Coach, each employee will be an expert regarding a certain product and provide customers with the correct information.\n\nCoach makes sure that product knowledge isn't forgotten and regularly refreshes the employee's knowledge. It's a quick and efficient way to ensure that you are always up-to-date with the newest products."
                   }
                 </div>
               </p.Stack>
@@ -428,7 +428,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Customer relations are important for employees because customers are crucial to the business. Coach helps employees connect with customers on a more personal level by improving their ability to provide positive experiences.\n\nCoach is useful because it lets you create personalized content for your company . Coach’s personalization algorithm makes every employees experience unique, making every session fun and having them focus on their weak points."
+                    "Coach helps employees connect with customers on a more personal level by improving their ability to provide positive experiences.\n\nCoach’s personalization algorithm makes every employee's experience unique, focusing on improving their weak points."
                   }
                 </div>
               </p.Stack>
@@ -464,7 +464,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Onboarding an employee in the luxury goods industry is crucial for them being successful within the company. Coach can provide that training through a mobile-based platform to ensure that every single employee has the same understanding of their job and how they need to succeed. Coach can help managers see exactly where their new employees are at in the training process and help them when they are struggling with different issues. This way the companies save time and money while reducing the possibility of any issues."
+                    "Getting new hires up to speed quickly is vital for any organization. \n\nEase the learning curve with a series of short microlearning training sessions that can be accessed at any time, and help new hires master your product in no time.\n\nIncrease productivity by learning when there are no customers around.\n"
                   }
                 </div>
               </p.Stack>
