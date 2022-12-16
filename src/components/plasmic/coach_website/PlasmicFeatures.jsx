@@ -18,6 +18,7 @@ import {
 } from "@plasmicapp/react-web";
 import MenuHeaderDesktop from "../../MenuHeaderDesktop"; // plasmic-import: RhmfQLZ342T/component
 import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: yBETKiGCDw/codeComponent
+import { WebShowcaseComponent } from "components/Showcase/WebShowcaseComponent"; // plasmic-import: eVMkkH0Avy/codeComponent
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
@@ -247,6 +248,18 @@ function PlasmicFeatures__RenderFunc(props) {
             </h1>
 
             <div className={classNames(projectcss.all, sty.freeBox___4D6Rd)} />
+
+            <div className={classNames(projectcss.all, sty.freeBox__oBlHg)}>
+              <WebShowcaseComponent
+                data-plasmic-name={"webShowcaseComponent"}
+                data-plasmic-override={overrides.webShowcaseComponent}
+                className={classNames(
+                  "__wab_instance",
+                  sty.webShowcaseComponent
+                )}
+                isLight={true}
+              />
+            </div>
           </div>
 
           <p.Stack
@@ -353,6 +366,7 @@ const PlasmicDescendants = {
     "columns",
     "copy",
     "showcaseComponent",
+    "webShowcaseComponent",
     "cta",
     "footer"
   ],
@@ -362,6 +376,7 @@ const PlasmicDescendants = {
   columns: ["columns", "copy"],
   copy: ["copy"],
   showcaseComponent: ["showcaseComponent"],
+  webShowcaseComponent: ["webShowcaseComponent"],
   cta: ["cta"],
   footer: ["footer"]
 };
@@ -405,6 +420,7 @@ export const PlasmicFeatures = Object.assign(
     columns: makeNodeComponent("columns"),
     copy: makeNodeComponent("copy"),
     showcaseComponent: makeNodeComponent("showcaseComponent"),
+    webShowcaseComponent: makeNodeComponent("webShowcaseComponent"),
     cta: makeNodeComponent("cta"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicFeatures

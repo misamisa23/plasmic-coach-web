@@ -1115,6 +1115,16 @@
           "id": "yBETKiGCDw",
           "name": "ShowcaseComponent",
           "componentImportPath": "components/Showcase/ShowcaseComponent"
+        },
+        {
+          "id": "eVMkkH0Avy",
+          "name": "WebShowcaseComponent",
+          "componentImportPath": "components/Showcase/WebShowcaseComponent"
+        },
+        {
+          "id": "Sl8jgLFwzt",
+          "name": "Header",
+          "componentImportPath": "components/Header/Header"
         }
       ]
     },
@@ -1155,7 +1165,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

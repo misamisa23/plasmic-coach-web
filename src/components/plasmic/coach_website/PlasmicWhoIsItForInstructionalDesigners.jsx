@@ -138,7 +138,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "The training tool \nthat helps you learn"
-                        : "Build trainings that employees  love"}
+                        : "Build training that employees  love"}
                     </h1>
                   </p.Stack>
 
@@ -311,7 +311,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Coach allows you to create trainings fast, without the need of extra tech skills. Just as easy and simple as using an Excel document. "
+                      "Coach allows you to create training fast without needing extra tech skills. \nJust as easy and simple as using an Excel document. "
                     }
                   </div>
                 </p.Stack>
@@ -363,7 +363,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Get feedback from learners to continuously improve your trainings. Coach’s integrated feedback system allows each employee to leave feedback regards the training you’ve built. The more you know, the better your trainings will become!"
+                      "Get feedback from learners to continuously improve your training. Coach’s integrated feedback system allows each employee to leave feedback regards the training you’ve built. \nThe more you know, the better your training will become!"
                     }
                   </div>
                 </p.Stack>
@@ -406,7 +406,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                       sty.text__oOzPz
                     )}
                   >
-                    {"Employees who love your trainings"}
+                    {"Employees will love your training"}
                   </div>
 
                   <div
@@ -417,7 +417,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Personalization on another level! Coach’s smart system recognises every employee’s knowledge gap and fills the void with content they actually need!"
+                      "Personalization on another level! Coach’s smart system recognizes every employee’s knowledge gap and fills the void with content they actually need!"
                     }
                   </div>
                 </p.Stack>
@@ -469,7 +469,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Knowledgeable employees work better - which ultimately means better results and bigger profits. And who doesn’t love profits! \nI bet CEOs do 😉 "
+                      "Knowledgeable employees work better - which ultimately means better results and bigger profits. \nAnd who doesn’t love profits? \nI bet CEOs do 😉 "
                     }
                   </div>
                 </p.Stack>

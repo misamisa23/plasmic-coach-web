@@ -228,9 +228,42 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                     sty.text__wwYEq
                   )}
                 >
-                  {
-                    "Employees in consumer electronics are sometimes required to master hundreds, if not thousands of products. \n\nConstant updates and additions to product catalogues, make this process difficult for everyone from the HR & Training department all the way to the trainees.\n\nThis process becomes especially difficult when onboarding new hires, as bombarding them with information about thousands of products is a guaranteed way to overwhelm and confuse them.\n\nThe largest problem is when companies provide inefficient or no training at all.\n\nInefficient training leads to lost sales opportunities, bad customer reviews and overall negative employee experience.\n\nThe good news is that there is a solution."
-                  }
+                  <React.Fragment>
+                    <React.Fragment>
+                      {
+                        "Employees in consumer electronics are sometimes required to master hundreds, if not thousands of products. \n\nConstant updates and additions to product catalogues, make this process difficult for everyone from the HR & Training department all the way to the trainees.\n\nThis process becomes especially difficult when onboarding new hires, as bombarding them with information about thousands of products is a guaranteed way to overwhelm and confuse them.\n\nThe largest problem is when companies provide inefficient or no training at all.\n\nInefficient training leads to lost sales opportunities, bad customer reviews and overall negative employee experience.\n\n"
+                      }
+                    </React.Fragment>
+                    {
+                      <h4
+                        data-plasmic-name={"h4"}
+                        data-plasmic-override={overrides.h4}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>
+                            {"The good news is that there is a "}
+                          </React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FEBE10", fontWeight: 700 }}
+                          >
+                            {"solution"}
+                          </span>
+                          <React.Fragment>{"."}</React.Fragment>
+                        </React.Fragment>
+                      </h4>
+                    }
+
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </div>
 
                 <div
@@ -315,7 +348,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Getting new hires up to speed quickly is vital for any organization. \n\nEase the learning curve with a series of short microlearning training sessions that can be accessed at any time, and help new hires master your product catalogue in no time.\n\nIncrease productivity by learning during when there are no customers around.\n"
+                    "Getting new hires up to speed quickly is vital for any organization. \n\nEase the learning curve with a series of short microlearning training sessions that can be accessed at any time, and help new hires master your product catalog in no time.\n\nIncrease productivity by learning when there are no customers around.\n"
                   }
                 </div>
               </p.Stack>
@@ -351,7 +384,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Providing product training materials often isn't enough for employees to master the product.\n\nX\n\nThe best thing is - employees will only need 5-6 minutes of daily to master your product catalog."
+                    "Providing product training materials often isn't enough for employees to master the product.\n\nThis is where Coach excels.\nLearn every detail about your products through the learning section and then test your knowledge through our 8 interactive games.\n\nThe best thing is - employees will only need 5-6 minutes daily to master your product catalog."
                   }
                 </div>
               </p.Stack>
@@ -427,7 +460,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   )}
                 >
                   {
-                    "In retail, confidence, knowledge, and experience levels vary a lot between employees. \n\nYou need your employees to not only get the grips with the product's specifications but also be able to make a connection and empathize with your customers to be able to close a sale. \n\nWith Coach you can easily create training that will boost employees' knowledge and skills, as well as refresh what they already learned."
+                    "In retail, confidence, knowledge, and experience levels vary a lot between employees. \n\nYou need your employees to not only get the grips with the product's specifications but also be able to make a connection and empathize with your customers to be able to close a sale. \n\nWith Coach, you can easily create training that will boost employees' knowledge and skills, as well as refresh what they already learned."
                   }
                 </div>
               </p.Stack>
@@ -537,6 +570,7 @@ const PlasmicDescendants = {
     "hero",
     "h1",
     "section1",
+    "h4",
     "section2",
     "section3",
     "section4",
@@ -547,7 +581,8 @@ const PlasmicDescendants = {
   menuHeaderDesktop: ["menuHeaderDesktop"],
   hero: ["hero", "h1"],
   h1: ["h1"],
-  section1: ["section1"],
+  section1: ["section1", "h4"],
+  h4: ["h4"],
   section2: ["section2"],
   section3: ["section3"],
   section4: ["section4"],
@@ -594,6 +629,7 @@ export const PlasmicIndustryConsumerElectronics = Object.assign(
     hero: makeNodeComponent("hero"),
     h1: makeNodeComponent("h1"),
     section1: makeNodeComponent("section1"),
+    h4: makeNodeComponent("h4"),
     section2: makeNodeComponent("section2"),
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),

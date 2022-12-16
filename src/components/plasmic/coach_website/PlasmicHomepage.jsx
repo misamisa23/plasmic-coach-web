@@ -18,7 +18,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import MenuHeaderDesktop from "../../MenuHeaderDesktop"; // plasmic-import: RhmfQLZ342T/component
+import { Header } from "components/Header/Header"; // plasmic-import: Sl8jgLFwzt/codeComponent
 import Button from "../../Button"; // plasmic-import: i2u7Uturkgt/component
 import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: yBETKiGCDw/codeComponent
 import IndustryCard from "../../IndustryCard"; // plasmic-import: lNCO1zQqfc/component
@@ -87,10 +87,10 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.root2
           )}
         >
-          <MenuHeaderDesktop
-            data-plasmic-name={"menuHeaderDesktop"}
-            data-plasmic-override={overrides.menuHeaderDesktop}
-            className={classNames("__wab_instance", sty.menuHeaderDesktop)}
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
           />
 
           <p.Stack
@@ -1608,7 +1608,7 @@ function PlasmicHomepage__RenderFunc(props) {
 const PlasmicDescendants = {
   root2: [
     "root2",
-    "menuHeaderDesktop",
+    "header",
     "section1",
     "copy",
     "section3",
@@ -1626,7 +1626,7 @@ const PlasmicDescendants = {
     "footer"
   ],
 
-  menuHeaderDesktop: ["menuHeaderDesktop"],
+  header: ["header"],
   section1: ["section1", "copy"],
   copy: ["copy"],
   section3: ["section3"],
@@ -1678,7 +1678,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root2"),
   {
     // Helper components rendering sub-elements
-    menuHeaderDesktop: makeNodeComponent("menuHeaderDesktop"),
+    header: makeNodeComponent("header"),
     section1: makeNodeComponent("section1"),
     copy: makeNodeComponent("copy"),
     section3: makeNodeComponent("section3"),

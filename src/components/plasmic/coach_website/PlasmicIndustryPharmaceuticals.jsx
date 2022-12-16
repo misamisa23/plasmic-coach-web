@@ -230,7 +230,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   )}
                 >
                   {
-                    "It's important for pharmaceutical companies to provide their staff with adequate training in order improve how best they can serve customers. Coach can assist them in seeing exactly where their new employees are at in the training process and help them when they are struggling with different product concepts or compliance issues. This way the companies save time and money while reducing the possibility of any compliance issues."
+                    "Coach helps employees master different product concepts, safety, and compliance training, and makes new employees onboard faster. \n\nCompanies save time and money while reducing the possibility of any possible issues."
                   }
                 </div>
 
@@ -318,7 +318,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   <React.Fragment>
                     <React.Fragment>
                       {
-                        "Pharmaceutical sales reps are the main link between pharmaceutical companies and physicians. This makes it even more important to ensure they have in-depth product knowledge that is up to date with FDA requirements, market demands, and legal guidelines at all times! \n\n\n"
+                        "Pharmaceutical sales reps are the main link between pharmaceutical companies and physicians. \nIt is very important to ensure they have in-depth product knowledge that is up to date with FDA requirements, market demands, and legal guidelines at all times! \n\n\n"
                       }
                     </React.Fragment>
                     <span
@@ -329,7 +329,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                     </span>
                     <React.Fragment>
                       {
-                        " lets you create and distribute training programs that can be used to keep your product knowledge up-to-date. The content creation tool lets you create lessons about specific products and deploy them easily. Create as many programs as you need for one position, specific departments, or the whole company!  "
+                        " lets you create and distribute training programs that can be used to keep your product knowledge up-to-date. With the content creation tool you create lessons about specific products and deploy them easily. \n\nCreate as many programs as you need for one position, specific departments, or the whole company!  "
                       }
                     </React.Fragment>
                   </React.Fragment>
@@ -369,7 +369,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   <React.Fragment>
                     <React.Fragment>
                       {
-                        "It’s critical for everyone to know all the safety standards set forth by the industry they work in and what’s required when working around these materials.\n\nThe problem with workplace safety training is that it gets quickly forgotten and it is not being refreshed enough for both new and current employees. (It is scientifically proven that 70% of the knowledge we learn, gets forgotten after a week).\n"
+                        "Workplace safety training gets quickly forgotten and it is not being refreshed enough for both new and current employees. (It is scientifically proven that 70% of the knowledge we learn, gets forgotten after a week).\n\n"
                       }
                     </React.Fragment>
                     <span
@@ -380,7 +380,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                     </span>
                     <React.Fragment>
                       {
-                        "'s scientifically proven methods such as spaced repetition, combined with interactive games and gamification methods increase knowledge retention and battle the forgetting curve. Coach gets everyone be up to date with the latest safety standards, and lets them refresh their knowledge every week by spending short amounts of time playing fun games!"
+                        "'s scientifically proven methods increases knowledge retention makes sure that safety training is remembered at all times. \n\nEveryone will be up to date with the latest safety standards, and their knowledge will be refreshed by spending short amounts of time playing fun games!"
                       }
                     </React.Fragment>
                   </React.Fragment>
@@ -458,7 +458,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Pharmaceutical companies have a great number of new employees joining their companies every year.  It can be a difficult task to onboard new employees in the pharmaceutical industry because of all the compliance training that is required.\n\nCoach can help pharmaceutical companies onboard employees faster and more effectively!"
+                    "Getting new hires up to speed quickly is vital for any organization. \n\nEase the learning curve with a series of short microlearning training sessions that can be accessed at any time, and help new hires master your product catalog in no time.\n\nIncrease productivity by learning when there are no customers around.\n"
                   }
                 </div>
               </p.Stack>
@@ -494,7 +494,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Pharmaceutical companies want their employees working in the R&D department to be knowledgeable about the latest drug therapies, how to develop new drugs and how to bring them through clinical trials.\n\n\nMany of the LMS systems are not customizable and the content that they provide can be inadequate for the training needed. This is why Coach has a built-in content creation tool which can help with the customization of the training programs.\n\n\nThe microlearning methodology that Coach uses provides short chunks of information to make sure that employees are not overwhelmed. "
+                    "Pharmaceutical companies want their employees working in the R&D department to be knowledgeable about the latest drug therapies, how to develop new drugs and how to bring them through clinical trials.\n\n\n\nMany of the LMS systems are not customizable and the content that they provide can be inadequate for the training needed. \n\nThis is why Coach has a built-in content creation tool which can help with the customization of the training programs.\n\n\n\nThe microlearning methodology that Coach uses provides short chunks of information to make sure that employees are not overwhelmed. "
                   }
                 </div>
               </p.Stack>

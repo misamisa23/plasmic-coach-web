@@ -137,7 +137,7 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                     >
                       {hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "The training tool \nthat helps you learn"
-                        : "Cost-effective\n employee trainings"}
+                        : "Cost-effective\n employee training"}
                     </h1>
                   </p.Stack>
 
@@ -306,7 +306,7 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                       sty.text__r66Qm
                     )}
                   >
-                    {"Drive discovery\n with data (and promote accordingly!)"}
+                    {"Drive discovery\n with insights"}
                   </div>
 
                   <div
@@ -317,7 +317,7 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                     )}
                   >
                     {
-                      "You used to have ideas about the efficiency of your trainings. Now you have proof. With data-driven insights, Coach shows whether your expectations match the reality. Because we only like surprises on birthdays!"
+                      "You used to have ideas about the efficiency of your training. Now you have proof. \nWith data-driven insights, Coach shows whether your expectations match reality. \nBecause we only like surprises on birthdays!"
                     }
                   </div>
                 </p.Stack>
@@ -423,7 +423,7 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Knowledgeable employees = happy & motivated employees. And the word of mouth spreads fast - almost as fast as creating a training in Coach. "
+                      "Knowledgeable employees = happy & motivated employees. \nAnd the word of mouth spreads fast - almost as fast as creating training in Coach. "
                     }
                   </div>
                 </p.Stack>
@@ -475,7 +475,7 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                     )}
                   >
                     {
-                      "People forget 70% out of it in just after 2 weeks - no matter how good the training is.\nIt’s nobody’s fault, its science. Coach is built with this fact in mind and works with each employee until the information is placed in the long term memory. "
+                      "People forget 70% of it in just after 2 weeks - no matter how good the training is.\nIt’s nobody’s fault, it's science. Coach is built with this fact in mind and works with each employee until the information is placed in the long-term memory. "
                     }
                   </div>
                 </p.Stack>

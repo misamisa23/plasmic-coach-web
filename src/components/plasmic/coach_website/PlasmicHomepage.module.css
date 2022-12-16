@@ -23,18 +23,10 @@
 .root2 > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 0px;
 }
-.menuHeaderDesktop:global(.__wab_instance) {
-  position: sticky;
-  height: 90px;
-  left: 0px;
-  top: 0px;
-  z-index: 2;
-  flex-shrink: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .menuHeaderDesktop:global(.__wab_instance) {
-    flex-shrink: 0;
-  }
+.header:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
 }
 .section1 {
   flex-direction: row;
@@ -1331,7 +1323,7 @@
   margin-bottom: 0px;
   transform: none;
   align-self: auto;
-  background: #11253e;
+  background: url("./images/webBgPattern1Png.png") top 50% left 50% / contain repeat, #11253e;
   min-width: 0;
   padding: 101px 135px 0px;
   border-width: 2px;

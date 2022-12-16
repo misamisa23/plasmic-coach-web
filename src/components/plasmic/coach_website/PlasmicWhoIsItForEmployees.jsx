@@ -247,13 +247,13 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                 >
                   <React.Fragment>
                     <React.Fragment>
-                      {"With Coach, you’ll notice "}
+                      {"With Coach, you’ll notice"}
                     </React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
-                      {"your knowledge improves"}
+                      {" your knowledge improves"}
                     </span>
                     <React.Fragment>
                       {
@@ -366,7 +366,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Coach gives you 8 different games to play and learn. Real games for adults. With different levels. Like Sudoku - it can get really challenging, right? "
+                      "Coach gives you 8 different games to play and learn. \nAll of them are interactive and with different challenge levels."
                     }
                   </div>
                 </p.Stack>
@@ -409,7 +409,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                       sty.text__vrGgp
                     )}
                   >
-                    {"Stay aware of your knowledge and the gaps"}
+                    {"Be aware of your knowledge gaps"}
                   </div>
 
                   <div
@@ -420,7 +420,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     )}
                   >
                     {
-                      "You don’t know what you don’t know, until a time comes to use that knowledge in practice. Coach helps you detect your knowledge gaps in a pile of various information - and pushes you to learn the parts that you don’t know - until you’ve mastered it all!"
+                      "You don’t know what you don’t know until the time comes to use that knowledge in practice. Coach helps you detect your knowledge gaps and pushes you to learn the parts that you don’t know - until you’ve mastered it all!"
                     }
                   </div>
                 </p.Stack>
@@ -461,7 +461,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                       sty.text__sRatq
                     )}
                   >
-                    {"See where your knowledge stands vs your colleagues"}
+                    {"See where you knowledge stand with your knowledge"}
                   </div>
 
                   <div
@@ -472,7 +472,7 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     )}
                   >
                     {
-                      "A little competition forces us to do better. Now you are able to see how your knowledge progressed over the time and where you stand between your colleagues. PS: if you are the best in the biz, Coach makes sure the management notices this."
+                      "A little competition forces us to do better. Now you are able to see how your knowledge progressed over time and where you stand among your colleagues. \nPS: if you are the best in the biz, Coach makes sure the management notices this."
                     }
                   </div>
                 </p.Stack>

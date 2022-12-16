@@ -248,7 +248,7 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                   )}
                 >
                   <React.Fragment>
-                    <React.Fragment>{"Coach delivers "}</React.Fragment>
+                    <React.Fragment>{"Coach provides "}</React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
@@ -321,7 +321,7 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Coach is here to save your time - so you can spend it where you need it the most. That’s our singular focus."
+                      "Coach is here to save your time - so you can spend it where you need it the most. "
                     }
                   </div>
                 </p.Stack>
@@ -427,7 +427,7 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Building a fun working environment that is also productive is a challenge. A fun one, though! Coach lets you tap into the power of play and stimulate employees’ learning retention and improve company culture."
+                      "Building a fun working environment that is also productive is a challenge. A fun one, though! \nCoach lets you tap into the power of play and stimulate employees’ learning retention to improve company culture."
                     }
                   </div>
                 </p.Stack>
@@ -479,7 +479,7 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Create beautiful custom reports that executives don't need a PhD to understand. Analyze your training reports and assign additional lessons to employees with knowledge gaps. Because knowledgeable teams make happy clients."
+                      "Create beautiful custom reports that executives don't need a Ph.D. to understand. \nAnalyze your training reports and assign additional lessons to employees with knowledge gaps. \nBecause knowledgeable teams make happy clients."
                     }
                   </div>
                 </p.Stack>

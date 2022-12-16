@@ -230,7 +230,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   )}
                 >
                   {
-                    "The telecom industry uses the latest communication technology so it is paramount for every employee to be up to date with the latest knowledge.\n\nCoach is an effective solution for telecommunication companies who want their teams up to date on new products/services, sales pitches, customer service excellence, and more!"
+                    "The telecom industry uses the latest communication technology so it is paramount for every employee to be up to date with the latest knowledge.\n\nCoach is an effective solution for telecommunication companies who want their teams up to date on new products and services, sales pitches, customer service excellence, and more!"
                   }
                 </div>
 
