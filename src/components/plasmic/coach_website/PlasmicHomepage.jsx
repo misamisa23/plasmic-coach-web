@@ -18,9 +18,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { Header } from "components/Header/Header"; // plasmic-import: Sl8jgLFwzt/codeComponent
+import { Header } from "components/Header/Header"; // plasmic-import: uaRmXpnJcl/codeComponent
 import Button from "../../Button"; // plasmic-import: i2u7Uturkgt/component
-import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: yBETKiGCDw/codeComponent
+import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: MpmSfV-HL-/codeComponent
 import IndustryCard from "../../IndustryCard"; // plasmic-import: lNCO1zQqfc/component
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
 import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
@@ -53,6 +53,15 @@ export const PlasmicHomepage__VariantProps = new Array();
 
 export const PlasmicHomepage__ArgProps = new Array("whiteblueButton");
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicHomepage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -61,13 +70,11 @@ function PlasmicHomepage__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -87,12 +94,6 @@ function PlasmicHomepage__RenderFunc(props) {
             sty.root2
           )}
         >
-          <Header
-            data-plasmic-name={"header"}
-            data-plasmic-override={overrides.header}
-            className={classNames("__wab_instance", sty.header)}
-          />
-
           <p.Stack
             as={"div"}
             data-plasmic-name={"section1"}
@@ -102,6 +103,76 @@ function PlasmicHomepage__RenderFunc(props) {
           >
             <div className={classNames(projectcss.all, sty.columns__oIjP6)}>
               <div className={classNames(projectcss.all, sty.column__n2TL5)}>
+                <Header
+                  data-plasmic-name={"header"}
+                  data-plasmic-override={overrides.header}
+                  className={classNames("__wab_instance", sty.header)}
+                  data={[
+                    {
+                      itemTitle: "Product",
+                      subMenuItems: [
+                        {
+                          itemTitle: "Our Platform",
+                          items: [
+                            { title: "Mobile app", link: "/features" },
+                            { title: "Admin panel", link: "/features" }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      itemTitle: "Solutions",
+                      subMenuItems: [
+                        {
+                          itemTitle: "By industry",
+                          items: [
+                            { title: "Consumer Electronics", link: "link" },
+                            { title: "Manufacturing", link: "link" },
+                            { title: "Banking", link: "link" },
+                            { title: "Telecommunications", link: "link" },
+                            { title: "Pharmaceuticals", link: "link" },
+                            { title: "Luxury Goods", link: "link" },
+                            { title: "IT and Technology", link: "link" }
+                          ]
+                        },
+                        {
+                          itemTitle: "By target group",
+                          items: [
+                            { title: "For Managers", link: "link" },
+                            { title: "For CEOs", link: "link" },
+                            { title: "For Employees", link: "link" },
+                            {
+                              title: "For Instructional Designers",
+                              link: "link"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      itemTitle: "Who it's for",
+                      subMenuItems: [
+                        {
+                          itemTitle: "Target groups",
+                          items: [
+                            {
+                              title: "For Managers (L&D, HR, People)",
+                              link: "link"
+                            },
+                            { title: "For Employees", link: "link" },
+                            { title: "For CEOs", link: "link" },
+                            {
+                              title: "For Instructional Designers",
+                              link: "link"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    { itemTitle: "Product", link: "/product" }
+                  ]}
+                />
+
                 <p.Stack
                   as={"div"}
                   hasGap={true}
@@ -216,7 +287,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     displayHeight={"100%"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
-                    displayMinHeight={"320px"}
+                    displayMinHeight={"340px"}
                     displayMinWidth={"0"}
                     displayWidth={"100%"}
                     src={{
@@ -857,14 +928,21 @@ function PlasmicHomepage__RenderFunc(props) {
               </p.Stack>
             </div>
 
-            <div className={classNames(projectcss.all, sty.freeBox__f8XUc)}>
-              <ShowcaseComponent
-                data-plasmic-name={"showcaseComponent"}
-                data-plasmic-override={overrides.showcaseComponent}
-                className={classNames("__wab_instance", sty.showcaseComponent)}
-                isLight={false}
-              />
-            </div>
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <div className={classNames(projectcss.all, sty.freeBox__f8XUc)}>
+                <ShowcaseComponent
+                  data-plasmic-name={"showcaseComponent"}
+                  data-plasmic-override={overrides.showcaseComponent}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.showcaseComponent
+                  )}
+                  isLight={false}
+                />
+              </div>
+            ) : null}
           </div>
 
           <p.Stack
@@ -1608,8 +1686,8 @@ function PlasmicHomepage__RenderFunc(props) {
 const PlasmicDescendants = {
   root2: [
     "root2",
-    "header",
     "section1",
+    "header",
     "copy",
     "section3",
     "section4",
@@ -1626,8 +1704,8 @@ const PlasmicDescendants = {
     "footer"
   ],
 
+  section1: ["section1", "header", "copy"],
   header: ["header"],
-  section1: ["section1", "copy"],
   copy: ["copy"],
   section3: ["section3"],
   section4: ["section4"],
@@ -1654,7 +1732,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicHomepage__ArgProps,
           internalVariantPropNames: PlasmicHomepage__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -1678,8 +1755,8 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root2"),
   {
     // Helper components rendering sub-elements
-    header: makeNodeComponent("header"),
     section1: makeNodeComponent("section1"),
+    header: makeNodeComponent("header"),
     copy: makeNodeComponent("copy"),
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),

@@ -16,9 +16,6 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import MenuHeaderDesktop from "../../MenuHeaderDesktop"; // plasmic-import: RhmfQLZ342T/component
-import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: yBETKiGCDw/codeComponent
-import { WebShowcaseComponent } from "components/Showcase/WebShowcaseComponent"; // plasmic-import: eVMkkH0Avy/codeComponent
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
@@ -29,6 +26,15 @@ export const PlasmicFeatures__VariantProps = new Array();
 
 export const PlasmicFeatures__ArgProps = new Array();
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicFeatures__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -37,7 +43,6 @@ function PlasmicFeatures__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -57,12 +62,6 @@ function PlasmicFeatures__RenderFunc(props) {
             sty.root
           )}
         >
-          <MenuHeaderDesktop
-            data-plasmic-name={"menuHeaderDesktop"}
-            data-plasmic-override={overrides.menuHeaderDesktop}
-            className={classNames("__wab_instance", sty.menuHeaderDesktop)}
-          />
-
           <p.Stack
             as={"div"}
             data-plasmic-name={"section1"}
@@ -218,14 +217,7 @@ function PlasmicFeatures__RenderFunc(props) {
 
             <div className={classNames(projectcss.all, sty.freeBox__cbVw4)} />
 
-            <div className={classNames(projectcss.all, sty.freeBox__pAf6W)}>
-              <ShowcaseComponent
-                data-plasmic-name={"showcaseComponent"}
-                data-plasmic-override={overrides.showcaseComponent}
-                className={classNames("__wab_instance", sty.showcaseComponent)}
-                isLight={true}
-              />
-            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__pAf6W)} />
           </div>
 
           <div className={classNames(projectcss.all, sty.freeBox__ebQBr)}>
@@ -249,17 +241,7 @@ function PlasmicFeatures__RenderFunc(props) {
 
             <div className={classNames(projectcss.all, sty.freeBox___4D6Rd)} />
 
-            <div className={classNames(projectcss.all, sty.freeBox__oBlHg)}>
-              <WebShowcaseComponent
-                data-plasmic-name={"webShowcaseComponent"}
-                data-plasmic-override={overrides.webShowcaseComponent}
-                className={classNames(
-                  "__wab_instance",
-                  sty.webShowcaseComponent
-                )}
-                isLight={true}
-              />
-            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__oBlHg)} />
           </div>
 
           <p.Stack
@@ -359,24 +341,10 @@ function PlasmicFeatures__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "menuHeaderDesktop",
-    "section1",
-    "columns",
-    "copy",
-    "showcaseComponent",
-    "webShowcaseComponent",
-    "cta",
-    "footer"
-  ],
-
-  menuHeaderDesktop: ["menuHeaderDesktop"],
+  root: ["root", "section1", "columns", "copy", "cta", "footer"],
   section1: ["section1", "columns", "copy"],
   columns: ["columns", "copy"],
   copy: ["copy"],
-  showcaseComponent: ["showcaseComponent"],
-  webShowcaseComponent: ["webShowcaseComponent"],
   cta: ["cta"],
   footer: ["footer"]
 };
@@ -391,7 +359,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicFeatures__ArgProps,
           internalVariantPropNames: PlasmicFeatures__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -415,12 +382,9 @@ export const PlasmicFeatures = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    menuHeaderDesktop: makeNodeComponent("menuHeaderDesktop"),
     section1: makeNodeComponent("section1"),
     columns: makeNodeComponent("columns"),
     copy: makeNodeComponent("copy"),
-    showcaseComponent: makeNodeComponent("showcaseComponent"),
-    webShowcaseComponent: makeNodeComponent("webShowcaseComponent"),
     cta: makeNodeComponent("cta"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicFeatures

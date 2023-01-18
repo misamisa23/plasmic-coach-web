@@ -41,6 +41,15 @@ export const PlasmicButton__ArgProps = new Array(
   "link"
 );
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -49,7 +58,6 @@ function PlasmicButton__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -58,31 +66,26 @@ function PlasmicButton__RenderFunc(props) {
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.showStartIcon
       },
-
       {
         path: "showEndIcon",
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.showEndIcon
       },
-
       {
         path: "isDisabled",
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.isDisabled
       },
-
       {
         path: "shape",
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.shape
       },
-
       {
         path: "size",
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.size
       },
-
       {
         path: "color",
         type: "private",
@@ -99,11 +102,9 @@ function PlasmicButton__RenderFunc(props) {
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false
     });
-
   const triggers = {
     focusVisibleWithin_root: isRootFocusVisibleWithin
   };
-
   return (
     <p.Stack
       as={"button"}
@@ -540,7 +541,6 @@ function useBehavior(props, ref) {
         group: "showStartIcon",
         variant: "showStartIcon"
       },
-
       showEndIconVariant: { group: "showEndIcon", variant: "showEndIcon" },
       isDisabledVariant: { group: "isDisabled", variant: "isDisabled" },
       contentSlot: "children",
@@ -548,7 +548,6 @@ function useBehavior(props, ref) {
       endIconSlot: "endIcon",
       root: "root"
     },
-
     ref
   );
 
@@ -572,7 +571,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicButton__ArgProps,
           internalVariantPropNames: PlasmicButton__VariantProps
         }),
-
       [props, nodeName]
     );
 

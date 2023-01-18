@@ -31,6 +31,15 @@ export const PlasmicMenuHeaderDesktop__VariantProps = new Array("base2");
 
 export const PlasmicMenuHeaderDesktop__ArgProps = new Array();
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicMenuHeaderDesktop__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -39,7 +48,6 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -58,7 +66,6 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -322,7 +329,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             closeButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__yvq8G)}
+                className={classNames(sty.img___2EHfR)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -340,7 +347,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link___6YlKd
+                    sty.link___4EFw
                   )}
                   href={"/"}
                 >
@@ -352,7 +359,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__dCqMa
+                    sty.link___4IlvR
                   )}
                   href={"/"}
                 >
@@ -364,7 +371,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link___1Zzc
+                    sty.link__o5BP3
                   )}
                   href={"/"}
                 >
@@ -446,7 +453,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             closeButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__rr7Xk)}
+                className={classNames(sty.img__bbGiy)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -517,7 +524,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             openButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img___8AMa9)}
+                className={classNames(sty.img__rg5Xm)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -551,7 +558,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicMenuHeaderDesktop__ArgProps,
           internalVariantPropNames: PlasmicMenuHeaderDesktop__VariantProps
         }),
-
       [props, nodeName]
     );
 

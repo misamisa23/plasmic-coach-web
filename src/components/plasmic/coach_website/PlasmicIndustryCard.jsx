@@ -42,6 +42,15 @@ export const PlasmicIndustryCard__VariantProps = new Array(
 
 export const PlasmicIndustryCard__ArgProps = new Array();
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicIndustryCard__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -50,7 +59,6 @@ function PlasmicIndustryCard__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -59,25 +67,21 @@ function PlasmicIndustryCard__RenderFunc(props) {
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.consumerElectronics
       },
-
       {
         path: "manufacturing",
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.manufacturing
       },
-
       {
         path: "pharmaceuticals",
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.pharmaceuticals
       },
-
       {
         path: "telecom",
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.telecom
       },
-
       {
         path: "luxuryGoods",
         type: "private",
@@ -94,7 +98,6 @@ function PlasmicIndustryCard__RenderFunc(props) {
   const triggers = {
     hover_root: isRootHover
   };
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -357,7 +360,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryCard__ArgProps,
           internalVariantPropNames: PlasmicIndustryCard__VariantProps
         }),
-
       [props, nodeName]
     );
 
