@@ -24,6 +24,15 @@ export const PlasmicYellowButton__VariantProps = new Array();
 
 export const PlasmicYellowButton__ArgProps = new Array();
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicYellowButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -32,7 +41,6 @@ function PlasmicYellowButton__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -71,7 +79,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicYellowButton__ArgProps,
           internalVariantPropNames: PlasmicYellowButton__VariantProps
         }),
-
       [props, nodeName]
     );
 

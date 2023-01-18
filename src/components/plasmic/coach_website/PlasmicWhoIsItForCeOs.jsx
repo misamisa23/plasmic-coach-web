@@ -38,6 +38,15 @@ export const PlasmicWhoIsItForCeOs__VariantProps = new Array();
 
 export const PlasmicWhoIsItForCeOs__ArgProps = new Array();
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicWhoIsItForCeOs__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -46,13 +55,11 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -624,7 +631,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicWhoIsItForCeOs__ArgProps,
           internalVariantPropNames: PlasmicWhoIsItForCeOs__VariantProps
         }),
-
       [props, nodeName]
     );
 

@@ -34,6 +34,15 @@ export const PlasmicIndustryPharmaceuticals__VariantProps = new Array();
 
 export const PlasmicIndustryPharmaceuticals__ArgProps = new Array();
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -42,7 +51,6 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -654,7 +662,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryPharmaceuticals__ArgProps,
           internalVariantPropNames: PlasmicIndustryPharmaceuticals__VariantProps
         }),
-
       [props, nodeName]
     );
 

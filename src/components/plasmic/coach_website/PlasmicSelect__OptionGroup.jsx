@@ -34,6 +34,15 @@ export const PlasmicSelect__OptionGroup__ArgProps = new Array(
   "title"
 );
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicSelect__OptionGroup__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -42,7 +51,6 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -51,7 +59,6 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
         type: "private",
         initFunc: ($props, $state, $ctx) => $props.noTitle
       },
-
       {
         path: "isFirst",
         type: "private",
@@ -67,7 +74,6 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
   const superContexts = {
     Select: React.useContext(SUPER__PlasmicSelect.Context)
   };
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -174,7 +180,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicSelect__OptionGroup__ArgProps,
           internalVariantPropNames: PlasmicSelect__OptionGroup__VariantProps
         }),
-
       [props, nodeName]
     );
 

@@ -1112,17 +1112,52 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         },
         {
-          "id": "yBETKiGCDw",
+          "id": "MpmSfV-HL-",
           "name": "ShowcaseComponent",
           "componentImportPath": "components/Showcase/ShowcaseComponent"
         },
         {
-          "id": "eVMkkH0Avy",
+          "id": "FkLHZQYST3",
           "name": "WebShowcaseComponent",
           "componentImportPath": "components/Showcase/WebShowcaseComponent"
         },
         {
-          "id": "Sl8jgLFwzt",
+          "id": "x6LsJ1l76J",
+          "name": "ShowcaseComponentMobile",
+          "componentImportPath": "components/Showcase/ShowcaseComponentMobile"
+        },
+        {
+          "id": "k4-IeVmZfG",
+          "name": "WebShowcaseComponentMobile",
+          "componentImportPath": "components/Showcase/WebShowcaseComponentMobile"
+        },
+        {
+          "id": "uaRmXpnJcl",
+          "name": "Header",
+          "componentImportPath": "components/Header/Header"
+        },
+        {
+          "id": "LTduvKoF0z",
+          "name": "ShowcaseComponent",
+          "componentImportPath": "components/Showcase/ShowcaseComponent"
+        },
+        {
+          "id": "ZTlMRqAofS",
+          "name": "WebShowcaseComponent",
+          "componentImportPath": "components/Showcase/WebShowcaseComponent"
+        },
+        {
+          "id": "o1aWQ1hXH0",
+          "name": "ShowcaseComponentMobile",
+          "componentImportPath": "components/Showcase/ShowcaseComponentMobile"
+        },
+        {
+          "id": "YvouuiJ_ZH",
+          "name": "WebShowcaseComponentMobile",
+          "componentImportPath": "components/Showcase/WebShowcaseComponentMobile"
+        },
+        {
+          "id": "7WBNdJCUDB",
           "name": "Header",
           "componentImportPath": "components/Header/Header"
         }
@@ -1180,6 +1215,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.189",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.189/dist/plasmic.schema.json"
+  "cliVersion": "0.1.194",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.194/dist/plasmic.schema.json"
 }

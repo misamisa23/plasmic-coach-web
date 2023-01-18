@@ -33,6 +33,15 @@ export const PlasmicIndustryManufacturing__VariantProps = new Array();
 
 export const PlasmicIndustryManufacturing__ArgProps = new Array();
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicIndustryManufacturing__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $ctx = ph.useDataEnv?.() || {};
@@ -41,7 +50,6 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -565,7 +573,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryManufacturing__ArgProps,
           internalVariantPropNames: PlasmicIndustryManufacturing__VariantProps
         }),
-
       [props, nodeName]
     );
 
