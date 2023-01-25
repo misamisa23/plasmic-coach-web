@@ -18,17 +18,41 @@ export default function AppRoot() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/plasmic-host" element={<PlasmicCanvasHost/>} />
+        <Route path="/plasmic-host" element={<PlasmicCanvasHost />} />
         <Route path="/features" element={<Features />} />
-        <Route path="/industry-consumer-electronics" element={<IndustryConsumerElectronics />} />
-        <Route path="/industry-luxury-goods" element={<IndustryLuxuryGoods />} />
-        <Route path="/industry-manufacturing" element={<IndustryManufacturing />} />
-        <Route path="/industry-pharmaceuticals" element={<IndustryPharmaceuticals />} />
-        <Route path="/industry-telecommunication" element={<IndustryTelecommunication />} />
+        <Route
+          path="/industry-consumer-electronics"
+          element={<IndustryConsumerElectronics />}
+        />
+        <Route
+          path="/industry-luxury-goods"
+          element={<IndustryLuxuryGoods />}
+        />
+        <Route
+          path="/industry-manufacturing"
+          element={<IndustryManufacturing />}
+        />
+        <Route
+          path="/industry-pharmaceuticals"
+          element={<IndustryPharmaceuticals />}
+        />
+        <Route
+          path="/industry-telecommunication"
+          element={<IndustryTelecommunication />}
+        />
         <Route path="/who-is-it-for-ceos" element={<WhoIsItForCeOs />} />
-        <Route path="/who-is-it-for-employees" element={<WhoIsItForEmployees />} />
-        <Route path="/who-is-it-for-instructional-designers" element={<WhoIsItForInstructionalDesigners />} />
-        <Route path="/who-is-it-for-managers" element={<WhoIsItForManagers />} />
+        <Route
+          path="/who-is-it-for-employees"
+          element={<WhoIsItForEmployees />}
+        />
+        <Route
+          path="/who-is-it-for-instructional-designers"
+          element={<WhoIsItForInstructionalDesigners />}
+        />
+        <Route
+          path="/who-is-it-for-managers"
+          element={<WhoIsItForManagers />}
+        />
       </Routes>
     </BrowserRouter>
   );
