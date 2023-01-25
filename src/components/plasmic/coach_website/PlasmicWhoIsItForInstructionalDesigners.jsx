@@ -56,11 +56,13 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -257,12 +259,14 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     <React.Fragment>
                       {"Instructional Designers say it’s their "}
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"new ‘right-hand’ tool"}
                     </span>
+
                     <React.Fragment>{"!"}</React.Fragment>
                   </React.Fragment>
                 </div>
@@ -627,6 +631,7 @@ function makeNodeComponent(nodeName) {
           internalVariantPropNames:
             PlasmicWhoIsItForInstructionalDesigners__VariantProps
         }),
+
       [props, nodeName]
     );
 

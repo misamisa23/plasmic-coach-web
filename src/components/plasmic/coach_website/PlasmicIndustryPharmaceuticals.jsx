@@ -51,6 +51,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -140,6 +141,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                       <React.Fragment>
                         {"Employee training in\n"}
                       </React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
@@ -329,12 +331,14 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                         "Pharmaceutical sales reps are the main link between pharmaceutical companies and physicians. \nIt is very important to ensure they have in-depth product knowledge that is up to date with FDA requirements, market demands, and legal guidelines at all times! \n\n\n"
                       }
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"Coach"}
                     </span>
+
                     <React.Fragment>
                       {
                         " lets you create and distribute training programs that can be used to keep your product knowledge up-to-date. With the content creation tool you create lessons about specific products and deploy them easily. \n\nCreate as many programs as you need for one position, specific departments, or the whole company!  "
@@ -380,12 +384,14 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                         "Workplace safety training gets quickly forgotten and it is not being refreshed enough for both new and current employees. (It is scientifically proven that 70% of the knowledge we learn, gets forgotten after a week).\n\n"
                       }
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"Coach"}
                     </span>
+
                     <React.Fragment>
                       {
                         "'s scientifically proven methods increases knowledge retention makes sure that safety training is remembered at all times. \n\nEveryone will be up to date with the latest safety standards, and their knowledge will be refreshed by spending short amounts of time playing fun games!"
@@ -662,6 +668,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryPharmaceuticals__ArgProps,
           internalVariantPropNames: PlasmicIndustryPharmaceuticals__VariantProps
         }),
+
       [props, nodeName]
     );
 

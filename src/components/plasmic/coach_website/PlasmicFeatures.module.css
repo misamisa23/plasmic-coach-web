@@ -356,6 +356,13 @@
   min-width: 0;
   padding: 35px 200px;
 }
+.showcaseComponent:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 551px;
+  top: 47.21875px;
+}
 .freeBox__ebQBr {
   display: flex;
   position: relative;
@@ -406,6 +413,13 @@
   max-width: 100%;
   min-width: 0;
   padding: 8px 8px 0px;
+}
+.webShowcaseComponent:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 338px;
+  top: 65.921875px;
 }
 .cta {
   flex-direction: column;

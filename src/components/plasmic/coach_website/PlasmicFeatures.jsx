@@ -16,6 +16,8 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
+import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: LTduvKoF0z/codeComponent
+import { WebShowcaseComponent } from "components/Showcase/WebShowcaseComponent"; // plasmic-import: FkLHZQYST3/codeComponent
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
@@ -43,6 +45,7 @@ function PlasmicFeatures__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -101,6 +104,7 @@ function PlasmicFeatures__RenderFunc(props) {
                       >
                         <React.Fragment>
                           <React.Fragment>{""}</React.Fragment>
+
                           {
                             <h1
                               className={classNames(
@@ -116,6 +120,7 @@ function PlasmicFeatures__RenderFunc(props) {
                                     "Effortlessly train your employees with our "
                                   }
                                 </React.Fragment>
+
                                 <span
                                   className={
                                     "plasmic_default__all plasmic_default__span"
@@ -217,7 +222,14 @@ function PlasmicFeatures__RenderFunc(props) {
 
             <div className={classNames(projectcss.all, sty.freeBox__cbVw4)} />
 
-            <div className={classNames(projectcss.all, sty.freeBox__pAf6W)} />
+            <div className={classNames(projectcss.all, sty.freeBox__pAf6W)}>
+              <ShowcaseComponent
+                data-plasmic-name={"showcaseComponent"}
+                data-plasmic-override={overrides.showcaseComponent}
+                className={classNames("__wab_instance", sty.showcaseComponent)}
+                isLight={true}
+              />
+            </div>
           </div>
 
           <div className={classNames(projectcss.all, sty.freeBox__ebQBr)}>
@@ -241,7 +253,17 @@ function PlasmicFeatures__RenderFunc(props) {
 
             <div className={classNames(projectcss.all, sty.freeBox___4D6Rd)} />
 
-            <div className={classNames(projectcss.all, sty.freeBox__oBlHg)} />
+            <div className={classNames(projectcss.all, sty.freeBox__oBlHg)}>
+              <WebShowcaseComponent
+                data-plasmic-name={"webShowcaseComponent"}
+                data-plasmic-override={overrides.webShowcaseComponent}
+                className={classNames(
+                  "__wab_instance",
+                  sty.webShowcaseComponent
+                )}
+                isLight={true}
+              />
+            </div>
           </div>
 
           <p.Stack
@@ -341,10 +363,22 @@ function PlasmicFeatures__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section1", "columns", "copy", "cta", "footer"],
+  root: [
+    "root",
+    "section1",
+    "columns",
+    "copy",
+    "showcaseComponent",
+    "webShowcaseComponent",
+    "cta",
+    "footer"
+  ],
+
   section1: ["section1", "columns", "copy"],
   columns: ["columns", "copy"],
   copy: ["copy"],
+  showcaseComponent: ["showcaseComponent"],
+  webShowcaseComponent: ["webShowcaseComponent"],
   cta: ["cta"],
   footer: ["footer"]
 };
@@ -359,6 +393,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicFeatures__ArgProps,
           internalVariantPropNames: PlasmicFeatures__VariantProps
         }),
+
       [props, nodeName]
     );
 
@@ -385,6 +420,8 @@ export const PlasmicFeatures = Object.assign(
     section1: makeNodeComponent("section1"),
     columns: makeNodeComponent("columns"),
     copy: makeNodeComponent("copy"),
+    showcaseComponent: makeNodeComponent("showcaseComponent"),
+    webShowcaseComponent: makeNodeComponent("webShowcaseComponent"),
     cta: makeNodeComponent("cta"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicFeatures

@@ -50,6 +50,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -139,6 +140,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                       <React.Fragment>
                         {"Employee training in the\n"}
                       </React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
@@ -573,6 +575,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryManufacturing__ArgProps,
           internalVariantPropNames: PlasmicIndustryManufacturing__VariantProps
         }),
+
       [props, nodeName]
     );
 

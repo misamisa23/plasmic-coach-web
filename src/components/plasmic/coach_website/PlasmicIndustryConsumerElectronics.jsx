@@ -50,6 +50,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -139,6 +140,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                       <React.Fragment>
                         {"Employee training for\n"}
                       </React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
@@ -242,6 +244,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                         "Employees in consumer electronics are sometimes required to master hundreds, if not thousands of products. \n\nConstant updates and additions to product catalogues, make this process difficult for everyone from the HR & Training department all the way to the trainees.\n\nThis process becomes especially difficult when onboarding new hires, as bombarding them with information about thousands of products is a guaranteed way to overwhelm and confuse them.\n\nThe largest problem is when companies provide inefficient or no training at all.\n\nInefficient training leads to lost sales opportunities, bad customer reviews and overall negative employee experience.\n\n"
                       }
                     </React.Fragment>
+
                     {
                       <h4
                         data-plasmic-name={"h4"}
@@ -257,6 +260,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                           <React.Fragment>
                             {"The good news is that there is a "}
                           </React.Fragment>
+
                           <span
                             className={
                               "plasmic_default__all plasmic_default__span"
@@ -265,6 +269,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                           >
                             {"solution"}
                           </span>
+
                           <React.Fragment>{"."}</React.Fragment>
                         </React.Fragment>
                       </h4>
@@ -609,6 +614,7 @@ function makeNodeComponent(nodeName) {
           internalVariantPropNames:
             PlasmicIndustryConsumerElectronics__VariantProps
         }),
+
       [props, nodeName]
     );
 
