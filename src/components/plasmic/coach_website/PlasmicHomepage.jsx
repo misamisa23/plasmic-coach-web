@@ -18,7 +18,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { Header } from "components/Header/Header"; // plasmic-import: uaRmXpnJcl/codeComponent
+import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import Button from "../../Button"; // plasmic-import: i2u7Uturkgt/component
 import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: MpmSfV-HL-/codeComponent
 import IndustryCard from "../../IndustryCard"; // plasmic-import: lNCO1zQqfc/component
@@ -105,103 +105,10 @@ function PlasmicHomepage__RenderFunc(props) {
           >
             <div className={classNames(projectcss.all, sty.columns__oIjP6)}>
               <div className={classNames(projectcss.all, sty.column__n2TL5)}>
-                <Header
-                  data-plasmic-name={"header"}
-                  data-plasmic-override={overrides.header}
-                  className={classNames("__wab_instance", sty.header)}
-                  data={[
-                    {
-                      itemTitle: "Product",
-                      subMenuItems: [
-                        {
-                          itemTitle: "Our Platform",
-                          items: [
-                            { title: "Mobile app", link: "/features" },
-                            { title: "Admin panel", link: "/features" }
-                          ]
-                        }
-                      ]
-                    },
-
-                    {
-                      itemTitle: "Solutions",
-                      subMenuItems: [
-                        {
-                          itemTitle: "By industry",
-                          items: [
-                            {
-                              title: "Consumer Electronics",
-                              link: "/industry-consumer-electronics"
-                            },
-
-                            {
-                              title: "Manufacturing",
-                              link: "/industry-manufacturing"
-                            },
-
-                            { title: "Banking", link: "link" },
-                            {
-                              title: "Telecommunications",
-                              link: "/industry-telecommunication"
-                            },
-
-                            {
-                              title: "Pharmaceuticals",
-                              link: "/industry-pharmaceuticals"
-                            },
-
-                            {
-                              title: "Luxury Goods",
-                              link: "/industry-luxury-goods"
-                            },
-
-                            { title: "IT and Technology", link: "link" }
-                          ]
-                        },
-
-                        {
-                          itemTitle: "By target group",
-                          items: [
-                            { title: "For Managers", link: "link" },
-                            { title: "For CEOs", link: "link" },
-                            { title: "For Employees", link: "link" },
-                            {
-                              title: "For Instructional Designers",
-                              link: "link"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-
-                    {
-                      itemTitle: "Who it's for",
-                      subMenuItems: [
-                        {
-                          itemTitle: "Target groups",
-                          items: [
-                            {
-                              title: "For Managers (L&D, HR, People)",
-                              link: "/who-is-it-for-managers"
-                            },
-
-                            {
-                              title: "For Employees",
-                              link: "/who-is-it-for-employees"
-                            },
-
-                            { title: "For CEOs", link: "/who-is-it-for-ceos" },
-                            {
-                              title: "For Instructional Designers",
-                              link: "/who-is-it-for-instructional-designers"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-
-                    { itemTitle: "Product", link: "/product" }
-                  ]}
+                <ReusableHeader
+                  data-plasmic-name={"reusableHeader"}
+                  data-plasmic-override={overrides.reusableHeader}
+                  className={classNames("__wab_instance", sty.reusableHeader)}
                 />
 
                 <p.Stack
@@ -1732,7 +1639,7 @@ const PlasmicDescendants = {
   root2: [
     "root2",
     "section1",
-    "header",
+    "reusableHeader",
     "copy",
     "section3",
     "section4",
@@ -1749,8 +1656,8 @@ const PlasmicDescendants = {
     "footer"
   ],
 
-  section1: ["section1", "header", "copy"],
-  header: ["header"],
+  section1: ["section1", "reusableHeader", "copy"],
+  reusableHeader: ["reusableHeader"],
   copy: ["copy"],
   section3: ["section3"],
   section4: ["section4"],
@@ -1802,7 +1709,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section1: makeNodeComponent("section1"),
-    header: makeNodeComponent("header"),
+    reusableHeader: makeNodeComponent("reusableHeader"),
     copy: makeNodeComponent("copy"),
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),

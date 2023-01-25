@@ -31,7 +31,8 @@ export default function MenuItem({ text, items, link, isDark }) {
           if (items) {
             setShowItems((prevState) => !prevState);
           } else if (link) {
-            navigate(link);
+            window.location = link;
+            // navigate(link);
           }
         }}
       >

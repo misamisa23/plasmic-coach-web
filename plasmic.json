@@ -457,6 +457,19 @@
           "cssFilePath": "plasmic/coach_website/PlasmicFeatures.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "OcmELIHcZf",
+          "name": "ReusableHeader",
+          "type": "managed",
+          "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+          "renderModuleFilePath": "plasmic/coach_website/PlasmicReusableHeader.jsx",
+          "importSpec": {
+            "modulePath": "ReusableHeader.jsx"
+          },
+          "cssFilePath": "plasmic/coach_website/PlasmicReusableHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

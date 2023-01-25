@@ -16,6 +16,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
+import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: LTduvKoF0z/codeComponent
 import { WebShowcaseComponent } from "components/Showcase/WebShowcaseComponent"; // plasmic-import: FkLHZQYST3/codeComponent
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
@@ -65,6 +66,12 @@ function PlasmicFeatures__RenderFunc(props) {
             sty.root
           )}
         >
+          <ReusableHeader
+            data-plasmic-name={"reusableHeader"}
+            data-plasmic-override={overrides.reusableHeader}
+            className={classNames("__wab_instance", sty.reusableHeader)}
+          />
+
           <p.Stack
             as={"div"}
             data-plasmic-name={"section1"}
@@ -365,6 +372,7 @@ function PlasmicFeatures__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
+    "reusableHeader",
     "section1",
     "columns",
     "copy",
@@ -374,6 +382,7 @@ const PlasmicDescendants = {
     "footer"
   ],
 
+  reusableHeader: ["reusableHeader"],
   section1: ["section1", "columns", "copy"],
   columns: ["columns", "copy"],
   copy: ["copy"],
@@ -417,6 +426,7 @@ export const PlasmicFeatures = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    reusableHeader: makeNodeComponent("reusableHeader"),
     section1: makeNodeComponent("section1"),
     columns: makeNodeComponent("columns"),
     copy: makeNodeComponent("copy"),
