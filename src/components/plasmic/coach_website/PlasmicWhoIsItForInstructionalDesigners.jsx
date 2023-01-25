@@ -18,7 +18,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import MenuHeaderDesktop from "../../MenuHeaderDesktop"; // plasmic-import: RhmfQLZ342T/component
+import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
 import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -80,10 +80,10 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
             sty.root
           )}
         >
-          <MenuHeaderDesktop
-            data-plasmic-name={"menuHeaderDesktop"}
-            data-plasmic-override={overrides.menuHeaderDesktop}
-            className={classNames("__wab_instance", sty.menuHeaderDesktop)}
+          <ReusableHeader
+            data-plasmic-name={"reusableHeader"}
+            data-plasmic-override={overrides.reusableHeader}
+            className={classNames("__wab_instance", sty.reusableHeader)}
           />
 
           <p.Stack
@@ -611,8 +611,8 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "menuHeaderDesktop", "hero", "h1", "section2", "footer"],
-  menuHeaderDesktop: ["menuHeaderDesktop"],
+  root: ["root", "reusableHeader", "hero", "h1", "section2", "footer"],
+  reusableHeader: ["reusableHeader"],
   hero: ["hero", "h1"],
   h1: ["h1"],
   section2: ["section2"],
@@ -655,7 +655,7 @@ export const PlasmicWhoIsItForInstructionalDesigners = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    menuHeaderDesktop: makeNodeComponent("menuHeaderDesktop"),
+    reusableHeader: makeNodeComponent("reusableHeader"),
     hero: makeNodeComponent("hero"),
     h1: makeNodeComponent("h1"),
     section2: makeNodeComponent("section2"),

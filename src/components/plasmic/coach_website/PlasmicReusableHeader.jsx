@@ -113,7 +113,7 @@ function PlasmicReusableHeader__RenderFunc(props) {
 
         { itemTitle: "Blog", link: "/blog" }
       ]}
-      isDark={true}
+      isDark={false}
     />
   );
 }

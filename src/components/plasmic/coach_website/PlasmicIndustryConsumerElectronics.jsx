@@ -16,7 +16,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import MenuHeaderDesktop from "../../MenuHeaderDesktop"; // plasmic-import: RhmfQLZ342T/component
+import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
@@ -70,10 +70,10 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             sty.root
           )}
         >
-          <MenuHeaderDesktop
-            data-plasmic-name={"menuHeaderDesktop"}
-            data-plasmic-override={overrides.menuHeaderDesktop}
-            className={classNames("__wab_instance", sty.menuHeaderDesktop)}
+          <ReusableHeader
+            data-plasmic-name={"reusableHeader"}
+            data-plasmic-override={overrides.reusableHeader}
+            className={classNames("__wab_instance", sty.reusableHeader)}
           />
 
           <div
@@ -579,7 +579,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "menuHeaderDesktop",
+    "reusableHeader",
     "hero",
     "h1",
     "section1",
@@ -591,7 +591,7 @@ const PlasmicDescendants = {
     "footer"
   ],
 
-  menuHeaderDesktop: ["menuHeaderDesktop"],
+  reusableHeader: ["reusableHeader"],
   hero: ["hero", "h1"],
   h1: ["h1"],
   section1: ["section1", "h4"],
@@ -638,7 +638,7 @@ export const PlasmicIndustryConsumerElectronics = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    menuHeaderDesktop: makeNodeComponent("menuHeaderDesktop"),
+    reusableHeader: makeNodeComponent("reusableHeader"),
     hero: makeNodeComponent("hero"),
     h1: makeNodeComponent("h1"),
     section1: makeNodeComponent("section1"),
