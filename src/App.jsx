@@ -13,9 +13,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import PlasmicCanvasHost from "./pages/plasmic-host";
 
+import ScrollToTop from "./helpers/ScrollToTop";
+
 export default function AppRoot() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/plasmic-host" element={<PlasmicCanvasHost />} />
