@@ -60,7 +60,10 @@ function PlasmicSelect__Option__RenderFunc(props) {
         path: "isSelected",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isSelected : undefined
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.isSelected
+          : undefined,
+        variableType: "variant"
       },
 
       {
@@ -69,14 +72,18 @@ function PlasmicSelect__Option__RenderFunc(props) {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.isHighlighted
-          : undefined
+          : undefined,
+        variableType: "variant"
       },
 
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.isDisabled
+          : undefined,
+        variableType: "variant"
       }
     ],
 

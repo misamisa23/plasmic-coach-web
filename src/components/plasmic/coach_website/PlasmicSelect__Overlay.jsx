@@ -56,7 +56,8 @@ function PlasmicSelect__Overlay__RenderFunc(props) {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.relativePlacement
-          : undefined
+          : undefined,
+        variableType: "variant"
       }
     ],
 

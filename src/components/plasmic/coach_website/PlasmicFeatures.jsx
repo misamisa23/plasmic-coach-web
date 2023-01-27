@@ -12,18 +12,24 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
-import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: LTduvKoF0z/codeComponent
+import { ShowcaseComponentMobile } from "components/Showcase/ShowcaseComponentMobile"; // plasmic-import: x6LsJ1l76J/codeComponent
+import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: MpmSfV-HL-/codeComponent
 import { WebShowcaseComponent } from "components/Showcase/WebShowcaseComponent"; // plasmic-import: FkLHZQYST3/codeComponent
+import { WebShowcaseComponentMobile } from "components/Showcase/WebShowcaseComponentMobile"; // plasmic-import: k4-IeVmZfG/codeComponent
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
+import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicFeatures.module.css"; // plasmic-import: O4MESrAuYA/css
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
+import crookedBg4SvgXJa9D6Q77 from "./images/crookedBg4Svg.svg"; // plasmic-import: xJA9D6q77/picture
 
 export const PlasmicFeatures__VariantProps = new Array();
 
@@ -49,6 +55,10 @@ function PlasmicFeatures__RenderFunc(props) {
 
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsaAzWhvm6PjSv1()
+  });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -66,6 +76,8 @@ function PlasmicFeatures__RenderFunc(props) {
             sty.root
           )}
         >
+          <div className={classNames(projectcss.all, sty.freeBox__goK2K)} />
+
           <ReusableHeader
             data-plasmic-name={"reusableHeader"}
             data-plasmic-override={overrides.reusableHeader}
@@ -208,70 +220,186 @@ function PlasmicFeatures__RenderFunc(props) {
             </div>
           </p.Stack>
 
-          <div className={classNames(projectcss.all, sty.freeBox__hRn9)}>
-            <h1
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1__vttdJ
-              )}
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__hRn9)}
+          >
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__iTreO)}
+              >
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <h1
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1__vttdJ
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {"App - Main features"}
+                      </span>
+                    </React.Fragment>
+                  </h1>
+                ) : null}
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__cbVw4)}
+                />
+
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__sAoYs)}
+                  >
+                    <ShowcaseComponentMobile
+                      data-plasmic-name={"showcaseComponentMobile"}
+                      data-plasmic-override={overrides.showcaseComponentMobile}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.showcaseComponentMobile
+                      )}
+                    />
+                  </div>
+                ) : null}
+
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__aIlXl)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__pAf6W)}
+                    >
+                      <ShowcaseComponent
+                        data-plasmic-name={"showcaseComponent"}
+                        data-plasmic-override={overrides.showcaseComponent}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.showcaseComponent
+                        )}
+                        isLight={true}
+                      />
+                    </div>
+                  </div>
+                ) : null}
+              </p.Stack>
+            ) : null}
+          </p.Stack>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__au2Jh)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg4SvgXJa9D6Q77,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
+
+          {true ? (
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__ebQBr)}
             >
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ color: "#000000" }}
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__t8BtC)}
                 >
-                  {"App - Main features"}
-                </span>
-              </React.Fragment>
-            </h1>
+                  <h1
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1__z5UGh
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {"Admin Panel - Main features"}
+                      </span>
+                    </React.Fragment>
+                  </h1>
 
-            <div className={classNames(projectcss.all, sty.freeBox__cbVw4)} />
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___4D6Rd)}
+                  />
+                </p.Stack>
+              ) : null}
 
-            <div className={classNames(projectcss.all, sty.freeBox__pAf6W)}>
-              <ShowcaseComponent
-                data-plasmic-name={"showcaseComponent"}
-                data-plasmic-override={overrides.showcaseComponent}
-                className={classNames("__wab_instance", sty.showcaseComponent)}
-                isLight={true}
-              />
-            </div>
-          </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__roR2D)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__oBlHg)}
+                  >
+                    <WebShowcaseComponent
+                      data-plasmic-name={"webShowcaseComponent"}
+                      data-plasmic-override={overrides.webShowcaseComponent}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.webShowcaseComponent
+                      )}
+                      isLight={true}
+                    />
+                  </div>
+                </div>
+              ) : null}
 
-          <div className={classNames(projectcss.all, sty.freeBox__ebQBr)}>
-            <h1
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1__z5UGh
-              )}
-            >
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ color: "#000000" }}
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___6WuKw)}
                 >
-                  {"Admin - Main features"}
-                </span>
-              </React.Fragment>
-            </h1>
-
-            <div className={classNames(projectcss.all, sty.freeBox___4D6Rd)} />
-
-            <div className={classNames(projectcss.all, sty.freeBox__oBlHg)}>
-              <WebShowcaseComponent
-                data-plasmic-name={"webShowcaseComponent"}
-                data-plasmic-override={overrides.webShowcaseComponent}
-                className={classNames(
-                  "__wab_instance",
-                  sty.webShowcaseComponent
-                )}
-                isLight={true}
-              />
-            </div>
-          </div>
+                  <WebShowcaseComponentMobile
+                    data-plasmic-name={"webShowcaseComponentMobile"}
+                    data-plasmic-override={overrides.webShowcaseComponentMobile}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.webShowcaseComponentMobile
+                    )}
+                    isLight={false}
+                  />
+                </div>
+              ) : null}
+            </p.Stack>
+          ) : null}
 
           <p.Stack
             as={"div"}
@@ -307,17 +435,6 @@ function PlasmicFeatures__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__mnFQh)}
             >
-              <button
-                className={classNames(
-                  projectcss.all,
-                  projectcss.button,
-                  projectcss.__wab_text,
-                  sty.button__c4NYb
-                )}
-              >
-                {"BOOK A DEMO"}
-              </button>
-
               <p.Stack
                 as={"button"}
                 hasGap={true}
@@ -376,8 +493,10 @@ const PlasmicDescendants = {
     "section1",
     "columns",
     "copy",
+    "showcaseComponentMobile",
     "showcaseComponent",
     "webShowcaseComponent",
+    "webShowcaseComponentMobile",
     "cta",
     "footer"
   ],
@@ -386,8 +505,10 @@ const PlasmicDescendants = {
   section1: ["section1", "columns", "copy"],
   columns: ["columns", "copy"],
   copy: ["copy"],
+  showcaseComponentMobile: ["showcaseComponentMobile"],
   showcaseComponent: ["showcaseComponent"],
   webShowcaseComponent: ["webShowcaseComponent"],
+  webShowcaseComponentMobile: ["webShowcaseComponentMobile"],
   cta: ["cta"],
   footer: ["footer"]
 };
@@ -430,8 +551,10 @@ export const PlasmicFeatures = Object.assign(
     section1: makeNodeComponent("section1"),
     columns: makeNodeComponent("columns"),
     copy: makeNodeComponent("copy"),
+    showcaseComponentMobile: makeNodeComponent("showcaseComponentMobile"),
     showcaseComponent: makeNodeComponent("showcaseComponent"),
     webShowcaseComponent: makeNodeComponent("webShowcaseComponent"),
+    webShowcaseComponentMobile: makeNodeComponent("webShowcaseComponentMobile"),
     cta: makeNodeComponent("cta"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicFeatures

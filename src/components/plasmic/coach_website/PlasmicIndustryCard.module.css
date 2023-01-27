@@ -15,7 +15,7 @@
   height: 210px;
   max-width: 100%;
   background: #ffffff;
-  box-shadow: 2px 4px 13px 0px #c9c9c84d;
+  box-shadow: none;
   transition-property: all;
   transition-duration: 0.2s;
   flex-shrink: 0;

@@ -139,41 +139,73 @@ function PlasmicFooter__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__faLEs)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__evmsG)}
-                  displayHeight={"45px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: appStoreI1SvgLi4XsSx9I,
-                    fullWidth: 300,
-                    fullHeight: 105,
-                    aspectRatio: 2.869565
-                  }}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__udnOe
+                  )}
+                >
+                  <a
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__mnnI
+                    )}
+                    href={
+                      "https://apps.apple.com/za/app/coach-efficient-microlearning/id1593632133"
+                    }
+                    target={"_blank"}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__evmsG)}
+                      displayHeight={"45px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: appStoreI1SvgLi4XsSx9I,
+                        fullWidth: 300,
+                        fullHeight: 105,
+                        aspectRatio: 2.869565
+                      }}
+                    />
+                  </a>
+                </a>
 
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__kUoz7)}
-                  displayHeight={"45px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: googlePlayI1SvgLcZljj7H3,
-                    fullWidth: 300,
-                    fullHeight: 94,
-                    aspectRatio: 3.195652
-                  }}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__siLwa
+                  )}
+                  href={
+                    "https://play.google.com/store/apps/details?id=com.konceptiva.coach"
+                  }
+                  target={"_blank"}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__kUoz7)}
+                    displayHeight={"45px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: googlePlayI1SvgLcZljj7H3,
+                      fullWidth: 300,
+                      fullHeight: 94,
+                      aspectRatio: 3.195652
+                    }}
+                  />
+                </a>
               </p.Stack>
             </p.Stack>
 
@@ -197,20 +229,47 @@ function PlasmicFooter__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__ir31E)}
               >
-                <FooterIconFbsvgIcon
-                  className={classNames(projectcss.all, sty.svg__yKxZ)}
-                  role={"img"}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__dYqN
+                  )}
+                  href={"https://www.facebook.com/konceptiva"}
+                >
+                  <FooterIconFbsvgIcon
+                    className={classNames(projectcss.all, sty.svg__yKxZ)}
+                    role={"img"}
+                  />
+                </a>
 
-                <FooterIconInstagramsvgIcon
-                  className={classNames(projectcss.all, sty.svg__oaInP)}
-                  role={"img"}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link___5HGnL
+                  )}
+                  href={"https://www.instagram.com/konceptiva/"}
+                >
+                  <FooterIconInstagramsvgIcon
+                    className={classNames(projectcss.all, sty.svg__oaInP)}
+                    role={"img"}
+                  />
+                </a>
 
-                <FooterIconLinkedinsvgIcon
-                  className={classNames(projectcss.all, sty.svg__dWhCk)}
-                  role={"img"}
-                />
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__hu6QF
+                  )}
+                  href={"https://www.linkedin.com/company/konceptiva-digital/"}
+                >
+                  <FooterIconLinkedinsvgIcon
+                    className={classNames(projectcss.all, sty.svg__dWhCk)}
+                    role={"img"}
+                  />
+                </a>
               </p.Stack>
             </p.Stack>
           </p.Stack>
@@ -232,65 +291,65 @@ function PlasmicFooter__RenderFunc(props) {
               {"Product"}
             </div>
 
-            <div
+            <a
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text__n7J0
+                sty.link__n7J0
               )}
+              href={`/features`}
             >
-              {"App features"}
-            </div>
+              {"Features"}
+            </a>
 
-            <div
+            <a
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text___9YHgs
+                sty.link___3Pz
               )}
-            >
-              {"Admin panel"}
-            </div>
-
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text___3Pz
-              )}
+              href={`/who-is-it-for-managers`}
             >
               {"For Managers"}
-            </div>
+            </a>
 
-            <div
+            <a
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text__qhDb6
+                sty.link__qhDb6
               )}
+              href={`/who-is-it-for-instructional-designers`}
             >
               {"For IDs"}
-            </div>
+            </a>
 
-            <div
+            <a
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text__lHo0K
+                sty.link__lHo0K
               )}
+              href={`/who-is-it-for-ceos`}
             >
               {"For CEOs"}
-            </div>
+            </a>
 
-            <div
+            <a
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text___3QGh
+                sty.link___3QGh
               )}
+              href={`/who-is-it-for-employees`}
             >
               {"For Employees"}
-            </div>
+            </a>
           </p.Stack>
         </div>
 
@@ -315,55 +374,65 @@ function PlasmicFooter__RenderFunc(props) {
             </div>
           </p.Stack>
 
-          <div
+          <a
             className={classNames(
               projectcss.all,
+              projectcss.a,
               projectcss.__wab_text,
-              sty.text__xH5Av
+              sty.link__xH5Av
             )}
+            href={`/industry-consumer-electronics`}
           >
             {"Consumer Electronics"}
-          </div>
+          </a>
 
-          <div
+          <a
             className={classNames(
               projectcss.all,
+              projectcss.a,
               projectcss.__wab_text,
-              sty.text__chaju
+              sty.link__chaju
             )}
+            href={`/industry-manufacturing`}
           >
             {"Manufacturing"}
-          </div>
+          </a>
 
-          <div
+          <a
             className={classNames(
               projectcss.all,
+              projectcss.a,
               projectcss.__wab_text,
-              sty.text__bEyT2
+              sty.link__bEyT2
             )}
+            href={`/industry-telecommunication`}
           >
             {"Telecom"}
-          </div>
+          </a>
 
-          <div
+          <a
             className={classNames(
               projectcss.all,
+              projectcss.a,
               projectcss.__wab_text,
-              sty.text___5NYv
+              sty.link___5NYv
             )}
+            href={`/industry-pharmaceuticals`}
           >
             {"Pharmaceuticals"}
-          </div>
+          </a>
 
-          <div
+          <a
             className={classNames(
               projectcss.all,
+              projectcss.a,
               projectcss.__wab_text,
-              sty.text__qWAb
+              sty.link__qWAb
             )}
+            href={`/industry-luxury-goods`}
           >
             {"Luxury Goods"}
-          </div>
+          </a>
         </p.Stack>
 
         <p.Stack
@@ -391,40 +460,10 @@ function PlasmicFooter__RenderFunc(props) {
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__uKbY0
-            )}
-          >
-            {"Blog"}
-          </div>
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
               sty.text__czA2I
             )}
           >
-            {"Who We Are"}
-          </div>
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__xf1U1
-            )}
-          >
-            {"Press"}
-          </div>
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__q55N
-            )}
-          >
-            {"Careers"}
+            {"About Us"}
           </div>
 
           <div
@@ -434,17 +473,7 @@ function PlasmicFooter__RenderFunc(props) {
               sty.text__v5CeH
             )}
           >
-            {"Contact Us"}
-          </div>
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__voQl9
-            )}
-          >
-            {"FAQ"}
+            {"Contact"}
           </div>
         </p.Stack>
       </p.Stack>

@@ -56,7 +56,8 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
         path: "base2",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.base2 : undefined
+        initFunc: true ? ($props, $state, $ctx) => $props.base2 : undefined,
+        variableType: "variant"
       }
     ],
 

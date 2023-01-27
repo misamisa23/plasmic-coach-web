@@ -24,8 +24,10 @@ import sty from "./PlasmicIndustryConsumerElectronics.module.css"; // plasmic-im
 import industryIconsConsumerelectronicspngLywdoMcQp from "./images/industryIconsConsumerelectronicspng.png"; // plasmic-import: LYWDOMcQp/picture
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import illustrationBannerConsumerElectronicspngDPkLBpuo from "./images/illustrationBannerConsumerElectronicspng.png"; // plasmic-import: DPkL_BPUO/picture
+import crookedBg3SvgH1G7EkiWgx from "./images/crookedBg3Svg.svg"; // plasmic-import: h1G7ekiWgx/picture
 import consumerelectronics1Png2J4UC9Ex4V from "./images/consumerelectronics1Png2.png"; // plasmic-import: J4uC9Ex4V/picture
 import webOnboardingTrainingpng7WY11Mx3O from "./images/webOnboardingTrainingpng.png"; // plasmic-import: 7wY11MX3O/picture
+import crookedBg4SvgXJa9D6Q77 from "./images/crookedBg4Svg.svg"; // plasmic-import: xJA9D6q77/picture
 import webConsumerProductpng2UHzpz2V0M from "./images/webConsumerProductpng2.png"; // plasmic-import: uHzpz2V0M/picture
 import webSoftskillsTrainingpngNrfAsd9HE from "./images/webSoftskillsTrainingpng.png"; // plasmic-import: nrfASD9hE/picture
 
@@ -70,6 +72,8 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             sty.root
           )}
         >
+          <div className={classNames(projectcss.all, sty.freeBox__af8Ef)} />
+
           <ReusableHeader
             data-plasmic-name={"reusableHeader"}
             data-plasmic-override={overrides.reusableHeader}
@@ -137,9 +141,14 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                     )}
                   >
                     <React.Fragment>
-                      <React.Fragment>
-                        {"Employee training for\n"}
-                      </React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#11253E" }}
+                      >
+                        {"Employee training for"}
+                      </span>
+
+                      <React.Fragment>{"\n"}</React.Fragment>
 
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
@@ -224,6 +233,24 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             </div>
           </div>
 
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img___7FhC9)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
+
           <div
             data-plasmic-name={"section1"}
             data-plasmic-override={overrides.section1}
@@ -241,7 +268,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   <React.Fragment>
                     <React.Fragment>
                       {
-                        "Employees in consumer electronics are sometimes required to master hundreds, if not thousands of products. \n\nConstant updates and additions to product catalogues, make this process difficult for everyone from the HR & Training department all the way to the trainees.\n\nThis process becomes especially difficult when onboarding new hires, as bombarding them with information about thousands of products is a guaranteed way to overwhelm and confuse them.\n\nThe largest problem is when companies provide inefficient or no training at all.\n\nInefficient training leads to lost sales opportunities, bad customer reviews and overall negative employee experience.\n\n"
+                        "Employees in consumer electronics are sometimes required to master hundreds, if not thousands of products. \nConstant updates and additions to product catalogues, make this process difficult for everyone from the HR & Training department all the way to the trainees.\n\nThis process becomes especially difficult when onboarding new hires, as bombarding them with information about thousands of products is a guaranteed way to overwhelm and confuse them.\n\nThe largest problem is when companies provide inefficient or no training at all. Inefficient training leads to lost sales opportunities, bad customer reviews and overall negative employee experience.\n\n"
                       }
                     </React.Fragment>
 
@@ -368,6 +395,24 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             </div>
           </div>
 
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__ekM9)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg4SvgXJa9D6Q77,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
+
           <div
             data-plasmic-name={"section3"}
             data-plasmic-override={overrides.section3}
@@ -423,6 +468,24 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
               </div>
             </div>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__h1U9W)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section4"}
@@ -482,16 +545,16 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
 
           <p.Stack
             as={"div"}
-            data-plasmic-name={"cta"}
-            data-plasmic-override={overrides.cta}
+            data-plasmic-name={"cta2"}
+            data-plasmic-override={overrides.cta2}
             hasGap={true}
-            className={classNames(projectcss.all, sty.cta)}
+            className={classNames(projectcss.all, sty.cta2)}
           >
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__vyX5
+                sty.text__e3Nw
               )}
             >
               {"READY TO START?"}
@@ -501,7 +564,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__cMTnf
+                sty.text__tUtXy
               )}
             >
               {
@@ -512,33 +575,22 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__etKl)}
+              className={classNames(projectcss.all, sty.freeBox__uyLLo)}
             >
-              <button
-                className={classNames(
-                  projectcss.all,
-                  projectcss.button,
-                  projectcss.__wab_text,
-                  sty.button___0SulB
-                )}
-              >
-                {"BOOK A DEMO"}
-              </button>
-
               <p.Stack
                 as={"button"}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
                   projectcss.button,
-                  sty.button__lcWgS
+                  sty.button__m2Oaf
                 )}
               >
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__shDi
+                    sty.text___8DM6Y
                   )}
                 >
                   {"GET STARTED"}
@@ -546,7 +598,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
 
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__wllc)}
+                  className={classNames(sty.img__gqIt)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -587,7 +639,7 @@ const PlasmicDescendants = {
     "section2",
     "section3",
     "section4",
-    "cta",
+    "cta2",
     "footer"
   ],
 
@@ -599,7 +651,7 @@ const PlasmicDescendants = {
   section2: ["section2"],
   section3: ["section3"],
   section4: ["section4"],
-  cta: ["cta"],
+  cta2: ["cta2"],
   footer: ["footer"]
 };
 
@@ -646,7 +698,7 @@ export const PlasmicIndustryConsumerElectronics = Object.assign(
     section2: makeNodeComponent("section2"),
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),
-    cta: makeNodeComponent("cta"),
+    cta2: makeNodeComponent("cta2"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicIndustryConsumerElectronics
     internalVariantProps: PlasmicIndustryConsumerElectronics__VariantProps,

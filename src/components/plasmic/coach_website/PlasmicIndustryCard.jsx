@@ -69,7 +69,8 @@ function PlasmicIndustryCard__RenderFunc(props) {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.consumerElectronics
-          : undefined
+          : undefined,
+        variableType: "variant"
       },
 
       {
@@ -78,7 +79,8 @@ function PlasmicIndustryCard__RenderFunc(props) {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.manufacturing
-          : undefined
+          : undefined,
+        variableType: "variant"
       },
 
       {
@@ -87,14 +89,16 @@ function PlasmicIndustryCard__RenderFunc(props) {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.pharmaceuticals
-          : undefined
+          : undefined,
+        variableType: "variant"
       },
 
       {
         path: "telecom",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.telecom : undefined
+        initFunc: true ? ($props, $state, $ctx) => $props.telecom : undefined,
+        variableType: "variant"
       },
 
       {
@@ -103,7 +107,8 @@ function PlasmicIndustryCard__RenderFunc(props) {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.luxuryGoods
-          : undefined
+          : undefined,
+        variableType: "variant"
       }
     ],
 

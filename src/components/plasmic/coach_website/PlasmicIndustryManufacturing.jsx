@@ -70,6 +70,8 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
             sty.root
           )}
         >
+          <div className={classNames(projectcss.all, sty.freeBox__pQbEu)} />
+
           <ReusableHeader
             data-plasmic-name={"reusableHeader"}
             data-plasmic-override={overrides.reusableHeader}
@@ -478,17 +480,6 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__hzPBv)}
             >
-              <button
-                className={classNames(
-                  projectcss.all,
-                  projectcss.button,
-                  projectcss.__wab_text,
-                  sty.button__hgRyo
-                )}
-              >
-                {"BOOK A DEMO"}
-              </button>
-
               <p.Stack
                 as={"button"}
                 hasGap={true}

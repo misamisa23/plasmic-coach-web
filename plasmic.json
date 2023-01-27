@@ -1109,6 +1109,31 @@
           "id": "FvdGeL2khg",
           "name": "icon-industry-luxury-hover.svg",
           "filePath": "plasmic/coach_website/images/iconIndustryLuxuryHoversvg.svg"
+        },
+        {
+          "id": "9S0EZa2VM",
+          "name": "2-deploy-and-play.png 2",
+          "filePath": "plasmic/coach_website/images/_2DeployAndPlaypng2.png"
+        },
+        {
+          "id": "2202Hw1rJ",
+          "name": "1-add-content.png 2",
+          "filePath": "plasmic/coach_website/images/_1AddContentpng2.png"
+        },
+        {
+          "id": "NywMcMIbC",
+          "name": "3-track-and-improve.png 2",
+          "filePath": "plasmic/coach_website/images/_3TrackAndImprovepng2.png"
+        },
+        {
+          "id": "h1G7ekiWgx",
+          "name": "CrookedBg3.svg",
+          "filePath": "plasmic/coach_website/images/crookedBg3Svg.svg"
+        },
+        {
+          "id": "xJA9D6q77",
+          "name": "CrookedBg4.svg",
+          "filePath": "plasmic/coach_website/images/crookedBg4Svg.svg"
         }
       ],
       "indirect": false,

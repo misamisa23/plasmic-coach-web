@@ -79,6 +79,8 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
             sty.root
           )}
         >
+          <div className={classNames(projectcss.all, sty.freeBox__tTGll)} />
+
           <ReusableHeader
             data-plasmic-name={"reusableHeader"}
             data-plasmic-override={overrides.reusableHeader}
@@ -537,17 +539,6 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__gor0)}
                   >
-                    <button
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.button,
-                        projectcss.__wab_text,
-                        sty.button__pShK
-                      )}
-                    >
-                      {"BOOK A DEMO"}
-                    </button>
-
                     <p.Stack
                       as={"button"}
                       hasGap={true}

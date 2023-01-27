@@ -59,14 +59,16 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
         path: "noTitle",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.noTitle : undefined
+        initFunc: true ? ($props, $state, $ctx) => $props.noTitle : undefined,
+        variableType: "variant"
       },
 
       {
         path: "isFirst",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isFirst : undefined
+        initFunc: true ? ($props, $state, $ctx) => $props.isFirst : undefined,
+        variableType: "variant"
       }
     ],
 

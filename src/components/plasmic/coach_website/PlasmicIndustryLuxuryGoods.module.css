@@ -9,6 +9,18 @@
   min-width: 0;
   min-height: 0;
 }
+.freeBox__saGpq {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
 .reusableHeader:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -531,7 +543,7 @@
   width: 100%;
   height: auto;
   max-width: 800px;
-  padding-bottom: 28px;
+  padding-bottom: 0px;
   font-size: 20px;
   color: #58667f;
   font-weight: 400;
@@ -636,7 +648,7 @@
   width: 100%;
   height: auto;
   max-width: 800px;
-  padding-bottom: 28px;
+  padding-bottom: 0px;
   font-size: 20px;
   color: #58667f;
   font-weight: 400;
@@ -789,7 +801,7 @@
   width: 100%;
   height: auto;
   max-width: 800px;
-  padding-bottom: 28px;
+  padding-bottom: 0px;
   font-size: 20px;
   color: #58667f;
   font-weight: 400;
@@ -894,7 +906,7 @@
   width: 100%;
   height: auto;
   max-width: 800px;
-  padding-bottom: 28px;
+  padding-bottom: 0px;
   font-size: 20px;
   color: #58667f;
   font-weight: 400;
@@ -1014,23 +1026,6 @@
   > picture
   > img {
   margin-left: 15px;
-}
-.button__rNkDm {
-  position: relative;
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
-  background: none;
-  width: 180px;
-  height: 45px;
-  flex-shrink: 0;
-  border-radius: 30px;
-  padding: 6px 15px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .button__rNkDm {
-    font-size: 16px;
-  }
 }
 .button___9VzC5 {
   flex-direction: row;
