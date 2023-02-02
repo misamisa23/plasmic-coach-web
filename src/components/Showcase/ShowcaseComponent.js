@@ -109,7 +109,7 @@ export function ShowcaseComponent({ isLight, showButton, buttonTitle, onClickNav
           currentVideoTime={index == 4 ? video : 0}
           videoDelay={delayVideo}
         />
-        {showButton && <div style={{ margin: '10px 10px' }}>
+        {showButton && <div style={{ margin: '20px 10px' }}>
           <ActionButton
             title={buttonTitle ?? "Empty Button"}
             isDark={!isLight}
