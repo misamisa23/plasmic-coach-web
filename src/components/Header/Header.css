@@ -12,18 +12,28 @@
   z-index: 1000;
 }
 
+
 .header--wrapper.dark {
   background-color: #0f233c;
   border-bottom: 1px solid #6495d359;
 }
 
+.header--menu-icon {
+  display: none;
+}
+
+.header--menu-list {
+  display: flex;
+  flex-direction: row;
+}
+
 .header--logo {
   margin-left: 10%;
   margin-right: 60px;
+  cursor: pointer;
 }
 
 .header--action-button {
-  height: 40px;
   border-radius: 50px;
   margin-right: 10%;
   margin-left: auto;
@@ -38,6 +48,21 @@
 
 .header--action-button.dark {
   background-color: #febe10;
+}
+
+@media screen and (max-width:1200px) {
+  .header--action-button {
+    display: none;
+  }
+
+  .header--logo {
+    margin-left: 10%;
+    margin-right: 60px;
+    cursor: pointer;
+    width: 80px;
+  }
+
+
 }
 
 /* ======= MENU ITEM ======= */
@@ -59,6 +84,7 @@
 .header--menu-item-text img {
   margin-left: 10px;
 }
+
 .header--menu-items {
   position: absolute;
   top: 80px;
@@ -87,4 +113,86 @@
   font-weight: 0;
   padding: 10px 0;
   cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+  .header--menu-item-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .header--menu-list {
+    visibility: hidden;
+  }
+
+  .header--menu-icon {
+    display: block;
+    margin-left: 5%;
+    cursor: pointer;
+  }
+
+  .header--logo {
+    margin-left: 30px;
+    margin-right: 60px;
+    cursor: pointer;
+  }
+}
+
+.header--full-menu-container {
+  width: 0vw;
+  height: 0vh;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.header--full-menu-container-visible {
+  width: 100vw;
+  height: 80%;
+  padding-bottom: 100px;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  overflow: scroll;
+  background-color: white;
+  z-index: 100;
+}
+
+.header--responsive-menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 10%;
+  font-size: 18px;
+  font-weight: 800;
+  color: #335075;
+}
+
+.header--responsive-menu-item-title {
+  color: #335075;
+  font-weight: 600;
+  padding: 10px 0 15px 14%;
+  cursor: pointer;
+}
+
+.header--responsive-menu-subitem {
+  color: #335075;
+  font-weight: 200;
+  padding: 10px 0 15px 20%;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header--menu-caret {
+  cursor: pointer;
+  transform: rotateX(0deg);
+  transition: 300ms;
+}
+
+
+.header--menu-caret-show {
+  transform: rotateX(-180deg);
+  transition: 300ms;
 }

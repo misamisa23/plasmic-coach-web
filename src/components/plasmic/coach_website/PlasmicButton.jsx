@@ -58,7 +58,6 @@ function PlasmicButton__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -68,52 +67,39 @@ function PlasmicButton__RenderFunc(props) {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.showStartIcon
-          : undefined,
-        variableType: "variant"
+          : undefined
       },
-
       {
         path: "showEndIcon",
         type: "private",
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.showEndIcon
-          : undefined,
-        variableType: "variant"
+          : undefined
       },
-
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.isDisabled
-          : undefined,
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
       },
-
       {
         path: "shape",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.shape : undefined,
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.shape : undefined
       },
-
       {
         path: "size",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.size : undefined,
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.size : undefined
       },
-
       {
         path: "color",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined,
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined
       }
     ],
 
@@ -126,11 +112,9 @@ function PlasmicButton__RenderFunc(props) {
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false
     });
-
   const triggers = {
     focusVisibleWithin_root: isRootFocusVisibleWithin
   };
-
   return (
     <p.Stack
       as={"button"}
@@ -567,7 +551,6 @@ function useBehavior(props, ref) {
         group: "showStartIcon",
         variant: "showStartIcon"
       },
-
       showEndIconVariant: { group: "showEndIcon", variant: "showEndIcon" },
       isDisabledVariant: { group: "isDisabled", variant: "isDisabled" },
       contentSlot: "children",
@@ -575,7 +558,6 @@ function useBehavior(props, ref) {
       endIconSlot: "endIcon",
       root: "root"
     },
-
     ref
   );
 
@@ -599,7 +581,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicButton__ArgProps,
           internalVariantPropNames: PlasmicButton__VariantProps
         }),
-
       [props, nodeName]
     );
 

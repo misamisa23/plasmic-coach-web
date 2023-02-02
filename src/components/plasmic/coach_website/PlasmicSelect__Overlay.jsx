@@ -46,7 +46,6 @@ function PlasmicSelect__Overlay__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -56,8 +55,7 @@ function PlasmicSelect__Overlay__RenderFunc(props) {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.relativePlacement
-          : undefined,
-        variableType: "variant"
+          : undefined
       }
     ],
 
@@ -69,7 +67,6 @@ function PlasmicSelect__Overlay__RenderFunc(props) {
   const superContexts = {
     Select: React.useContext(SUPER__PlasmicSelect.Context)
   };
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -173,7 +170,6 @@ function useBehavior(props, ref) {
       contentSlot: "children",
       root: "root"
     },
-
     ref
   );
 }
@@ -198,7 +194,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicSelect__Overlay__ArgProps,
           internalVariantPropNames: PlasmicSelect__Overlay__VariantProps
         }),
-
       [props, nodeName]
     );
 

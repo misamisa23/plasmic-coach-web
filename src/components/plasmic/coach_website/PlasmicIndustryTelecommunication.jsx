@@ -12,20 +12,25 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
+import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicIndustryTelecommunication.module.css"; // plasmic-import: m_CDDYoZWSz/css
 import industryIconsTelecompngXlcyO4MRh from "./images/industryIconsTelecompng.png"; // plasmic-import: XlcyO4MRh/picture
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import illustrationBannerTelecompngFVoehJxH from "./images/illustrationBannerTelecompng.png"; // plasmic-import: F_voehJxH/picture
+import crookedBg3SvgH1G7EkiWgx from "./images/crookedBg3Svg.svg"; // plasmic-import: h1G7ekiWgx/picture
 import telecom1Png2SVv8Cc7Lk from "./images/telecom1Png2.png"; // plasmic-import: sVv8Cc7LK/picture
 import webSalesTrainingpng70SZ9Vex from "./images/webSalesTrainingpng.png"; // plasmic-import: 70s-Z9vex/picture
+import crookedBg4SvgXJa9D6Q77 from "./images/crookedBg4Svg.svg"; // plasmic-import: xJA9D6q77/picture
 import webTelecomProductpngTeNyMmOrG from "./images/webTelecomProductpng.png"; // plasmic-import: TeNyMMOrG/picture
 import webCustomerRelationspng8IqsZVd7 from "./images/webCustomerRelationspng.png"; // plasmic-import: 8IQS_ZVd7/picture
 import webOnboardingTrainingpng7WY11Mx3O from "./images/webOnboardingTrainingpng.png"; // plasmic-import: 7wY11MX3O/picture
@@ -51,9 +56,11 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsaAzWhvm6PjSv1()
+  });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -84,7 +91,11 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <div className={classNames(projectcss.all, sty.columns__t99Ib)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__t99Ib)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -143,7 +154,6 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                       <React.Fragment>
                         {"Employee training in the\n"}
                       </React.Fragment>
-
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
@@ -224,8 +234,26 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img___9LqmA)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section1"}
@@ -261,7 +289,11 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__hfxWv)}
-                  displayHeight={"282px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "282px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -284,7 +316,11 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
-            <div className={classNames(projectcss.all, sty.columns__yo3BB)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__yo3BB)}
+            >
               <div className={classNames(projectcss.all, sty.column__ybBZj)}>
                 <p.PlasmicImg
                   alt={""}
@@ -332,15 +368,37 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   }
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__masjx)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg4SvgXJa9D6Q77,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section3"}
             data-plasmic-override={overrides.section3}
             className={classNames(projectcss.all, sty.section3)}
           >
-            <div className={classNames(projectcss.all, sty.columns__uU3Ef)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__uU3Ef)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -388,15 +446,37 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__abOoN)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section4"}
             data-plasmic-override={overrides.section4}
             className={classNames(projectcss.all, sty.section4)}
           >
-            <div className={classNames(projectcss.all, sty.columns__mb2PL)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__mb2PL)}
+            >
               <div className={classNames(projectcss.all, sty.column__poJku)}>
                 <p.PlasmicImg
                   alt={""}
@@ -444,15 +524,37 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   }
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__bufcf)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg4SvgXJa9D6Q77,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section5"}
             data-plasmic-override={overrides.section5}
             className={classNames(projectcss.all, sty.section5)}
           >
-            <div className={classNames(projectcss.all, sty.columns__oeTi3)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__oeTi3)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -500,7 +602,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
 
           <p.Stack
@@ -626,7 +728,6 @@ function makeNodeComponent(nodeName) {
           internalVariantPropNames:
             PlasmicIndustryTelecommunication__VariantProps
         }),
-
       [props, nodeName]
     );
 

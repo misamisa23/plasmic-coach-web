@@ -52,13 +52,11 @@ function PlasmicFeatures__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -123,7 +121,6 @@ function PlasmicFeatures__RenderFunc(props) {
                       >
                         <React.Fragment>
                           <React.Fragment>{""}</React.Fragment>
-
                           {
                             <h1
                               className={classNames(
@@ -139,7 +136,6 @@ function PlasmicFeatures__RenderFunc(props) {
                                     "Effortlessly train your employees with our "
                                   }
                                 </React.Fragment>
-
                                 <span
                                   className={
                                     "plasmic_default__all plasmic_default__span"
@@ -231,33 +227,41 @@ function PlasmicFeatures__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__iTreO)}
               >
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <h1
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1__vttdJ
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#000000" }}
-                      >
-                        {"App - Main features"}
-                      </span>
-                    </React.Fragment>
-                  </h1>
-                ) : null}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__vq0XS)}
+                >
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__vttdJ
+                      )}
+                    >
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#000000" }}
+                        >
+                          {"App - Main features"}
+                        </span>
+                      </React.Fragment>
+                    </h1>
+                  ) : null}
 
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__cbVw4)}
-                />
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__cbVw4)}
+                  />
+                </p.Stack>
 
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
@@ -277,7 +281,6 @@ function PlasmicFeatures__RenderFunc(props) {
                     />
                   </div>
                 ) : null}
-
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -360,7 +363,6 @@ function PlasmicFeatures__RenderFunc(props) {
                   />
                 </p.Stack>
               ) : null}
-
               {(
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
               ) ? (
@@ -380,7 +382,6 @@ function PlasmicFeatures__RenderFunc(props) {
                   </div>
                 </div>
               ) : null}
-
               {(
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
               ) ? (
@@ -523,7 +524,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicFeatures__ArgProps,
           internalVariantPropNames: PlasmicFeatures__VariantProps
         }),
-
       [props, nodeName]
     );
 

@@ -10,7 +10,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
-    padding: 29px;
+    padding: 50px 29px 49px;
   }
 }
 .columns {
