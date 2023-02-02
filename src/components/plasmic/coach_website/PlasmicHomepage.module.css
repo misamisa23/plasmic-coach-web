@@ -37,9 +37,10 @@
   align-items: stretch;
   justify-content: flex-start;
   width: 100%;
-  height: auto;
+  height: 80px;
   max-width: 100%;
   min-width: 0;
+  flex-shrink: 0;
   padding: 8px;
 }
 .section1 {
@@ -1849,12 +1850,15 @@
 .freeBox__f8XUc {
   display: block;
   position: relative;
-  width: 100%;
+  width: 717px;
   height: auto;
   max-width: 100%;
   margin-top: 30px;
-  min-width: 0;
-  padding: 0px 0px 0px 225px;
+  align-self: auto;
+  left: auto;
+  top: auto;
+  z-index: 1;
+  padding: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__f8XUc {
@@ -1982,16 +1986,6 @@
   min-width: 0;
   flex-shrink: 0;
   padding: 8px;
-}
-.slider__qLuW:global(.__wab_instance) {
-  width: 100%;
-  max-width: 100%;
-  flex-direction: column;
-  object-fit: cover;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  min-width: 0;
 }
 .slider__bbjJz:global(.__wab_instance) {
   width: 100%;

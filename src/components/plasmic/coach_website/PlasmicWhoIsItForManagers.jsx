@@ -55,13 +55,11 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -260,27 +258,23 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                 >
                   <React.Fragment>
                     <React.Fragment>{"Coach provides "}</React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"insights"}
                     </span>
-
                     <React.Fragment>
                       {
                         " into the knowledge your employees get from your trainings, and helps you "
                       }
                     </React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"improve"}
                     </span>
-
                     <React.Fragment>{" them!"}</React.Fragment>
                   </React.Fragment>
                 </div>
@@ -632,7 +626,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicWhoIsItForManagers__ArgProps,
           internalVariantPropNames: PlasmicWhoIsItForManagers__VariantProps
         }),
-
       [props, nodeName]
     );
 

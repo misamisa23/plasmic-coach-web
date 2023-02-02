@@ -1000,47 +1000,6 @@ function PlasmicHomepage__RenderFunc(props) {
 
             <div className={classNames(projectcss.all, sty.freeBox___0BPpf)}>
               <Slider
-                centerMode={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : undefined
-                }
-                centerPadding={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "110"
-                    : undefined
-                }
-                children={null}
-                className={classNames("__wab_instance", sty.slider__qLuW)}
-                initialSlide={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? 1
-                    : undefined
-                }
-                slidesPerRow={
-                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 5
-                }
-                slidesToScroll={
-                  hasVariant(globalVariants, "screen", "mobileOnly") ? 5 : 5
-                }
-                slidesToShow={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? 1
-                    : undefined
-                }
-                swipeToSlide={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? false
-                    : undefined
-                }
-                vertical={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? false
-                    : undefined
-                }
-              />
-
-              <Slider
                 adaptiveHeight={true}
                 arrows={
                   hasVariant(globalVariants, "screen", "mobileOnly")
