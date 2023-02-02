@@ -13,6 +13,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import PlasmicCanvasHost from "./pages/plasmic-host";
 
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 import ScrollToTop from "./helpers/ScrollToTop";
 
 export default function AppRoot() {

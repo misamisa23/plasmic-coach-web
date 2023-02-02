@@ -31,7 +31,7 @@ export default function Video({
   return (
     <div
       className={`${
-        isWeb ? "" : isLight ? "video-container-full" : "video-container"
+        isWeb ? "" :  "video-container-full"
       }`}
     >
       <video

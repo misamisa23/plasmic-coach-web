@@ -12,6 +12,9 @@ registerComponent(ShowcaseComponent, {
   importPath: "components/Showcase/ShowcaseComponent",
   props: {
     isLight: "boolean",
+    showButton: "boolean",
+    buttonTitle: "string",
+    onClickNavigateToString: "string",
   },
 });
 

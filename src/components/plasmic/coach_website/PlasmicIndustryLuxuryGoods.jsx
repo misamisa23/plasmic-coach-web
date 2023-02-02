@@ -12,20 +12,25 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
+import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicIndustryLuxuryGoods.module.css"; // plasmic-import: dZ4nzDGoQBJ/css
 import industryIconsLuxurygoodspngX8SdV08N2 from "./images/industryIconsLuxurygoodspng.png"; // plasmic-import: X8SdV08N2/picture
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import illustrationBannerLuxuryGoodspngJkzxvrAAa from "./images/illustrationBannerLuxuryGoodspng.png"; // plasmic-import: JkzxvrAAa/picture
+import crookedBg3SvgH1G7EkiWgx from "./images/crookedBg3Svg.svg"; // plasmic-import: h1G7ekiWgx/picture
 import luxury1Png2Lr73RiQs2 from "./images/luxury1Png2.png"; // plasmic-import: LR73RiQS2/picture
 import webSalesTrainingpng70SZ9Vex from "./images/webSalesTrainingpng.png"; // plasmic-import: 70s-Z9vex/picture
+import crookedBg4SvgXJa9D6Q77 from "./images/crookedBg4Svg.svg"; // plasmic-import: xJA9D6q77/picture
 import webLuxuryProductpngIY87WaGni from "./images/webLuxuryProductpng.png"; // plasmic-import: iY87waGni/picture
 import webCustomerRelationspng8IqsZVd7 from "./images/webCustomerRelationspng.png"; // plasmic-import: 8IQS_ZVd7/picture
 import webOnboardingTrainingpng7WY11Mx3O from "./images/webOnboardingTrainingpng.png"; // plasmic-import: 7wY11MX3O/picture
@@ -51,9 +56,11 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsaAzWhvm6PjSv1()
+  });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -84,7 +91,11 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <div className={classNames(projectcss.all, sty.columns__wr65D)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__wr65D)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -140,15 +151,18 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                     )}
                   >
                     <React.Fragment>
-                      <React.Fragment>
-                        {"Employee training in the\n"}
-                      </React.Fragment>
-
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {"Deliver exceptional customer service and"}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
                       >
-                        {"Luxury Goods industry"}
+                        {" drive sales"}
                       </span>
                     </React.Fragment>
                   </h1>
@@ -224,8 +238,26 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img___26LIh)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section1"}
@@ -241,9 +273,45 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                     sty.text__nZUs3
                   )}
                 >
-                  {
-                    "Luxury goods companies provide products that are highly desired by customers. \n\nIn order to be successful, luxury goods companies must deliver a high-quality product as well as excellent customer service. \n\nHaving employees trained with proper etiquette and communication skills is a key component of success."
-                  }
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    <React.Fragment>
+                      <React.Fragment>
+                        {
+                          "Luxury goods companies have a reputation to uphold - one of sophistication, quality, and exceptional customer service. At the core of delivering this experience is a team of well-trained employees.\n\n"
+                        }
+                      </React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"Coach"}
+                      </span>
+                      <React.Fragment>
+                        {
+                          " provides comprehensive training platform for employees, that can cover everything from product knowledge to customer service etiquette. \n\nOur goal is to arm your team with the skills and confidence they need to deliver the ultimate luxury experience."
+                        }
+                      </React.Fragment>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <React.Fragment>
+                        {
+                          "Luxury goods companies have a reputation to uphold - one of sophistication, quality, and exceptional customer service. At the core of delivering this experience is a team of well-trained employees.\n\n"
+                        }
+                      </React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"Coach"}
+                      </span>
+                      <React.Fragment>
+                        {
+                          " provides comprehensive training platform for employees, that can cover everything from product knowledge to customer service etiquette. \n\nOur goal is to arm your team with the skills and confidence they need to deliver the ultimate luxury experience."
+                        }
+                      </React.Fragment>
+                    </React.Fragment>
+                  )}
                 </div>
 
                 <div
@@ -261,7 +329,11 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__puKmM)}
-                  displayHeight={"282px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "282px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -284,7 +356,11 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
-            <div className={classNames(projectcss.all, sty.columns___3P6Ru)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns___3P6Ru)}
+            >
               <div className={classNames(projectcss.all, sty.column___3KJn8)}>
                 <p.PlasmicImg
                   alt={""}
@@ -328,19 +404,41 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   )}
                 >
                   {
-                    "It is essential for employees to learn the proper way of providing customers with high-quality services. \n\nCoach provides training as well as assessment so that luxury goods companies can provide their employees and make them successful. \n\nCoach uses small bite-sized learning sessions, to make sure employees are able to improve their skills and become more successful individuals overall, without spending too much time off their work."
+                    "Success in the luxury goods industry starts with your employees. They are the face of your brand and their level of knowledge and customer service skills can make all the difference. \n\nThat's why sales training is essential.\n\nMaximize your sales potential with Coach's training approach designed to fit into even the busiest of schedules. Using small, bite-sized learning sessions, your employees can improve their skills and become more successful individuals, without sacrificing valuable work time.\n\n "
                   }
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img___3ZwCz)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg4SvgXJa9D6Q77,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section3"}
             data-plasmic-override={overrides.section3}
             className={classNames(projectcss.all, sty.section3)}
           >
-            <div className={classNames(projectcss.all, sty.columns__yZd6K)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__yZd6K)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -364,7 +462,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Knowing everything about the product you are selling is crucial if you want to position yourself as an expert. \n\nBy using Coach, each employee will be an expert regarding a certain product and provide customers with the correct information.\n\nCoach makes sure that product knowledge isn't forgotten and regularly refreshes the employee's knowledge. It's a quick and efficient way to ensure that you are always up-to-date with the newest products."
+                    "Customers expect employees to be experts on the products they're selling, and having that expertise can make all the difference in closing a sale.\n\nWith Coach, your employees will receive comprehensive training on each product, ensuring they are equipped with the correct information and ready to position themselves as experts.\n\nBut we don't stop there. Our platform is designed to regularly refresh employee knowledge, so that they always stay up-to-date with the latest products. It's a quick and efficient way to maintain your competitive edge."
                   }
                 </div>
               </p.Stack>
@@ -388,15 +486,37 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__aNoTv)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section4"}
             data-plasmic-override={overrides.section4}
             className={classNames(projectcss.all, sty.section4)}
           >
-            <div className={classNames(projectcss.all, sty.columns__bV8V1)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__bV8V1)}
+            >
               <div className={classNames(projectcss.all, sty.column__fqkz1)}>
                 <p.PlasmicImg
                   alt={""}
@@ -440,19 +560,41 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Coach helps employees connect with customers on a more personal level by improving their ability to provide positive experiences.\n\nCoach’s personalization algorithm makes every employee's experience unique, focusing on improving their weak points."
+                    "Creating a personal connection with customers is crucial for building brand loyalty and driving sales. \n\nCoach helps employees improve their ability to provide positive experiences, strengthening the connection with customers.\n\nOur personalization algorithm ensures that each employee's training experience is tailored to their individual needs. \nThis means that Coach focuses on improving the weak points of each employee, leading to more well-rounded and confident customer interactions."
                   }
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__gjsRo)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg4SvgXJa9D6Q77,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section5"}
             data-plasmic-override={overrides.section5}
             className={classNames(projectcss.all, sty.section5)}
           >
-            <div className={classNames(projectcss.all, sty.columns__pMeBp)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__pMeBp)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -476,7 +618,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Getting new hires up to speed quickly is vital for any organization. \n\nEase the learning curve with a series of short microlearning training sessions that can be accessed at any time, and help new hires master your product in no time.\n\nIncrease productivity by learning when there are no customers around.\n"
+                    "Getting new hires up to speed quickly is vital for any organization. \n\nCoach uses a series of short, microlearning sessions that can be accessed at any time. This makes it easy for new hires to master your products quickly and efficiently.\n\nNot only does this help new hires hit the ground running, but it also increases overall productivity by allowing for learning during downtime, when there are no customers around."
                   }
                 </div>
               </p.Stack>
@@ -500,21 +642,21 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
 
           <p.Stack
             as={"div"}
-            data-plasmic-name={"cta"}
-            data-plasmic-override={overrides.cta}
+            data-plasmic-name={"cta2"}
+            data-plasmic-override={overrides.cta2}
             hasGap={true}
-            className={classNames(projectcss.all, sty.cta)}
+            className={classNames(projectcss.all, sty.cta2)}
           >
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__tj0St
+                sty.text__bvlbq
               )}
             >
               {"READY TO START?"}
@@ -524,7 +666,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__dCXo
+                sty.text___98DLy
               )}
             >
               {
@@ -535,7 +677,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___5Fwl5)}
+              className={classNames(projectcss.all, sty.freeBox__jMSx2)}
             >
               <p.Stack
                 as={"button"}
@@ -543,14 +685,14 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                 className={classNames(
                   projectcss.all,
                   projectcss.button,
-                  sty.button___9VzC5
+                  sty.button__p2Fmg
                 )}
               >
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__rMmRe
+                    sty.text__rQrkc
                   )}
                 >
                   {"GET STARTED"}
@@ -558,7 +700,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
 
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__nmRiO)}
+                  className={classNames(sty.img__yKzJh)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -599,7 +741,7 @@ const PlasmicDescendants = {
     "section3",
     "section4",
     "section5",
-    "cta",
+    "cta2",
     "footer"
   ],
 
@@ -611,7 +753,7 @@ const PlasmicDescendants = {
   section3: ["section3"],
   section4: ["section4"],
   section5: ["section5"],
-  cta: ["cta"],
+  cta2: ["cta2"],
   footer: ["footer"]
 };
 
@@ -625,7 +767,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryLuxuryGoods__ArgProps,
           internalVariantPropNames: PlasmicIndustryLuxuryGoods__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -657,7 +798,7 @@ export const PlasmicIndustryLuxuryGoods = Object.assign(
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),
     section5: makeNodeComponent("section5"),
-    cta: makeNodeComponent("cta"),
+    cta2: makeNodeComponent("cta2"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicIndustryLuxuryGoods
     internalVariantProps: PlasmicIndustryLuxuryGoods__VariantProps,

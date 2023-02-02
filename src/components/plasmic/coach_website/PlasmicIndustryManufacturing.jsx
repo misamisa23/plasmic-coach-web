@@ -12,20 +12,25 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
+import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicIndustryManufacturing.module.css"; // plasmic-import: Qi8fjVputO/css
 import industryIconsManufacturingsvg3G8MWcWudI from "./images/industryIconsManufacturingsvg.svg"; // plasmic-import: 3G8mWcWudI/picture
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import illustrationBannerManufacturingpng9LdhmeRy from "./images/illustrationBannerManufacturingpng.png"; // plasmic-import: 9LDHME-Ry/picture
+import crookedBg3SvgH1G7EkiWgx from "./images/crookedBg3Svg.svg"; // plasmic-import: h1G7ekiWgx/picture
 import manufacturing1Png2ZraVek1O9 from "./images/manufacturing1Png2.png"; // plasmic-import: zraVek1o9/picture
 import webOnboardingTrainingpng7WY11Mx3O from "./images/webOnboardingTrainingpng.png"; // plasmic-import: 7wY11MX3O/picture
+import crookedBg4SvgXJa9D6Q77 from "./images/crookedBg4Svg.svg"; // plasmic-import: xJA9D6q77/picture
 import webManufacturingSafetypngJ36Q0EyCx from "./images/webManufacturingSafetypng.png"; // plasmic-import: J36q0EyCx/picture
 import webManufacturingProcedurespngKzfFzkAuT from "./images/webManufacturingProcedurespng.png"; // plasmic-import: KzfFzkAuT/picture
 
@@ -50,9 +55,11 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsaAzWhvm6PjSv1()
+  });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -83,7 +90,11 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <div className={classNames(projectcss.all, sty.columns__s7IuU)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__s7IuU)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -139,15 +150,18 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                     )}
                   >
                     <React.Fragment>
-                      <React.Fragment>
-                        {"Employee training in the\n"}
-                      </React.Fragment>
-
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {"Close the Skills Gap in Manufacturing with "}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
                       >
-                        {"Manufacturing industry"}
+                        {"Employee Training"}
                       </span>
                     </React.Fragment>
                   </h1>
@@ -223,8 +237,26 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img___25Mme)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section1"}
@@ -260,7 +292,11 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img___6IYh5)}
-                  displayHeight={"282px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "282px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -283,7 +319,11 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
-            <div className={classNames(projectcss.all, sty.columns__eUjn0)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__eUjn0)}
+            >
               <div className={classNames(projectcss.all, sty.column__zUebW)}>
                 <p.PlasmicImg
                   alt={""}
@@ -327,19 +367,41 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   )}
                 >
                   {
-                    "New employees who went through a structured onboarding program were 58% more likely to be with the organization after three years.\n\nA structured onboarding process can boost employee retention, and new hire productivity, and result in higher profits for your organization. \n\nWith Coach, you will be able to set your employees up for success in their roles by introducing them to their organization and mapping out their responsibilities. "
+                    "Studies show that new employees who go through a structured onboarding process are 58% more likely to stay with the organization after three years.\n\nCoach's onboarding solution helps you boost employee retention and productivity, leading to increased profits for your organization. Get your new hires up to speed quickly and efficiently with a tailored introduction to your organization and clear mapping of their responsibilities.\n"
                   }
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__nz1P5)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg4SvgXJa9D6Q77,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section3"}
             data-plasmic-override={overrides.section3}
             className={classNames(projectcss.all, sty.section3)}
           >
-            <div className={classNames(projectcss.all, sty.columns__rEfqQ)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__rEfqQ)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -363,7 +425,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Safety training ensures that employees know how to carry out the critical functions of their role safely. This not only keeps the employee themselves safe on the job, but also keeps their coworkers safe as well. \n\nWith Coach, you can keep your employees safe on the job by teaching them best practices and creating a workforce of proactive safety advocates. You will ensure your employees know how to operate and repair equipment safely and accurately. \n\nAnd what’s even more important is that with Coach you can refresh their knowledge on a regular basis, as well as keep track of how well employees are aware of the safety rules. "
+                    "Safety training ensures that employees know how to carry out the critical functions of their role safely. This not only keeps the employee themselves safe on the job, but also keeps their coworkers safe as well. \n\nWith Coach, you can keep your employees safe on the job by teaching them best practices and creating a workforce of proactive safety advocates. You will ensure your employees know how to operate and repair equipment safely and accurately. \n\nAnd what’s even more important is that with Coach you can refresh their knowledge on a regular basis, as well as keep track of how well employees are aware of the safety rules."
                   }
                 </div>
               </p.Stack>
@@ -387,15 +449,37 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__hYg16)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section4"}
             data-plasmic-override={overrides.section4}
             className={classNames(projectcss.all, sty.section4)}
           >
-            <div className={classNames(projectcss.all, sty.columns__mkilb)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__mkilb)}
+            >
               <div className={classNames(projectcss.all, sty.column__vEwWa)}>
                 <p.PlasmicImg
                   alt={""}
@@ -439,25 +523,25 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Process and equipment training provides manufacturing employees with the knowledge required to complete processes efficiently in their roles. \n\nWith a more efficient workforce, organizations in manufacturing can increase their output and better meet the demands of their industry. \n\nWith Coach you will teach complex processes and allow for hands-on training that helps employees work at full capacity. \n\nOn top of this, you will test employees knowledge through the Coach system to make sure that they are on top of what they must know to do their job well."
+                    "Process and equipment training is crucial in ensuring manufacturing employees have the necessary knowledge to perform their job functions efficiently.\n\nBy utilizing Coach, your team will learn complex procedures through hands-on training, leading to increased productivity and output for your organization.\n\nCoach’s assesment system ensures that your employees are retaining the information and are equipped to perform their job duties effectively."
                   }
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
 
           <p.Stack
             as={"div"}
-            data-plasmic-name={"cta"}
-            data-plasmic-override={overrides.cta}
+            data-plasmic-name={"cta2"}
+            data-plasmic-override={overrides.cta2}
             hasGap={true}
-            className={classNames(projectcss.all, sty.cta)}
+            className={classNames(projectcss.all, sty.cta2)}
           >
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__yyPdK
+                sty.text___9ACmT
               )}
             >
               {"READY TO START?"}
@@ -467,7 +551,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__qBy12
+                sty.text__kKfme
               )}
             >
               {
@@ -478,7 +562,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__hzPBv)}
+              className={classNames(projectcss.all, sty.freeBox___729Fe)}
             >
               <p.Stack
                 as={"button"}
@@ -486,14 +570,14 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                 className={classNames(
                   projectcss.all,
                   projectcss.button,
-                  sty.button__rOj0A
+                  sty.button__hZwyz
                 )}
               >
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__hj3Zl
+                    sty.text__aDnOu
                   )}
                 >
                   {"GET STARTED"}
@@ -501,7 +585,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
 
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__vUtC)}
+                  className={classNames(sty.img__sgTJ)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -541,7 +625,7 @@ const PlasmicDescendants = {
     "section2",
     "section3",
     "section4",
-    "cta",
+    "cta2",
     "footer"
   ],
 
@@ -552,7 +636,7 @@ const PlasmicDescendants = {
   section2: ["section2"],
   section3: ["section3"],
   section4: ["section4"],
-  cta: ["cta"],
+  cta2: ["cta2"],
   footer: ["footer"]
 };
 
@@ -566,7 +650,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryManufacturing__ArgProps,
           internalVariantPropNames: PlasmicIndustryManufacturing__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -597,7 +680,7 @@ export const PlasmicIndustryManufacturing = Object.assign(
     section2: makeNodeComponent("section2"),
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),
-    cta: makeNodeComponent("cta"),
+    cta2: makeNodeComponent("cta2"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicIndustryManufacturing
     internalVariantProps: PlasmicIndustryManufacturing__VariantProps,

@@ -12,20 +12,25 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
+import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicIndustryPharmaceuticals.module.css"; // plasmic-import: F-wbj2VstZH/css
 import industryIconsArtboard31SvgOy70P0DV5 from "./images/industryIconsArtboard31Svg.svg"; // plasmic-import: oy70P0dV5/picture
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import illustrationBannerPharmapng0KhpcwPYb from "./images/illustrationBannerPharmapng.png"; // plasmic-import: 0KhpcwPYb/picture
+import crookedBg3SvgH1G7EkiWgx from "./images/crookedBg3Svg.svg"; // plasmic-import: h1G7ekiWgx/picture
 import pharma1Png2HgSa0M5Jw from "./images/pharma1Png2.png"; // plasmic-import: hgSA0m5jw/picture
 import webPharmaProductTrainingpngEvq4OZhow from "./images/webPharmaProductTrainingpng.png"; // plasmic-import: EVQ4oZHOW/picture
+import crookedBg4SvgXJa9D6Q77 from "./images/crookedBg4Svg.svg"; // plasmic-import: xJA9D6q77/picture
 import webPharmaSafetypng9Cd57NdIa from "./images/webPharmaSafetypng.png"; // plasmic-import: 9CD57NdIa/picture
 import webOnboardingTrainingpng7WY11Mx3O from "./images/webOnboardingTrainingpng.png"; // plasmic-import: 7wY11MX3O/picture
 import webPharmaResearchpngFMzADzZb from "./images/webPharmaResearchpng.png"; // plasmic-import: fMZ_ADzZb/picture
@@ -51,9 +56,11 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsaAzWhvm6PjSv1()
+  });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -84,7 +91,11 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <div className={classNames(projectcss.all, sty.columns__tZk3)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__tZk3)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -140,15 +151,18 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                     )}
                   >
                     <React.Fragment>
-                      <React.Fragment>
-                        {"Employee training in\n"}
-                      </React.Fragment>
-
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {"Stay up to date with "}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
                       >
-                        {"Pharmaceutical companies"}
+                        {"market demands"}
                       </span>
                     </React.Fragment>
                   </h1>
@@ -224,8 +238,26 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__brC7R)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section1"}
@@ -242,7 +274,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Coach helps employees master different product concepts, safety, and compliance training, and makes new employees onboard faster. \n\nCompanies save time and money while reducing the possibility of any possible issues."
+                    "Ensuring the safety of your patients and the quality of your products is a top priority. \n\nCoach is a comprehensive training platform that helps your employees master the knowledge, skills and safety protocols necessary to excel in their roles. \n\nImprove safety, reduce the risk of compliance issues, and get new hires up to speed faster - with Coach, your company is in good hands."
                   }
                 </div>
 
@@ -261,7 +293,11 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__yB6R3)}
-                  displayHeight={"282px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "282px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -284,7 +320,11 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
-            <div className={classNames(projectcss.all, sty.columns__aaOc4)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__aaOc4)}
+            >
               <div className={classNames(projectcss.all, sty.column__fBzWc)}>
                 <p.PlasmicImg
                   alt={""}
@@ -330,34 +370,54 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   <React.Fragment>
                     <React.Fragment>
                       {
-                        "Pharmaceutical sales reps are the main link between pharmaceutical companies and physicians. \nIt is very important to ensure they have in-depth product knowledge that is up to date with FDA requirements, market demands, and legal guidelines at all times! \n\n\n"
+                        "Pharmaceutical sales reps play a crucial role in connecting your company with physicians. It's essential to equip them with the latest and most accurate product knowledge to stay compliant with FDA regulations, market demands, and legal guidelines.\n\nWith "
                       }
                     </React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"Coach"}
                     </span>
-
                     <React.Fragment>
                       {
-                        " lets you create and distribute training programs that can be used to keep your product knowledge up-to-date. With the content creation tool you create lessons about specific products and deploy them easily. \n\nCreate as many programs as you need for one position, specific departments, or the whole company!  "
+                        ", you can create and deliver training programs that keep your team's product knowledge up-to-date. \n\nThe easy-to-use content creation tool lets you design lessons for specific products and deploy them to your team with ease. Tailor your training programs to suit the needs of individual positions, departments, or your entire company."
                       }
                     </React.Fragment>
                   </React.Fragment>
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img___6UOnP)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg4SvgXJa9D6Q77,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section3"}
             data-plasmic-override={overrides.section3}
             className={classNames(projectcss.all, sty.section3)}
           >
-            <div className={classNames(projectcss.all, sty.columns__gbkuy)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__gbkuy)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -386,14 +446,12 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                         "Workplace safety training gets quickly forgotten and it is not being refreshed enough for both new and current employees. (It is scientifically proven that 70% of the knowledge we learn, gets forgotten after a week).\n\n"
                       }
                     </React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"Coach"}
                     </span>
-
                     <React.Fragment>
                       {
                         "'s scientifically proven methods increases knowledge retention makes sure that safety training is remembered at all times. \n\nEveryone will be up to date with the latest safety standards, and their knowledge will be refreshed by spending short amounts of time playing fun games!"
@@ -422,15 +480,37 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__zShZ)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg3SvgH1G7EkiWgx,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section4"}
             data-plasmic-override={overrides.section4}
             className={classNames(projectcss.all, sty.section4)}
           >
-            <div className={classNames(projectcss.all, sty.columns__tC9Mh)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__tC9Mh)}
+            >
               <div className={classNames(projectcss.all, sty.column__dfbBy)}>
                 <p.PlasmicImg
                   alt={""}
@@ -478,8 +558,26 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                   }
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
+
+          <p.PlasmicImg
+            alt={""}
+            className={classNames(sty.img__eGtPz)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            loading={"lazy"}
+            src={{
+              src: crookedBg4SvgXJa9D6Q77,
+              fullWidth: 300,
+              fullHeight: 14,
+              aspectRatio: 20.869565
+            }}
+          />
 
           <div
             data-plasmic-name={"section5"}
@@ -509,9 +607,24 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                     sty.text__wsQu
                   )}
                 >
-                  {
-                    "Pharmaceutical companies want their employees working in the R&D department to be knowledgeable about the latest drug therapies, how to develop new drugs and how to bring them through clinical trials.\n\n\n\nMany of the LMS systems are not customizable and the content that they provide can be inadequate for the training needed. \n\nThis is why Coach has a built-in content creation tool which can help with the customization of the training programs.\n\n\n\nThe microlearning methodology that Coach uses provides short chunks of information to make sure that employees are not overwhelmed. "
-                  }
+                  <React.Fragment>
+                    <React.Fragment>
+                      {
+                        "Employees working in the R&D department need to be knowledgeable about the latest drug therapies, how to develop new drugs and how to bring them through clinical trials.\n\n\n\nWith "
+                      }
+                    </React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"Coach"}
+                    </span>
+                    <React.Fragment>
+                      {
+                        ", your R&D employees will receive targeted, relevant, and up-to-date training that will boost their performance and drive innovation. \n\nWith the ability to constantly update training programs and the short and engaging microlearning lessons, your employees will be well equipped to tackle the challenges of drug development and clinical trials."
+                      }
+                    </React.Fragment>
+                  </React.Fragment>
                 </div>
               </p.Stack>
 
@@ -539,16 +652,16 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
 
           <p.Stack
             as={"div"}
-            data-plasmic-name={"cta"}
-            data-plasmic-override={overrides.cta}
+            data-plasmic-name={"cta2"}
+            data-plasmic-override={overrides.cta2}
             hasGap={true}
-            className={classNames(projectcss.all, sty.cta)}
+            className={classNames(projectcss.all, sty.cta2)}
           >
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__ek8Ya
+                sty.text__y9OzO
               )}
             >
               {"READY TO START?"}
@@ -558,7 +671,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__hu7C5
+                sty.text__rUu4
               )}
             >
               {
@@ -569,7 +682,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__swFjm)}
+              className={classNames(projectcss.all, sty.freeBox__ebv9V)}
             >
               <p.Stack
                 as={"button"}
@@ -577,14 +690,14 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                 className={classNames(
                   projectcss.all,
                   projectcss.button,
-                  sty.button__wMlBv
+                  sty.button__x9Vdz
                 )}
               >
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__nCeV
+                    sty.text__wJuMt
                   )}
                 >
                   {"GET STARTED"}
@@ -592,7 +705,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
 
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__xdE1Y)}
+                  className={classNames(sty.img__iEdo)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -633,7 +746,7 @@ const PlasmicDescendants = {
     "section3",
     "section4",
     "section5",
-    "cta",
+    "cta2",
     "footer"
   ],
 
@@ -645,7 +758,7 @@ const PlasmicDescendants = {
   section3: ["section3"],
   section4: ["section4"],
   section5: ["section5"],
-  cta: ["cta"],
+  cta2: ["cta2"],
   footer: ["footer"]
 };
 
@@ -659,7 +772,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryPharmaceuticals__ArgProps,
           internalVariantPropNames: PlasmicIndustryPharmaceuticals__VariantProps
         }),
-
       [props, nodeName]
     );
 
@@ -691,7 +803,7 @@ export const PlasmicIndustryPharmaceuticals = Object.assign(
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),
     section5: makeNodeComponent("section5"),
-    cta: makeNodeComponent("cta"),
+    cta2: makeNodeComponent("cta2"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicIndustryPharmaceuticals
     internalVariantProps: PlasmicIndustryPharmaceuticals__VariantProps,

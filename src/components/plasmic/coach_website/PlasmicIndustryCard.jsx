@@ -59,7 +59,6 @@ function PlasmicIndustryCard__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -69,46 +68,37 @@ function PlasmicIndustryCard__RenderFunc(props) {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.consumerElectronics
-          : undefined,
-        variableType: "variant"
+          : undefined
       },
-
       {
         path: "manufacturing",
         type: "private",
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.manufacturing
-          : undefined,
-        variableType: "variant"
+          : undefined
       },
-
       {
         path: "pharmaceuticals",
         type: "private",
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.pharmaceuticals
-          : undefined,
-        variableType: "variant"
+          : undefined
       },
-
       {
         path: "telecom",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.telecom : undefined,
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.telecom : undefined
       },
-
       {
         path: "luxuryGoods",
         type: "private",
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.luxuryGoods
-          : undefined,
-        variableType: "variant"
+          : undefined
       }
     ],
 
@@ -121,7 +111,6 @@ function PlasmicIndustryCard__RenderFunc(props) {
   const triggers = {
     hover_root: isRootHover
   };
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -384,7 +373,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryCard__ArgProps,
           internalVariantPropNames: PlasmicIndustryCard__VariantProps
         }),
-
       [props, nodeName]
     );
 

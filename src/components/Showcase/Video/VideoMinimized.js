@@ -39,7 +39,7 @@ export default function VideoMinimized({
         muted={true}
         onEnded={onVideoEnd}
         height={330}
-        className={isWeb ? "video-container-web-mobile" : ""}
+        className={isWeb ? "video-container-web-mobile" : "video-container-app"}
         ref={videoRef}
         autoPlay={true}
         onPlay={onPlayHandler}

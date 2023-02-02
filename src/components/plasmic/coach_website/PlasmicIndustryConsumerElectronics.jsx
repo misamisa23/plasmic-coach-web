@@ -12,12 +12,15 @@ import * as React from "react";
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import Footer from "../../Footer"; // plasmic-import: 0UCZXj9Zumd/component
+import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: aAzWHVM6PJSv1/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicIndustryConsumerElectronics.module.css"; // plasmic-import: BnI8QqbLFB1/css
@@ -33,7 +36,9 @@ import webSoftskillsTrainingpngNrfAsd9HE from "./images/webSoftskillsTrainingpng
 
 export const PlasmicIndustryConsumerElectronics__VariantProps = new Array();
 
-export const PlasmicIndustryConsumerElectronics__ArgProps = new Array();
+export const PlasmicIndustryConsumerElectronics__ArgProps = new Array(
+  "children"
+);
 
 const __wrapUserFunction =
   globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
@@ -52,9 +57,11 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsaAzWhvm6PjSv1()
+  });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -85,7 +92,11 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <div className={classNames(projectcss.all, sty.columns__qkAe)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__qkAe)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -136,27 +147,52 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.h1,
-                      projectcss.__wab_text,
                       sty.h1
                     )}
                   >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#11253E" }}
-                      >
-                        {"Employee training for"}
-                      </span>
+                    {p.renderPlasmicSlot({
+                      defaultContents: (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___7W7TF
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#000000" }}
+                            >
+                              {"Effortlessly master"}
+                            </span>
+                            <React.Fragment>{""}</React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#3E7CB1" }}
+                            >
+                              {" "}
+                            </span>
+                            <React.Fragment>{"\n"}</React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#3E7CB1" }}
+                            >
+                              {"1000's of products"}
+                            </span>
+                          </React.Fragment>
+                        </div>
+                      ),
 
-                      <React.Fragment>{"\n"}</React.Fragment>
-
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#3E7CB1" }}
-                      >
-                        {"Consumer Electronics"}
-                      </span>
-                    </React.Fragment>
+                      value: args.children,
+                      className: classNames(sty.slotTargetChildren)
+                    })}
                   </h1>
                 </p.Stack>
 
@@ -230,7 +266,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
 
           <p.PlasmicImg
@@ -256,7 +292,11 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             data-plasmic-override={overrides.section1}
             className={classNames(projectcss.all, sty.section1)}
           >
-            <div className={classNames(projectcss.all, sty.columns__pkFyD)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__pkFyD)}
+            >
               <div className={classNames(projectcss.all, sty.column__k8Aeg)}>
                 <div
                   className={classNames(
@@ -271,7 +311,6 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                         "Employees in consumer electronics are sometimes required to master hundreds, if not thousands of products. \nConstant updates and additions to product catalogues, make this process difficult for everyone from the HR & Training department all the way to the trainees.\n\nThis process becomes especially difficult when onboarding new hires, as bombarding them with information about thousands of products is a guaranteed way to overwhelm and confuse them.\n\nThe largest problem is when companies provide inefficient or no training at all. Inefficient training leads to lost sales opportunities, bad customer reviews and overall negative employee experience.\n\n"
                       }
                     </React.Fragment>
-
                     {
                       <h4
                         data-plasmic-name={"h4"}
@@ -287,7 +326,6 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                           <React.Fragment>
                             {"The good news is that there is a "}
                           </React.Fragment>
-
                           <span
                             className={
                               "plasmic_default__all plasmic_default__span"
@@ -296,7 +334,6 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                           >
                             {"solution"}
                           </span>
-
                           <React.Fragment>{"."}</React.Fragment>
                         </React.Fragment>
                       </h4>
@@ -321,7 +358,11 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__fJ2Hk)}
-                  displayHeight={"282px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "282px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -336,7 +377,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
 
           <div
@@ -344,7 +385,11 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
-            <div className={classNames(projectcss.all, sty.columns__qaA2U)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__qaA2U)}
+            >
               <div className={classNames(projectcss.all, sty.column___4TJjj)}>
                 <p.PlasmicImg
                   alt={""}
@@ -377,7 +422,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                     sty.text__pK2Pl
                   )}
                 >
-                  {"Onboard new hires on \n1000’s of products"}
+                  {"Onboard new hires"}
                 </div>
 
                 <div
@@ -388,11 +433,11 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Getting new hires up to speed quickly is vital for any organization. \n\nEase the learning curve with a series of short microlearning training sessions that can be accessed at any time, and help new hires master your product catalog in no time.\n\nIncrease productivity by learning when there are no customers around.\n"
+                    "Getting new hires up to speed quickly is vital for any organization. \n\nEase the learning curve with a series of short microlearning training sessions that can be accessed at any time, and help new hires master your product catalog in no time.\n\nIncrease productivity by learning when there are no customers around.\n\n\n"
                   }
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
 
           <p.PlasmicImg
@@ -418,7 +463,11 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             data-plasmic-override={overrides.section3}
             className={classNames(projectcss.all, sty.section3)}
           >
-            <div className={classNames(projectcss.all, sty.columns___4Zi1N)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns___4Zi1N)}
+            >
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -442,7 +491,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Providing product training materials often isn't enough for employees to master the product.\n\nThis is where Coach excels.\nLearn every detail about your products through the learning section and then test your knowledge through our 8 interactive games.\n\nThe best thing is - employees will only need 5-6 minutes daily to master your product catalog."
+                    "Providing product training materials often isn't enough for employees to master the product.\n\nCoach offers a simple solution to product training by providing an easy to use, micro-learning platform that helps employees master thousands of products in no time. \nWith bite-sized learning modules, employees can quickly and effectively learn about new products and updates, all from their mobile device.\n\nNot only does this save time and effort for the HR and Training departments, it also provides employees with a convenient and engaging way to learn about the products they sell."
                   }
                 </div>
               </p.Stack>
@@ -466,7 +515,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   }}
                 />
               </div>
-            </div>
+            </p.Stack>
           </div>
 
           <p.PlasmicImg
@@ -492,7 +541,11 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
             data-plasmic-override={overrides.section4}
             className={classNames(projectcss.all, sty.section4)}
           >
-            <div className={classNames(projectcss.all, sty.columns__spoFd)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__spoFd)}
+            >
               <div className={classNames(projectcss.all, sty.column__kvC1C)}>
                 <p.PlasmicImg
                   alt={""}
@@ -540,7 +593,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   }
                 </div>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
 
           <p.Stack
@@ -666,7 +719,6 @@ function makeNodeComponent(nodeName) {
           internalVariantPropNames:
             PlasmicIndustryConsumerElectronics__VariantProps
         }),
-
       [props, nodeName]
     );
 

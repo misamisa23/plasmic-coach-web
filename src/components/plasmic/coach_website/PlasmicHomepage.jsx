@@ -71,13 +71,11 @@ function PlasmicHomepage__RenderFunc(props) {
     ...args,
     ...variants
   };
-
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
-
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -146,7 +144,6 @@ function PlasmicHomepage__RenderFunc(props) {
                         >
                           <React.Fragment>
                             <React.Fragment>{""}</React.Fragment>
-
                             {
                               <h1
                                 className={classNames(
@@ -231,7 +228,6 @@ function PlasmicHomepage__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.freeBox__w2HtN)}
                   />
                 ) : null}
-
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -918,9 +914,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     >
                       {"By utilizing Coach, we make sure\n "}
                     </span>
-
                     <React.Fragment>{"\n"}</React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#FFFFFF" }}
@@ -941,11 +935,14 @@ function PlasmicHomepage__RenderFunc(props) {
                 <ShowcaseComponent
                   data-plasmic-name={"showcaseComponent"}
                   data-plasmic-override={overrides.showcaseComponent}
+                  buttonTitle={"See Features"}
                   className={classNames(
                     "__wab_instance",
                     sty.showcaseComponent
                   )}
                   isLight={false}
+                  onClickNavigateToString={"features"}
+                  showButton={true}
                 />
               </div>
             ) : null}
@@ -976,7 +973,6 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>
                       {"Train employees in a wide "}
                     </React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -989,7 +985,6 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>
                       {"Train employees in a wide\n"}
                     </React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -1003,152 +998,197 @@ function PlasmicHomepage__RenderFunc(props) {
               <div className={classNames(projectcss.all, sty.freeBox__shS54)} />
             </p.Stack>
 
-            <Slider
-              adaptiveHeight={true}
-              arrows={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              }
-              autoplay={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : false
-              }
-              centerMode={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              }
-              centerPadding={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "50px"
-                  : "30px"
-              }
-              className={classNames("__wab_instance", sty.slider__jxCZo)}
-              dots={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? false
-                  : true
-              }
-              draggable={true}
-              infinite={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : undefined
-              }
-              rows={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? 1
-                  : undefined
-              }
-              rtl={false}
-              slidesPerRow={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 5
-              }
-              slidesToScroll={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? 4 : 5
-              }
-              slidesToShow={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? 1
-                  : undefined
-              }
-              swipeToSlide={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : false
-              }
-              variableWidth={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              }
-              vertical={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? false
-                  : undefined
-              }
-            >
-              <a
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__eWvcn
-                )}
-                href={`/industry-consumer-electronics`}
-              >
-                <IndustryCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.industryCard__canrj
-                  )}
-                  consumerElectronics={true}
-                />
-              </a>
+            <div className={classNames(projectcss.all, sty.freeBox___0BPpf)}>
+              <Slider
+                centerMode={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : undefined
+                }
+                centerPadding={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "110"
+                    : undefined
+                }
+                children={null}
+                className={classNames("__wab_instance", sty.slider__qLuW)}
+                initialSlide={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? 1
+                    : undefined
+                }
+                slidesPerRow={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 5
+                }
+                slidesToScroll={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 5 : 5
+                }
+                slidesToShow={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? 1
+                    : undefined
+                }
+                swipeToSlide={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? false
+                    : undefined
+                }
+                vertical={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? false
+                    : undefined
+                }
+              />
 
-              <a
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__rnLrx
-                )}
-                href={`/industry-manufacturing`}
+              <Slider
+                adaptiveHeight={true}
+                arrows={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                }
+                autoplay={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                }
+                centerMode={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                }
+                centerPadding={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "50px"
+                    : "30px"
+                }
+                className={classNames("__wab_instance", sty.slider__bbjJz)}
+                dots={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? false
+                    : true
+                }
+                draggable={true}
+                infinite={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : undefined
+                }
+                rows={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 1
+                }
+                rtl={false}
+                slidesPerRow={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 5
+                }
+                slidesToScroll={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 5 : 1
+                }
+                slidesToShow={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 1
+                }
+                swipeToSlide={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                }
+                variableWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                }
+                vertical={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? false
+                    : undefined
+                }
               >
-                <IndustryCard
+                <a
                   className={classNames(
-                    "__wab_instance",
-                    sty.industryCard__oR0Em
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__eWvcn
                   )}
-                  manufacturing={true}
-                />
-              </a>
+                  href={`/industry-consumer-electronics`}
+                >
+                  <IndustryCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.industryCard__canrj
+                    )}
+                    consumerElectronics={true}
+                  />
+                </a>
 
-              <a
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__ci7Uc
-                )}
-                href={`/industry-pharmaceuticals`}
-              >
-                <IndustryCard
+                <a
                   className={classNames(
-                    "__wab_instance",
-                    sty.industryCard___0Zxc0
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__rnLrx
                   )}
-                  pharmaceuticals={true}
-                />
-              </a>
+                  href={`/industry-manufacturing`}
+                >
+                  <IndustryCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.industryCard__oR0Em
+                    )}
+                    manufacturing={true}
+                  />
+                </a>
 
-              <a
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__fiEgo
-                )}
-                href={`/industry-telecommunication`}
-              >
-                <IndustryCard
+                <a
                   className={classNames(
-                    "__wab_instance",
-                    sty.industryCard__sp0ND
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__ci7Uc
                   )}
-                  telecom={true}
-                />
-              </a>
+                  href={`/industry-pharmaceuticals`}
+                >
+                  <IndustryCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.industryCard___0Zxc0
+                    )}
+                    pharmaceuticals={true}
+                  />
+                </a>
 
-              <a
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__t0AsR
-                )}
-                href={`/industry-luxury-goods`}
-              >
-                <IndustryCard
+                <a
                   className={classNames(
-                    "__wab_instance",
-                    sty.industryCard__sc6Af
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__fiEgo
                   )}
-                  luxuryGoods={true}
-                />
-              </a>
-            </Slider>
+                  href={`/industry-telecommunication`}
+                >
+                  <IndustryCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.industryCard__sp0ND
+                    )}
+                    telecom={true}
+                  />
+                </a>
+
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__t0AsR
+                  )}
+                  href={`/industry-luxury-goods`}
+                >
+                  <IndustryCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.industryCard__sc6Af
+                    )}
+                    luxuryGoods={true}
+                  />
+                </a>
+              </Slider>
+            </div>
           </p.Stack>
 
           <div className={classNames(projectcss.all, sty.freeBox__y5Yie)}>
@@ -1210,7 +1250,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   : false
               }
               centerMode={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
               }
               centerPadding={
                 hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1229,22 +1271,16 @@ function PlasmicHomepage__RenderFunc(props) {
                   ? true
                   : undefined
               }
-              rows={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? 1
-                  : undefined
-              }
+              rows={hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 1}
               rtl={false}
               slidesPerRow={
                 hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 4
               }
               slidesToScroll={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? 4 : 4
+                hasVariant(globalVariants, "screen", "mobileOnly") ? 4 : 1
               }
               slidesToShow={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? 1
-                  : undefined
+                hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 1
               }
               swipeToSlide={
                 hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1252,7 +1288,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   : false
               }
               variableWidth={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
               }
               vertical={
                 hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1302,14 +1340,12 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
-
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#11253E", fontWeight: 700 }}
                       >
                         {"Managers"}
                       </span>
-
                       <React.Fragment>{"\n(HR, L&D, Training)"}</React.Fragment>
                     </React.Fragment>
                   </div>
@@ -1356,7 +1392,6 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
-
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
@@ -1408,7 +1443,6 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
-
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
@@ -1460,7 +1494,6 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
-
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
@@ -1492,7 +1525,6 @@ function PlasmicHomepage__RenderFunc(props) {
               {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                 <React.Fragment>
                   <React.Fragment>{"See how we can help you"}</React.Fragment>
-
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#3E7CB1" }}
@@ -1503,7 +1535,6 @@ function PlasmicHomepage__RenderFunc(props) {
               ) : (
                 <React.Fragment>
                   <React.Fragment>{"See how we can help you\n"}</React.Fragment>
-
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#3E7CB1" }}
@@ -1633,7 +1664,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 >
                   <React.Fragment>
                     <React.Fragment>{"Our latest \n"}</React.Fragment>
-
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -1648,7 +1678,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 />
               </p.Stack>
             ) : null}
-
             {true ? (
               <div className={classNames(projectcss.all, sty.columns__uUosY)}>
                 <div className={classNames(projectcss.all, sty.column___00FKz)}>
@@ -1854,7 +1883,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicHomepage__ArgProps,
           internalVariantPropNames: PlasmicHomepage__VariantProps
         }),
-
       [props, nodeName]
     );
 
