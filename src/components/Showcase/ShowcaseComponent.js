@@ -24,6 +24,7 @@ import ActionButton from "components/elements/ActionButton";
 import { useNavigate } from "react-router-dom";
 
 export function ShowcaseComponent({ isLight, showButton, buttonTitle, onClickNavigateToString }) {
+
   const navigate = useNavigate();
 
   const [index, setIndex] = useState(0);

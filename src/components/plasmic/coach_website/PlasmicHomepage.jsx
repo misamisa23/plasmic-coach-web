@@ -1000,7 +1000,108 @@ function PlasmicHomepage__RenderFunc(props) {
 
             <div className={classNames(projectcss.all, sty.freeBox___0BPpf)}>
               <Slider
-                className={classNames("__wab_instance", sty.slider__xcXgz)}
+                centerMode={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : undefined
+                }
+                centerPadding={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "110"
+                    : undefined
+                }
+                children={null}
+                className={classNames("__wab_instance", sty.slider__qLuW)}
+                initialSlide={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? 1
+                    : undefined
+                }
+                slidesPerRow={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 5
+                }
+                slidesToScroll={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 5 : 5
+                }
+                slidesToShow={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? 1
+                    : undefined
+                }
+                swipeToSlide={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? false
+                    : undefined
+                }
+                vertical={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? false
+                    : undefined
+                }
+              />
+
+              <Slider
+                adaptiveHeight={true}
+                arrows={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                }
+                autoplay={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                }
+                centerMode={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                }
+                centerPadding={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "50px"
+                    : "30px"
+                }
+                className={classNames("__wab_instance", sty.slider__bbjJz)}
+                dots={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? false
+                    : true
+                }
+                draggable={true}
+                infinite={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : undefined
+                }
+                rows={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 1
+                }
+                rtl={false}
+                slidesPerRow={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 5
+                }
+                slidesToScroll={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 5 : 1
+                }
+                slidesToShow={
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 1
+                }
+                swipeToSlide={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                }
+                variableWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                }
+                vertical={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? false
+                    : undefined
+                }
               >
                 <a
                   className={classNames(
@@ -1170,22 +1271,16 @@ function PlasmicHomepage__RenderFunc(props) {
                   ? true
                   : undefined
               }
-              rows={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? 1
-                  : undefined
-              }
+              rows={hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 1}
               rtl={false}
               slidesPerRow={
                 hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 4
               }
               slidesToScroll={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? 4 : 4
+                hasVariant(globalVariants, "screen", "mobileOnly") ? 4 : 1
               }
               slidesToShow={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? 1
-                  : undefined
+                hasVariant(globalVariants, "screen", "mobileOnly") ? 1 : 1
               }
               swipeToSlide={
                 hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1193,7 +1288,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   : false
               }
               variableWidth={
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
               }
               vertical={
                 hasVariant(globalVariants, "screen", "mobileOnly")
