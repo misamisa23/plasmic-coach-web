@@ -20,8 +20,12 @@ import RewardsVideo from "assets/videos/get-rewards.mp4";
 import ImproveYourKnowledgeVideo from "assets/videos/improve-your-knowledge.mp4";
 import PersonalizedVideo from "assets/videos/personalized-experience.mp4";
 import TrackPerformanceVideo from "assets/videos/track-performance.mp4";
+import ActionButton from "components/elements/ActionButton";
+import { useNavigate } from "react-router-dom";
 
-export function ShowcaseComponent({ isLight }) {
+export function ShowcaseComponent({ isLight, showButton, buttonTitle, onClickNavigateToString }) {
+  const navigate = useNavigate();
+
   const [index, setIndex] = useState(0);
 
   const [video, setVideo] = useState(0);
@@ -95,7 +99,7 @@ export function ShowcaseComponent({ isLight }) {
           itemIndex={4}
           title={"Challenge Yourself"}
           description={
-            "Get better with each game and earn the #1 spot in your company!"
+            "Get better with each game and earn the #1 spot in your company!Get better with each game and earn the #1 spot in your company!"
           }
           icon={RewardsIcon}
           iconSelected={RewardsIconSelected}
@@ -105,6 +109,13 @@ export function ShowcaseComponent({ isLight }) {
           currentVideoTime={index == 4 ? video : 0}
           videoDelay={delayVideo}
         />
+        {showButton && <div style={{ margin: '10px 10px' }}>
+          <ActionButton
+            title={buttonTitle ?? "Empty Button"}
+            isDark={!isLight}
+            onClick={() => navigate(`/${onClickNavigateToString}`)}
+          />
+        </div>}
       </div>
       <div className="showcase--display">
         {index == 0 && (

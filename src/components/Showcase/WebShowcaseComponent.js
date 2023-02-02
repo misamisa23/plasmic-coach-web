@@ -3,17 +3,19 @@ import React, { useEffect, useRef, useState } from "react";
 import "./ShowcaseComponent.css";
 import { ShowcaseItem } from "./ShowcaseItem/ShowcaseItem";
 import Video from "./Video/Video";
-import PlayIcon from "assets/icons/web-icon-play.svg";
-import ImproveIcon from "assets/icons/web-icon-improve.svg";
-import ReinforceIcon from "assets/icons/web-icon-reinforce.svg";
-import RewardsIcon from "assets/icons/web-icon-rewards.svg";
-import TrackIcon from "assets/icons/web-icon-track.svg";
 
-import PlayIconSelected from "assets/icons/web-icon-play-selected.svg";
-import ImproveIconSelected from "assets/icons/web-icon-improve-selected.svg";
-import ReinforceIconSelected from "assets/icons/web-icon-reinforce-selected.svg";
-import RewardsIconSelected from "assets/icons/web-icon-rewards-selected.svg";
-import TrackIconSelected from "assets/icons/web-icon-track-selected.svg";
+
+import AnalyticsIcon from "assets/icons/web-icon-analytics.svg";
+import AssignIcon from "assets/icons/web-icon-assign.svg";
+import ContentIcon from "assets/icons/web-icon-content.svg";
+import FeedbackIcon from "assets/icons/web-icon-feedback.svg";
+import OrganizeIcon from "assets/icons/web-icon-organize.svg";
+
+import AnalyticsSelected from "assets/icons/web-icon-analytics-selected.svg";
+import AssignSelected from "assets/icons/web-icon-assign-selected.svg";
+import ContentSelected from "assets/icons/web-icon-content-selected.svg";
+import FeedbackSelected from "assets/icons/web-icon-feedback-selected.svg";
+import OrganizeSelected from "assets/icons/web-icon-organize-selected.svg";
 
 import Analytics from "assets/videos/admin-analytics.mp4";
 import AssignTraining from "assets/videos/admin-assigntraining.mp4";
@@ -90,8 +92,8 @@ export function WebShowcaseComponent({ isLight }) {
           description={
             "Get a complete overview of your organization’s learning progress and detect knowledge gaps before they hurt performance."
           }
-          icon={ReinforceIcon}
-          iconSelected={ReinforceIconSelected}
+          icon={AnalyticsIcon}
+          iconSelected={AnalyticsSelected}
           index={index}
           isLight={isLight}
           onClick={() => setIndex(0)}
@@ -105,8 +107,8 @@ export function WebShowcaseComponent({ isLight }) {
           description={
             "Add roles to users and assign training based on their role & department. Save time by importing your users in bulk."
           }
-          icon={ImproveIcon}
-          iconSelected={ImproveIconSelected}
+          icon={AssignIcon}
+          iconSelected={AssignSelected}
           index={index}
           isLight={isLight}
           onClick={() => setIndex(1)}
@@ -121,9 +123,9 @@ export function WebShowcaseComponent({ isLight }) {
             "Easily create new modules or let our team take care of it. Create as many courses as needed without an additional charge."
           }
           index={index}
-          icon={PlayIcon}
+          icon={ContentIcon}
           isLight={isLight}
-          iconSelected={PlayIconSelected}
+          iconSelected={ContentSelected}
           onClick={() => setIndex(2)}
           currentVideoTime={index == 2 ? video : 0}
           videoDelay={delayVideo}
@@ -135,9 +137,9 @@ export function WebShowcaseComponent({ isLight }) {
             "Coach makes it easy to give and receive feedback. Get alerts when something is wrong, and make accurate decisions based on user feedback and data."
           }
           index={index}
-          icon={ImproveIcon}
+          icon={FeedbackIcon}
           isLight={isLight}
-          iconSelected={ImproveIconSelected}
+          iconSelected={FeedbackSelected}
           onClick={() => setIndex(3)}
           currentVideoTime={index == 3 ? video : 0}
           videoDelay={delayVideo}
@@ -148,8 +150,8 @@ export function WebShowcaseComponent({ isLight }) {
           description={
             "Create an organization chart for your business and get detailed reports on how different units perform."
           }
-          icon={TrackIcon}
-          iconSelected={TrackIconSelected}
+          icon={OrganizeIcon}
+          iconSelected={OrganizeSelected}
           index={index}
           isLight={isLight}
           onClick={() => setIndex(4)}

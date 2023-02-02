@@ -123,18 +123,18 @@
 
 @media screen and (max-width:800px) {
   .header--menu-list {
-    visibility: hidden;
+    display: none;
   }
 
   .header--menu-icon {
     display: block;
-    margin-left: 5%;
+    margin-right: 10%;
+    margin-left: auto;
     cursor: pointer;
   }
 
   .header--logo {
-    margin-left: 30px;
-    margin-right: 60px;
+    margin-left: 40px;
     cursor: pointer;
   }
 }

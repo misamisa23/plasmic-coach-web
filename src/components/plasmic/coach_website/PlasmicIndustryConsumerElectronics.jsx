@@ -36,7 +36,9 @@ import webSoftskillsTrainingpngNrfAsd9HE from "./images/webSoftskillsTrainingpng
 
 export const PlasmicIndustryConsumerElectronics__VariantProps = new Array();
 
-export const PlasmicIndustryConsumerElectronics__ArgProps = new Array();
+export const PlasmicIndustryConsumerElectronics__ArgProps = new Array(
+  "children"
+);
 
 const __wrapUserFunction =
   globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
@@ -145,25 +147,52 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.h1,
-                      projectcss.__wab_text,
                       sty.h1
                     )}
                   >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#11253E" }}
-                      >
-                        {"Employee training for"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#3E7CB1" }}
-                      >
-                        {"Consumer Electronics"}
-                      </span>
-                    </React.Fragment>
+                    {p.renderPlasmicSlot({
+                      defaultContents: (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___7W7TF
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#000000" }}
+                            >
+                              {"Effortlessly master"}
+                            </span>
+                            <React.Fragment>{""}</React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#3E7CB1" }}
+                            >
+                              {" "}
+                            </span>
+                            <React.Fragment>{"\n"}</React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#3E7CB1" }}
+                            >
+                              {"1000's of products"}
+                            </span>
+                          </React.Fragment>
+                        </div>
+                      ),
+
+                      value: args.children,
+                      className: classNames(sty.slotTargetChildren)
+                    })}
                   </h1>
                 </p.Stack>
 
@@ -393,7 +422,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                     sty.text__pK2Pl
                   )}
                 >
-                  {"Onboard new hires on \n1000’s of products"}
+                  {"Onboard new hires"}
                 </div>
 
                 <div
@@ -404,7 +433,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Getting new hires up to speed quickly is vital for any organization. \n\nEase the learning curve with a series of short microlearning training sessions that can be accessed at any time, and help new hires master your product catalog in no time.\n\nIncrease productivity by learning when there are no customers around.\n"
+                    "Getting new hires up to speed quickly is vital for any organization. \n\nEase the learning curve with a series of short microlearning training sessions that can be accessed at any time, and help new hires master your product catalog in no time.\n\nIncrease productivity by learning when there are no customers around.\n\n\n"
                   }
                 </div>
               </p.Stack>
@@ -462,7 +491,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Providing product training materials often isn't enough for employees to master the product.\n\nThis is where Coach excels.\nLearn every detail about your products through the learning section and then test your knowledge through our 8 interactive games.\n\nThe best thing is - employees will only need 5-6 minutes daily to master your product catalog."
+                    "Providing product training materials often isn't enough for employees to master the product.\n\nCoach offers a simple solution to product training by providing an easy to use, micro-learning platform that helps employees master thousands of products in no time. \nWith bite-sized learning modules, employees can quickly and effectively learn about new products and updates, all from their mobile device.\n\nNot only does this save time and effort for the HR and Training departments, it also provides employees with a convenient and engaging way to learn about the products they sell."
                   }
                 </div>
               </p.Stack>

@@ -39,6 +39,9 @@
 
 .phone-mockup {
   position: absolute;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  border: none;
+  border-radius: 35px;
 }
 
 .video-container-full video {
@@ -65,12 +68,18 @@
 }
 .video-container-web {
   margin: 20px 0;
-  left: -40px;
+  left: -50px;
   height: 450px;
   width: 790px;
+  padding: 15px;
   border: solid 2px black;
   background-color: #f4f4f3;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+}
+
+.video-container-app {
+  width: 500px;
 }
 
 .video-container-web-mobile {

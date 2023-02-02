@@ -151,14 +151,18 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                     )}
                   >
                     <React.Fragment>
-                      <React.Fragment>
-                        {"Employee training in the\n"}
-                      </React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {"Provide exceptional "}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
                       >
-                        {"Telecom industry"}
+                        {"customer service"}
                       </span>
                     </React.Fragment>
                   </h1>
@@ -172,7 +176,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Turn your employees into highly knowledgeable and adaptable salespeople who know how to tackle any question or issue the customers have."
+                    "Maximize customer satisfaction with trained and skilled Customer Support Representatives!"
                   }
                 </div>
 
@@ -270,7 +274,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   )}
                 >
                   {
-                    "The telecom industry uses the latest communication technology so it is paramount for every employee to be up to date with the latest knowledge.\n\nCoach is an effective solution for telecommunication companies who want their teams up to date on new products and services, sales pitches, customer service excellence, and more!"
+                    "From new product information to effective sales pitches and exceptional customer service, your team will be ready to tackle any challenge that comes their way. \n\nCoach is an effective solution for telecommunication companies who want their teams up to date on new products and services, sales pitches, customer service excellence, and more!"
                   }
                 </div>
 
@@ -364,7 +368,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Sales training is one of the most important things for telecommunication companies. Keeping up with the ever-changing marketplace is not easy so it's important for telecom companies to send their employees to training courses.\n\nCoach has microlearning training modules which are short bite-sized games that help guide the learner through the necessary steps they need to take when it comes to sales. These games can be accessed on mobile devices, making Coach a versatile resource for telecommunication workers regardless of their location! Having quick learning sessions make the learning process fun and engaging. With Coach, you can also see your learning progress compared to others across the organization. This helps encourage employees to keep learning and doing more!\n\nHaving fun and engaging training boosts motivation, openness, collaboration, communication skills, decision-making capabilities - all necessary for an excellent salesperson! "
+                    "Sales training is critical for telecommunication companies to stay competitive in a rapidly changing marketplace. \nTo be successful in sales, employees must have up-to-date knowledge on new products and services, effective sales pitches, and excellent customer service skills.\n\nCoach provides microlearning training modules through short, engaging games that can be accessed on mobile devices, making it a convenient and flexible training resource for telecommunication workers on the go. \n\nWith Coach, employees can track their progress, compare their results with others in the organization, and keep learning to improve their skills.\n\nThese fun and interactive training sessions not only boost motivation but also foster essential skills such as open-mindedness, collaboration, communication, and decision-making."
                   }
                 </div>
               </p.Stack>
@@ -422,7 +426,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Salespeople are only as good as what they know about their product/service. Coach enables salespeople to quickly obtain the knowledge they need on their product/service. Coach allows them to do that in short, frequent sessions so they can keep up with information changes required due to competitors or new products!\n\nThe biggest problem with training is that naturally 70% of knowledge is forgotten after just one week. Coach helps battle this problem by using scientifically proven methods such as spaced repetition and gamification which help to keep information fresh and relevant. "
+                    "In today's fast-paced and ever-evolving market, it's crucial for salespeople to have a deep understanding of the products and services they are selling. \n\nCoach provides quick and convenient access to product knowledge through microlearning modules that are designed for on-the-go learning.\n\nThe short and frequent learning sessions allow salespeople to stay up-to-date with the latest information and changes in the market, giving them the competitive edge they need to succeed. "
                   }
                 </div>
               </p.Stack>
@@ -520,7 +524,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Coach can help customer relations representatives communicate better with customers by having learning sessions on how to build rapport and talk about common interests with the customer.  This is made possible by the content building tool which lets you customize your learning content and create hundreds of questions about your topic in a quick and easy manner."
+                    "Customers expect quick, effective solutions to their issues. Good customer relations play a critical role in maintaining a positive brand image and customer loyalty. \n\nCoach's microlearning approach provides a platform to equip employees with the latest techniques and knowledge on effective communication, empathetic listening, conflict resolution, and much more. With short, engaging sessions, employees can quickly build the skills they need to provide excellent customer service and foster strong customer relationships.\n\nWith Coach's analytics and reporting capabilities, managers can track employee progress and identify areas where they need improvement. This not only ensures that the customer relations team is knowledgeable and skilled, but it also creates a continuous feedback loop that leads to continuous improvement and growth."
                   }
                 </div>
               </p.Stack>
@@ -578,7 +582,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Telecom companies have a high number of employees that need to learn the job in a short amount of time. Coach can be used for learning sessions that can help employees learn about their job and become familiar with the company as well as fellow coworkers.\n\nCoach is a solution that can help people learn new concepts within minutes. Coach’s content building tool helps companies create their own learning content that will teach employees the essentials of their job in a matter of days.\n\nCoach also has insight tools that allow companies to collect data about an employee's performance in their training sessions. Coach will be able to give managers specific information about an employee's learning journey to make sure that they have been onboarded correctly."
+                    "Onboarding is crucial for telecom companies with a high number of employees who need to quickly learn the job. Coach provides a flexible and efficient solution for onboarding employees, allowing them to learn and become familiar with the company, their coworkers, and the essentials of their job. \n\nWith Coach's microlearning approach, employees can learn in short, quick sessions that won't take away from their work time.\n\nManagers can get insights on an employee's performance during their training sessions. This gives managers a clear understanding of each employee's learning journey, ensuring that everyone is fully onboarded and ready to excel in their role."
                   }
                 </div>
               </p.Stack>

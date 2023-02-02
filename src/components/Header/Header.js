@@ -22,8 +22,6 @@ export function Header({ isDark, data }) {
   return (
     <div>
       <div className={isDark ? "header--wrapper dark" : "header--wrapper"}>
-        <img className={"header--menu-icon"} src={BurgerMenu} onClick={() => toggleMenu()} height={20} width={20} />
-
         <img className="header--logo" src={isDark ? LogoDarkMode : Logo} onClick={() => {
           navigate('/');
           document.body.style.overflow = "scroll";
@@ -48,6 +46,7 @@ export function Header({ isDark, data }) {
         >
           REQUEST ACCESS
         </div>
+        <img className={"header--menu-icon"} src={BurgerMenu} onClick={() => toggleMenu()} height={20} width={20} />
       </div>
       <div className={showMenu ? "header--full-menu-container-visible" : "header--full-menu-container"}
       >
