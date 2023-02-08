@@ -24,10 +24,10 @@ import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicWhoIsItForEmployees.module.css"; // plasmic-import: rM_3tFwMIBc/css
-import coachEmployeessvgKtZvSgpX3 from "./images/coachEmployeessvg.svg"; // plasmic-import: ktZvSgpX3/picture
 import whoitsforBg1PngUn0YXaAyX from "./images/whoitsforBg1Png.png"; // plasmic-import: un0yXAAyX/picture
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import whoitsforBg2Png6Ezsola4F from "./images/whoitsforBg2Png.png"; // plasmic-import: 6Ezsola4F/picture
+import coachEmployeessvgKtZvSgpX3 from "./images/coachEmployeessvg.svg"; // plasmic-import: ktZvSgpX3/picture
 import webEmployees1PngTw3RXaUv7 from "./images/webEmployees1Png.png"; // plasmic-import: Tw3rXaUv7/picture
 import webEmployees2Png3CSoMm4Uh from "./images/webEmployees2Png.png"; // plasmic-import: 3CSoMm4uh/picture
 import webEmployees3Png1RI9KuqTz from "./images/webEmployees3Png.png"; // plasmic-import: 1rI9KUQTz/picture
@@ -55,11 +55,15 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
     ...args,
     ...variants
   };
+
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -92,44 +96,30 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
             hasGap={true}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__ftMoO)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"285px"}
-              loading={"lazy"}
-              src={{
-                src: coachEmployeessvgKtZvSgpX3,
-                fullWidth: 203,
-                fullHeight: 150,
-                aspectRatio: 1.354839
-              }}
-            />
-
             <div className={classNames(projectcss.all, sty.columns__nli1K)}>
-              <div className={classNames(projectcss.all, sty.column__dG188)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__feGy6)}
-                  displayHeight={"280px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: whoitsforBg1PngUn0YXaAyX,
-                    fullWidth: 507,
-                    fullHeight: 667,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.column__dG188)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__feGy6)}
+                    displayHeight={"280px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: whoitsforBg1PngUn0YXaAyX,
+                      fullWidth: 507,
+                      fullHeight: 667,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
 
               <div className={classNames(projectcss.all, sty.column__cXqkK)}>
                 <p.Stack
@@ -218,26 +208,52 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                 </p.Stack>
               </div>
 
-              <div className={classNames(projectcss.all, sty.column___6BHmn)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___8Jaki)}
-                  displayHeight={"280px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: whoitsforBg2Png6Ezsola4F,
-                    fullWidth: 482,
-                    fullHeight: 667,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.column___6BHmn)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___8Jaki)}
+                    displayHeight={"280px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: whoitsforBg2Png6Ezsola4F,
+                      fullWidth: 482,
+                      fullHeight: 667,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
             </div>
+
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__ftMoO)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "240px"
+                  : "300px"
+              }
+              loading={"lazy"}
+              src={{
+                src: coachEmployeessvgKtZvSgpX3,
+                fullWidth: 203,
+                fullHeight: 150,
+                aspectRatio: 1.354839
+              }}
+            />
           </p.Stack>
 
           <div
@@ -245,6 +261,8 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
+            <div className={classNames(projectcss.all, sty.freeBox__krGFo)} />
+
             <div className={classNames(projectcss.all, sty.columns__vqh9E)}>
               <div className={classNames(projectcss.all, sty.column__jzYrX)}>
                 <div
@@ -258,12 +276,14 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     <React.Fragment>
                       {"With Coach, you’ll notice"}
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {" your knowledge improves"}
                     </span>
+
                     <React.Fragment>
                       {
                         " right away - all while playing challenging games and having fun!"
@@ -273,8 +293,6 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                 </div>
               </div>
             </div>
-
-            <div className={classNames(projectcss.all, sty.freeBox__krGFo)} />
 
             <p.Stack
               as={"div"}
@@ -489,7 +507,11 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
             </p.Stack>
           </div>
 
-          <div className={classNames(projectcss.all, sty.freeBox__gfLfk)} />
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__gfLfk)} />
+          ) : null}
 
           <div className={classNames(projectcss.all, sty.freeBox__okBjt)}>
             <div className={classNames(projectcss.all, sty.freeBox___4JzUp)}>
@@ -575,7 +597,11 @@ function PlasmicWhoIsItForEmployees__RenderFunc(props) {
                     displayMaxWidth={"220px"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"100%"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "140px"
+                        : "100%"
+                    }
                     loading={"lazy"}
                     src={{
                       src: phoneCutEmployeespngIt31Wkx6U,
@@ -619,6 +645,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicWhoIsItForEmployees__ArgProps,
           internalVariantPropNames: PlasmicWhoIsItForEmployees__VariantProps
         }),
+
       [props, nodeName]
     );
 

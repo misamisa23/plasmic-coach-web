@@ -49,11 +49,15 @@ function PlasmicFooter__RenderFunc(props) {
     ...args,
     ...variants
   };
+
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -494,6 +498,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicFooter__ArgProps,
           internalVariantPropNames: PlasmicFooter__VariantProps
         }),
+
       [props, nodeName]
     );
 

@@ -48,6 +48,9 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
     ...args,
     ...variants
   };
+
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -67,6 +70,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -185,6 +189,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                         ) : null}
                       </a>
                     ) : null}
+
                     {false ? (
                       <div
                         className={classNames(
@@ -228,6 +233,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                 ) : null}
               </div>
             ) : null}
+
             {(
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
             ) ? (
@@ -262,6 +268,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
                         {"SIGN IN"}
                       </button>
                     ) : null}
+
                     {true ? (
                       <div
                         className={classNames(
@@ -297,6 +304,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             ) : null}
           </div>
         ) : null}
+
         {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
           <NavigationBar
             brand={
@@ -403,6 +411,7 @@ function PlasmicMenuHeaderDesktop__RenderFunc(props) {
             responsiveBreakpoint={768}
           />
         ) : null}
+
         {(hasVariant($state, "base2", "base2") ? true : true) ? (
           <NavigationBar
             brand={
@@ -559,6 +568,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicMenuHeaderDesktop__ArgProps,
           internalVariantPropNames: PlasmicMenuHeaderDesktop__VariantProps
         }),
+
       [props, nodeName]
     );
 

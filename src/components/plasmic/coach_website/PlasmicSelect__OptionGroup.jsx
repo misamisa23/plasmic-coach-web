@@ -51,6 +51,9 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
     ...args,
     ...variants
   };
+
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -60,6 +63,7 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
         variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.noTitle : undefined
       },
+
       {
         path: "isFirst",
         type: "private",
@@ -76,6 +80,7 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
   const superContexts = {
     Select: React.useContext(SUPER__PlasmicSelect.Context)
   };
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -101,6 +106,7 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
           })}
         />
       ) : null}
+
       {(hasVariant($state, "noTitle", "noTitle") ? false : true) ? (
         <div
           data-plasmic-name={"titleContainer"}
@@ -182,6 +188,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicSelect__OptionGroup__ArgProps,
           internalVariantPropNames: PlasmicSelect__OptionGroup__VariantProps
         }),
+
       [props, nodeName]
     );
 

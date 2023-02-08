@@ -52,6 +52,9 @@ function PlasmicSelect__Option__RenderFunc(props) {
     ...args,
     ...variants
   };
+
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
@@ -61,6 +64,7 @@ function PlasmicSelect__Option__RenderFunc(props) {
         variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.isSelected : undefined
       },
+
       {
         path: "isHighlighted",
         type: "private",
@@ -69,6 +73,7 @@ function PlasmicSelect__Option__RenderFunc(props) {
           ? ($props, $state, $ctx) => $props.isHighlighted
           : undefined
       },
+
       {
         path: "isDisabled",
         type: "private",
@@ -85,6 +90,7 @@ function PlasmicSelect__Option__RenderFunc(props) {
   const superContexts = {
     Select: React.useContext(SUPER__PlasmicSelect.Context)
   };
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -148,10 +154,12 @@ function useBehavior(props, ref) {
         group: "isHighlighted",
         variant: "isHighlighted"
       },
+
       labelSlot: "children",
       root: "root",
       labelContainer: "labelContainer"
     },
+
     ref
   );
 }
@@ -171,6 +179,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicSelect__Option__ArgProps,
           internalVariantPropNames: PlasmicSelect__Option__VariantProps
         }),
+
       [props, nodeName]
     );
 

@@ -32,6 +32,11 @@ import CorrectsvgIcon from "./icons/PlasmicIcon__Correctsvg"; // plasmic-import:
 import DownArrowIcon from "./icons/PlasmicIcon__DownArrow"; // plasmic-import: jcu2bb0zp/icon
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 import bannerimg1PngKTx7QbCd7 from "./images/bannerimg1Png.png"; // plasmic-import: KTx7QBCd7/picture
+import group58PngCtEPsrnJc from "./images/group58Png.png"; // plasmic-import: CtEPsrnJc/picture
+import group937Svg2IgFnzRrg from "./images/group937Svg.svg"; // plasmic-import: 2IgFnzRrg/picture
+import frame910JpgJ81OyBp4Q from "./images/frame910Jpg.jpeg"; // plasmic-import: j81oyBP4Q/picture
+import frame909JpgEFUNZso from "./images/frame909Jpg.jpeg"; // plasmic-import: e_fU-nZso/picture
+import frame908JpgI2W0HOkea from "./images/frame908Jpg.jpeg"; // plasmic-import: i2W0HOkea/picture
 import group926SvgNM1517Ao from "./images/group926Svg.svg"; // plasmic-import: n_m1517ao/picture
 import _1AddContentpng22202Hw1RJ from "./images/_1AddContentpng2.png"; // plasmic-import: 2202Hw1rJ/picture
 import crookedBg4SvgXJa9D6Q77 from "./images/crookedBg4Svg.svg"; // plasmic-import: xJA9D6q77/picture
@@ -40,15 +45,13 @@ import group925SvgC28AvbXr4 from "./images/group925Svg.svg"; // plasmic-import: 
 import crookedBg3SvgH1G7EkiWgx from "./images/crookedBg3Svg.svg"; // plasmic-import: h1G7ekiWgx/picture
 import group924SvgHZ23I3Yn from "./images/group924Svg.svg"; // plasmic-import: H_Z23_I3yn/picture
 import _3TrackAndImprovepng2NywMcMIbC from "./images/_3TrackAndImprovepng2.png"; // plasmic-import: NywMcMIbC/picture
-import group937Svg2IgFnzRrg from "./images/group937Svg.svg"; // plasmic-import: 2IgFnzRrg/picture
-import _287StartupFlatlinesvgD9Kazplxb from "./images/_287StartupFlatlinesvg.svg"; // plasmic-import: d9Kazplxb/picture
+import testimonialimgIvanapngOziH8Brv from "./images/testimonialimgIvanapng.png"; // plasmic-import: OziH8-Brv/picture
+import testimonialLogoSpringwellpng7FWIz0AVn from "./images/testimonialLogoSpringwellpng.png"; // plasmic-import: 7fWIz0aVn/picture
 import coachManagerssvgRqDhaxaBv from "./images/coachManagerssvg.svg"; // plasmic-import: RqDhaxaBV/picture
 import coachSeossvgXSpyNpbVc from "./images/coachSeossvg.svg"; // plasmic-import: xSpyNpbVC/picture
 import coachIdssvgXKnk6Mzl8 from "./images/coachIdssvg.svg"; // plasmic-import: xKNK6mzl8/picture
 import coachEmployeessvgKtZvSgpX3 from "./images/coachEmployeessvg.svg"; // plasmic-import: ktZvSgpX3/picture
-import frame910JpgJ81OyBp4Q from "./images/frame910Jpg.jpeg"; // plasmic-import: j81oyBP4Q/picture
-import frame909JpgEFUNZso from "./images/frame909Jpg.jpeg"; // plasmic-import: e_fU-nZso/picture
-import frame908JpgI2W0HOkea from "./images/frame908Jpg.jpeg"; // plasmic-import: i2W0HOkea/picture
+import _287StartupFlatlinesvgD9Kazplxb from "./images/_287StartupFlatlinesvg.svg"; // plasmic-import: d9Kazplxb/picture
 
 export const PlasmicHomepage__VariantProps = new Array();
 
@@ -71,11 +74,15 @@ function PlasmicHomepage__RenderFunc(props) {
     ...args,
     ...variants
   };
+
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -144,6 +151,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         >
                           <React.Fragment>
                             <React.Fragment>{""}</React.Fragment>
+
                             {
                               <h1
                                 className={classNames(
@@ -223,11 +231,16 @@ function PlasmicHomepage__RenderFunc(props) {
               ) : null}
 
               <div className={classNames(projectcss.all, sty.column__h9Vh4)}>
-                {true ? (
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__w2HtN)}
                   />
                 ) : null}
+
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -253,6 +266,300 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
             </div>
           </p.Stack>
+
+          <div
+            data-plasmic-name={"ctaBlog2"}
+            data-plasmic-override={overrides.ctaBlog2}
+            className={classNames(projectcss.all, sty.ctaBlog2)}
+          >
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"section12"}
+              data-plasmic-override={overrides.section12}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.section12)}
+            >
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__lQuMp
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                  <React.Fragment>
+                    <React.Fragment>{"What is "}</React.Fragment>
+
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#3E7CB1" }}
+                    >
+                      {"Coach?"}
+                    </span>
+                  </React.Fragment>
+                ) : (
+                  <React.Fragment>
+                    <React.Fragment>{"What is "}</React.Fragment>
+
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#3E7CB1" }}
+                    >
+                      {"Coach?"}
+                    </span>
+                  </React.Fragment>
+                )}
+              </h2>
+
+              <div className={classNames(projectcss.all, sty.freeBox__dyEzB)} />
+            </p.Stack>
+
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img___3UDqL)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"135px"}
+              loading={"lazy"}
+              src={{
+                src: group58PngCtEPsrnJc,
+                fullWidth: 406,
+                fullHeight: 328,
+                aspectRatio: undefined
+              }}
+            />
+
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__r0T8K)}
+                displayHeight={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "auto"
+                    : "auto"
+                }
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "231px"
+                    : "263px"
+                }
+                loading={"lazy"}
+                src={{
+                  src: group937Svg2IgFnzRrg,
+                  fullWidth: 300,
+                  fullHeight: 74,
+                  aspectRatio: 4.078652
+                }}
+              />
+            ) : null}
+
+            <div className={classNames(projectcss.all, sty.columns__olOJd)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__uAzUz)}
+              >
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__ky7F
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "Coach is a learning platform that helps companies detect and fix knowledge gaps through interactive learning games. \n\nIt offers a unique and engaging learning experience for employees that promotes skill development and knowledge mastery and simplifies content creation for management with easy-to-use features in the admin panel.\n\nThrough science-based methodologies like adaptive learning, spaced repetition and gamification, it guarantees efficient knowledge retention rates."
+                    : "Coach is a learning platform that helps companies detect and fix knowledge gaps through interactive learning games. \n\nCoach offers a unique and engaging learning experience for employees that promotes skill development and knowledge mastery, and uses science-based methodologies like adaptive learning, spaced repetition, and gamification to guarantee efficient knowledge retention rates.\n\nCoach simplifies content creation for management with easy-to-use features in the admin panel, and provides detailed statistics for assessment and improvement of training effectiveness. "}
+                </h1>
+              </p.Stack>
+            </div>
+
+            {true ? (
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"section11"}
+                data-plasmic-override={overrides.section11}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.section11)}
+              >
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__fGoNi
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{"Our latest \n"}</React.Fragment>
+
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#3E7CB1" }}
+                    >
+                      {"news and resources"}
+                    </span>
+                  </React.Fragment>
+                </h1>
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__avFqx)}
+                />
+              </p.Stack>
+            ) : null}
+
+            {true ? (
+              <div className={classNames(projectcss.all, sty.columns__k4C3U)}>
+                <div className={classNames(projectcss.all, sty.column__xEyLc)}>
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__u8Ko4)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__qjWaa)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: frame910JpgJ81OyBp4Q,
+                        fullWidth: 323,
+                        fullHeight: 203,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__lnHjQ
+                      )}
+                    >
+                      {"PRESS ARTICLE"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__xrzDu
+                      )}
+                    >
+                      {"Konceptiva: startup of the month January ’22!"}
+                    </div>
+                  </p.Stack>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__yWwCt)}>
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__iF71I)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__se13Y)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: frame909JpgEFUNZso,
+                        fullWidth: 323,
+                        fullHeight: 203,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___8R562
+                      )}
+                    >
+                      {"EVENT"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__cCkGe
+                      )}
+                    >
+                      {"Gamification of Corporate\nTraining - #Session1"}
+                    </div>
+                  </p.Stack>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__xG7Kk)}>
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__mNyZy)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__zeebe)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: frame908JpgI2W0HOkea,
+                        fullWidth: 323,
+                        fullHeight: 203,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__jhor0
+                      )}
+                    >
+                      {"BLOG"}
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__wcJ
+                      )}
+                    >
+                      {"Here are 5 tips for creating\nan effective course"}
+                    </div>
+                  </p.Stack>
+                </div>
+              </div>
+            ) : null}
+          </div>
 
           <div
             data-plasmic-name={"section2"}
@@ -769,7 +1076,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "auto"
-                      : "88px"
+                      : "auto"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -778,7 +1085,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "231px"
-                      : "360px"
+                      : "320px"
                   }
                   loading={"lazy"}
                   src={{
@@ -789,95 +1096,155 @@ function PlasmicHomepage__RenderFunc(props) {
                   }}
                 />
 
-                <div className={classNames(projectcss.all, sty.freeBox__v7Ndt)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yaDwO
-                    )}
-                  >
-                    {"READY TO START?"}
-                  </div>
-                </div>
-
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__vyCo2)}
-                    displayHeight={"263px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "125px"
-                        : "304px"
-                    }
-                    loading={"lazy"}
-                    src={{
-                      src: _287StartupFlatlinesvgD9Kazplxb,
-                      fullWidth: 173,
-                      fullHeight: 150,
-                      aspectRatio: 1.155172
-                    }}
-                  />
-                ) : null}
-
-                <h1
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1__dukdB
-                  )}
-                >
-                  {
-                    "See the full power of Coach in action, and find out how it can help you reach your goals."
-                  }
-                </h1>
-
                 <p.Stack
-                  as={"button"}
+                  as={"div"}
                   hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.button,
-                    sty.button__tGf
-                  )}
+                  className={classNames(projectcss.all, sty.columns__gx8Ob)}
                 >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__psGzX
-                    )}
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column___6WfWc)}
                   >
-                    {"GET STARTED"}
-                  </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__qEkUx
+                      )}
+                    >
+                      {'"Perfect tool!'}
+                    </div>
 
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__tSpNp)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"15px"}
-                    loading={"lazy"}
-                    src={{
-                      src: buttonCaretWhitesvg2S5Jbv6HmTb,
-                      fullWidth: 108,
-                      fullHeight: 150,
-                      aspectRatio: 0.722222
-                    }}
-                  />
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__dukdB
+                      )}
+                    >
+                      {
+                        "I consider the discovery of Coach and the opportunity to apply it in a complex learning process through fun and team building, while also raising digital awareness in the organization, a privilege in my HR career. Coach is not only fun, engaging, and easy to use, it provides incredibly effective learning results in a very short time."
+                      }
+                    </h1>
+
+                    {true ? (
+                      <Button
+                        data-plasmic-name={"whiteblueButton3"}
+                        data-plasmic-override={overrides.whiteblueButton3}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.whiteblueButton3
+                        )}
+                        endIcon={
+                          true ? (
+                            <DownArrowIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__fgnmL
+                              )}
+                              role={"img"}
+                            />
+                          ) : null
+                        }
+                        showEndIcon={true}
+                      >
+                        {true ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___0Wt05
+                            )}
+                          >
+                            {"READ FULL CASE STUDY"}
+                          </div>
+                        ) : null}
+                      </Button>
+                    ) : null}
+                  </p.Stack>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column__k0DgV)}
+                  >
+                    {(
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__vyCo2)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "160px"
+                            : "270px"
+                        }
+                        loading={"lazy"}
+                        src={{
+                          src: testimonialimgIvanapngOziH8Brv,
+                          fullWidth: 810,
+                          fullHeight: 810,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    ) : null}
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__dPf)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__mrLx5)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: testimonialLogoSpringwellpng7FWIz0AVn,
+                          fullWidth: 301,
+                          fullHeight: 196,
+                          aspectRatio: undefined
+                        }}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__twiMd
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>
+                            {"Ivana Dojchinovska-Stojanovikj\n"}
+                          </React.Fragment>
+
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#3E7CB1" }}
+                          >
+                            {"People Management Consultant"}
+                          </span>
+                        </React.Fragment>
+                      </div>
+                    </p.Stack>
+                  </p.Stack>
                 </p.Stack>
               </p.Stack>
             </div>
@@ -914,7 +1281,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     >
                       {"By utilizing Coach, we make sure\n "}
                     </span>
+
                     <React.Fragment>{"\n"}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#FFFFFF" }}
@@ -973,6 +1342,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>
                       {"Train employees in a wide "}
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -985,6 +1355,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>
                       {"Train employees in a wide\n"}
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -1299,12 +1670,14 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#11253E", fontWeight: 700 }}
                       >
                         {"Managers"}
                       </span>
+
                       <React.Fragment>{"\n(HR, L&D, Training)"}</React.Fragment>
                     </React.Fragment>
                   </div>
@@ -1351,6 +1724,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
@@ -1402,6 +1776,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
@@ -1453,6 +1828,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
@@ -1484,6 +1860,7 @@ function PlasmicHomepage__RenderFunc(props) {
               {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                 <React.Fragment>
                   <React.Fragment>{"See how we can help you"}</React.Fragment>
+
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#3E7CB1" }}
@@ -1494,6 +1871,7 @@ function PlasmicHomepage__RenderFunc(props) {
               ) : (
                 <React.Fragment>
                   <React.Fragment>{"See how we can help you\n"}</React.Fragment>
+
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#3E7CB1" }}
@@ -1541,23 +1919,33 @@ function PlasmicHomepage__RenderFunc(props) {
                   }
                 </h1>
 
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__zkhM1)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"310px"}
-                  loading={"lazy"}
-                  src={{
-                    src: _287StartupFlatlinesvgD9Kazplxb,
-                    fullWidth: 173,
-                    fullHeight: 150,
-                    aspectRatio: 1.155172
-                  }}
-                />
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__zkhM1)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "200px"
+                        : "310px"
+                    }
+                    loading={"lazy"}
+                    src={{
+                      src: _287StartupFlatlinesvgD9Kazplxb,
+                      fullWidth: 173,
+                      fullHeight: 150,
+                      aspectRatio: 1.155172
+                    }}
+                  />
+                ) : null}
 
                 <p.Stack
                   as={"div"}
@@ -1623,6 +2011,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 >
                   <React.Fragment>
                     <React.Fragment>{"Our latest \n"}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -1637,6 +2026,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 />
               </p.Stack>
             ) : null}
+
             {true ? (
               <div className={classNames(projectcss.all, sty.columns__uUosY)}>
                 <div className={classNames(projectcss.all, sty.column___00FKz)}>
@@ -1799,11 +2189,15 @@ const PlasmicDescendants = {
     "reusableHeader",
     "section1",
     "copy",
+    "ctaBlog2",
+    "section12",
+    "section11",
     "section2",
     "section3",
     "section4",
     "whiteblueButton2",
     "section5",
+    "whiteblueButton3",
     "section10",
     "showcaseComponent",
     "section6",
@@ -1817,11 +2211,15 @@ const PlasmicDescendants = {
   reusableHeader: ["reusableHeader"],
   section1: ["section1", "copy"],
   copy: ["copy"],
+  ctaBlog2: ["ctaBlog2", "section12", "section11"],
+  section12: ["section12"],
+  section11: ["section11"],
   section2: ["section2"],
   section3: ["section3"],
   section4: ["section4", "whiteblueButton2"],
   whiteblueButton2: ["whiteblueButton2"],
-  section5: ["section5", "section10", "showcaseComponent"],
+  section5: ["section5", "whiteblueButton3", "section10", "showcaseComponent"],
+  whiteblueButton3: ["whiteblueButton3"],
   section10: ["section10"],
   showcaseComponent: ["showcaseComponent"],
   section6: ["section6"],
@@ -1842,6 +2240,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicHomepage__ArgProps,
           internalVariantPropNames: PlasmicHomepage__VariantProps
         }),
+
       [props, nodeName]
     );
 
@@ -1868,11 +2267,15 @@ export const PlasmicHomepage = Object.assign(
     reusableHeader: makeNodeComponent("reusableHeader"),
     section1: makeNodeComponent("section1"),
     copy: makeNodeComponent("copy"),
+    ctaBlog2: makeNodeComponent("ctaBlog2"),
+    section12: makeNodeComponent("section12"),
+    section11: makeNodeComponent("section11"),
     section2: makeNodeComponent("section2"),
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),
     whiteblueButton2: makeNodeComponent("whiteblueButton2"),
     section5: makeNodeComponent("section5"),
+    whiteblueButton3: makeNodeComponent("whiteblueButton3"),
     section10: makeNodeComponent("section10"),
     showcaseComponent: makeNodeComponent("showcaseComponent"),
     section6: makeNodeComponent("section6"),

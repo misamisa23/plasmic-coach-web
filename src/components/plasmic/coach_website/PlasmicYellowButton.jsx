@@ -42,6 +42,8 @@ function PlasmicYellowButton__RenderFunc(props) {
     ...variants
   };
 
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -60,6 +62,9 @@ function PlasmicYellowButton__RenderFunc(props) {
         projectcss.plasmic_tokens,
         sty.getStartedButton
       )}
+      ref={ref => {
+        $refs["getStartedButton"] = ref;
+      }}
     >
       {"GET STARTED"}
     </button>
