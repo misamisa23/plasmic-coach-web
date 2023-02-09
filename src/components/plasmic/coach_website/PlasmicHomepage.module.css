@@ -131,7 +131,7 @@
   max-width: none;
   min-width: 0;
   min-height: 0;
-  padding: 125px 0px 100px 135px;
+  padding: 100px 0px 100px 135px;
 }
 .freeBox__wp57H > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -1309,10 +1309,10 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 520px;
-  height: 550px;
+  width: 90%;
+  height: 100%;
   align-self: flex-end;
-  flex-shrink: 0;
+  min-height: 0;
 }
 .img__lca4I > picture > img {
   object-fit: cover;
@@ -1415,10 +1415,10 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 520px;
-  height: 550px;
+  width: 90%;
+  height: 100%;
   align-self: flex-start;
-  flex-shrink: 0;
+  min-height: 0;
 }
 .img__geieu > picture > img {
   object-fit: cover;
@@ -2059,7 +2059,7 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  width: 100%;
+  width: 90%;
   height: 100%;
   align-self: flex-end;
   min-height: 0;

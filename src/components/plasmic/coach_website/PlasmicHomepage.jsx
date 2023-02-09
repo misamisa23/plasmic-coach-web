@@ -678,13 +678,13 @@ function PlasmicHomepage__RenderFunc(props) {
                 displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "367px"
-                    : "550px"
+                    : "100%"
                 }
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"520px"}
+                displayWidth={"90%"}
                 loading={"lazy"}
                 src={{
                   src: _1AddContentpng22202Hw1RJ,
@@ -728,13 +728,13 @@ function PlasmicHomepage__RenderFunc(props) {
                 displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "372px"
-                    : "550px"
+                    : "100%"
                 }
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"520px"}
+                displayWidth={"90%"}
                 loading={"lazy"}
                 src={{
                   src: _2DeployAndPlaypng29S0EZa2Vm,
@@ -1026,7 +1026,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"100%"}
+                displayWidth={"90%"}
                 loading={"lazy"}
                 src={{
                   src: _3TrackAndImprovepng2NywMcMIbC,

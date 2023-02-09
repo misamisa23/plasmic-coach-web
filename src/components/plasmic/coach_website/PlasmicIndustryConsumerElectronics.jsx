@@ -158,10 +158,10 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#000000" }}
                       >
-                        {"Effortlessly master"}
+                        {"Effortlessly master "}
                       </span>
 
-                      <React.Fragment>{"\n"}</React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
 
                       <span
                         className={"plasmic_default__all plasmic_default__span"}

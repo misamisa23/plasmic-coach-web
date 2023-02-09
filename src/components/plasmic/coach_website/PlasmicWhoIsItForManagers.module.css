@@ -35,7 +35,7 @@
   max-width: 100%;
   background: linear-gradient(180deg, #f5f6f6 29%, #ffffff 90%);
   min-width: 0;
-  padding: 60px 135px 230px;
+  padding: 60px 135px 0px;
 }
 .hero > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -395,13 +395,14 @@
   object-fit: cover;
 }
 .img__tOyVo {
-  position: absolute;
+  position: relative;
   object-fit: cover;
   max-width: 100%;
   width: 310px;
-  left: 557px;
-  top: 405px;
+  left: auto;
+  top: auto;
   z-index: 3;
+  align-self: center;
 }
 .img__tOyVo > picture > img {
   object-fit: cover;
@@ -1251,7 +1252,7 @@
 .column___6GiL1 > :global(.__wab_flex-container) {
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   min-width: 0;
   margin-top: calc(0px - 8px);
   height: calc(100% + 8px);
