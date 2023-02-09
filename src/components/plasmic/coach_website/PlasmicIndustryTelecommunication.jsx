@@ -56,6 +56,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
@@ -186,13 +187,15 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                 </div>
 
                 <p.Stack
-                  as={"button"}
+                  as={"a"}
                   hasGap={true}
                   className={classNames(
                     projectcss.all,
-                    projectcss.button,
-                    sty.button__qqUde
+                    projectcss.a,
+                    sty.link__qqUde
                   )}
+                  href={"https://calendly.com/kalina-t/30min"}
+                  target={"_blank"}
                 >
                   <div
                     className={classNames(
@@ -649,13 +652,15 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
               className={classNames(projectcss.all, sty.freeBox__phMxr)}
             >
               <p.Stack
-                as={"button"}
+                as={"a"}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
-                  projectcss.button,
-                  sty.button__cqglB
+                  projectcss.a,
+                  sty.link__cqglB
                 )}
+                href={"https://calendly.com/kalina-t/30min"}
+                target={"_blank"}
               >
                 <div
                   className={classNames(

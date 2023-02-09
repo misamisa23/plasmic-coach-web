@@ -28,20 +28,20 @@
   flex-wrap: nowrap;
   align-items: stretch;
   min-width: 0;
-  margin-left: calc(0px - 64px);
-  width: calc(100% + 64px);
+  margin-left: calc(0px - 50px);
+  width: calc(100% + 50px);
 }
 .columns > :global(.__wab_flex-container) > :nth-child(4n + 1) {
-  width: calc((100% - 4 * 64px) * 5 / 12);
+  width: calc((100% - 4 * 50px) * 5 / 12);
 }
 .columns > :global(.__wab_flex-container) > :nth-child(4n + 2) {
-  width: calc((100% - 4 * 64px) * 2 / 12);
+  width: calc((100% - 4 * 50px) * 2 / 12);
 }
 .columns > :global(.__wab_flex-container) > :nth-child(4n + 3) {
-  width: calc((100% - 4 * 64px) * 3 / 12);
+  width: calc((100% - 4 * 50px) * 2 / 12);
 }
 .columns > :global(.__wab_flex-container) > :nth-child(4n + 4) {
-  width: calc((100% - 4 * 64px) * 2 / 12);
+  width: calc((100% - 4 * 50px) * 3 / 12);
 }
 .columns > :global(.__wab_flex-container) > *,
 .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -51,7 +51,7 @@
   > :global(.__wab_slot)
   > picture
   > img {
-  margin-left: 64px;
+  margin-left: 50px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .columns {
@@ -73,7 +73,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .columns > :global(.__wab_flex-container) > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 64px) * 12 / 12);
+    width: calc((100% - 1 * 50px) * 12 / 12);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -755,7 +755,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-.text__czA2I {
+.link__czA2I {
   position: relative;
   left: auto;
   top: auto;
@@ -774,17 +774,198 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-.text__v5CeH {
+.text__zOxHh {
   position: relative;
   left: auto;
   top: auto;
+  color: var(--token-rAM-KXRql);
+  height: auto;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  text-align: left;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  margin-top: calc(26px + 25px) !important;
+}
+.freeBox___2NlbX {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  top: auto;
+  left: auto;
+  margin-top: calc(0px + 25px) !important;
+  min-width: 0;
+}
+.freeBox___2NlbX > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.freeBox___2NlbX > :global(.__wab_flex-container) > *,
+.freeBox___2NlbX > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox___2NlbX > :global(.__wab_flex-container) > picture > img,
+.freeBox___2NlbX
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.img__yCwRg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+}
+.img__yCwRg > picture > img {
+  object-fit: cover;
+}
+.img__yCwRg > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.text__v6RKc {
   color: #58667f;
   height: auto;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: none;
   line-height: 1.5;
-  letter-spacing: 0.03em;
+  letter-spacing: normal;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  text-align: left;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+.freeBox__nKaUn {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  top: auto;
+  left: auto;
+  margin-top: calc(0px + 25px) !important;
+  min-width: 0;
+}
+.freeBox__nKaUn > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.freeBox__nKaUn > :global(.__wab_flex-container) > *,
+.freeBox__nKaUn > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__nKaUn > :global(.__wab_flex-container) > picture > img,
+.freeBox__nKaUn
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.img__kw5Db {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+}
+.img__kw5Db > picture > img {
+  object-fit: cover;
+}
+.img__kw5Db > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.text__is6Gk {
+  color: #58667f;
+  height: auto;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  text-align: left;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+.freeBox__jKJa {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  top: auto;
+  left: auto;
+  margin-top: calc(0px + 25px) !important;
+  min-width: 0;
+}
+.freeBox__jKJa > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.freeBox__jKJa > :global(.__wab_flex-container) > *,
+.freeBox__jKJa > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__jKJa > :global(.__wab_flex-container) > picture > img,
+.freeBox__jKJa
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.img__ff0Xe {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+}
+.img__ff0Xe > picture > img {
+  object-fit: cover;
+}
+.img__ff0Xe > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.text__rczg8 {
+  color: #58667f;
+  height: auto;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.4;
+  letter-spacing: normal;
   font-family: "Inter", sans-serif;
   font-style: normal;
   text-align: left;

@@ -55,6 +55,7 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
@@ -170,13 +171,15 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                   </div>
 
                   <p.Stack
-                    as={"button"}
+                    as={"a"}
                     hasGap={true}
                     className={classNames(
                       projectcss.all,
-                      projectcss.button,
-                      sty.button__lAof1
+                      projectcss.a,
+                      sty.link__lAof1
                     )}
+                    href={"https://calendly.com/kalina-t/30min"}
+                    target={"_blank"}
                   >
                     <div
                       className={classNames(
@@ -557,13 +560,15 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.freeBox__gor0)}
                   >
                     <p.Stack
-                      as={"button"}
+                      as={"a"}
                       hasGap={true}
                       className={classNames(
                         projectcss.all,
-                        projectcss.button,
-                        sty.button__syG7R
+                        projectcss.a,
+                        sty.link__syG7R
                       )}
+                      href={"https://calendly.com/kalina-t/30min"}
+                      target={"_blank"}
                     >
                       <div
                         className={classNames(

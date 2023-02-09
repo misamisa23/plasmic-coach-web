@@ -173,13 +173,15 @@ function PlasmicFeatures__RenderFunc(props) {
                     </p.Stack>
 
                     <p.Stack
-                      as={"button"}
+                      as={"a"}
                       hasGap={true}
                       className={classNames(
                         projectcss.all,
-                        projectcss.button,
-                        sty.button__kuk4A
+                        projectcss.a,
+                        sty.link__kuk4A
                       )}
+                      href={"https://calendly.com/kalina-t/30min"}
+                      target={"_blank"}
                     >
                       <div
                         className={classNames(
@@ -225,7 +227,11 @@ function PlasmicFeatures__RenderFunc(props) {
                   className={classNames(sty.img___0O2Nx)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"80%"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "75%"
+                      : "80%"
+                  }
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
@@ -465,13 +471,15 @@ function PlasmicFeatures__RenderFunc(props) {
               className={classNames(projectcss.all, sty.freeBox__mnFQh)}
             >
               <p.Stack
-                as={"button"}
+                as={"a"}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
-                  projectcss.button,
-                  sty.button__kqBJc
+                  projectcss.a,
+                  sty.link__kqBJc
                 )}
+                href={"https://calendly.com/kalina-t/30min"}
+                target={"_blank"}
               >
                 <div
                   className={classNames(

@@ -1177,6 +1177,36 @@
           "id": "u95Ylhhpv",
           "name": "featuresbanner1.png 2",
           "filePath": "plasmic/coach_website/images/featuresbanner1Png2.png"
+        },
+        {
+          "id": "BJvvrFGLP",
+          "name": "coach-teamwork.png",
+          "filePath": "plasmic/coach_website/images/coachTeamworkpng.png"
+        },
+        {
+          "id": "WNrsTjGSl",
+          "name": "aboutusbannerimg.png",
+          "filePath": "plasmic/coach_website/images/aboutusbannerimgpng.png"
+        },
+        {
+          "id": "kubWKEWcd",
+          "name": "aboutusbannerimg.png 2",
+          "filePath": "plasmic/coach_website/images/aboutusbannerimgpng2.png"
+        },
+        {
+          "id": "taMtTFOnP",
+          "name": "coach-icon-phone.png",
+          "filePath": "plasmic/coach_website/images/coachIconPhonepng.png"
+        },
+        {
+          "id": "bB-tUyKpo",
+          "name": "coach-icon-mail.png",
+          "filePath": "plasmic/coach_website/images/coachIconMailpng.png"
+        },
+        {
+          "id": "Z6kRU6UKx",
+          "name": "coach-icon-company.png",
+          "filePath": "plasmic/coach_website/images/coachIconCompanypng.png"
         }
       ],
       "indirect": false,

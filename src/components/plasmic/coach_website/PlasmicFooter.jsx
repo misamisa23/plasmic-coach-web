@@ -27,6 +27,9 @@ import FooterIconLinkedinsvgIcon from "./icons/PlasmicIcon__FooterIconLinkedinsv
 import coachlogoBlacksvgZ3Py0Ikf4 from "./images/coachlogoBlacksvg.svg"; // plasmic-import: Z3Py0ikf4/picture
 import appStoreI1SvgLi4XsSx9I from "./images/appStoreI1Svg.svg"; // plasmic-import: li4XsSX9I/picture
 import googlePlayI1SvgLcZljj7H3 from "./images/googlePlayI1Svg.svg"; // plasmic-import: LCZljj7H3/picture
+import coachIconPhonepngTaMtTfOnP from "./images/coachIconPhonepng.png"; // plasmic-import: taMtTFOnP/picture
+import coachIconMailpngBBTUyKpo from "./images/coachIconMailpng.png"; // plasmic-import: bB-tUyKpo/picture
+import coachIconCompanypngZ6KRu6UKx from "./images/coachIconCompanypng.png"; // plasmic-import: Z6kRU6UKx/picture
 
 export const PlasmicFooter__VariantProps = new Array();
 
@@ -49,6 +52,7 @@ function PlasmicFooter__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
@@ -457,25 +461,135 @@ function PlasmicFooter__RenderFunc(props) {
             </div>
           </p.Stack>
 
-          <div
+          <a
             className={classNames(
               projectcss.all,
+              projectcss.a,
               projectcss.__wab_text,
-              sty.text__czA2I
+              sty.link__czA2I
             )}
+            href={`/about-us`}
           >
             {"About Us"}
-          </div>
+          </a>
 
           <div
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__v5CeH
+              sty.text__zOxHh
             )}
           >
-            {"Contact"}
+            {"CoNTACT"}
           </div>
+
+          {true ? (
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox___2NlbX)}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__yCwRg)}
+                displayHeight={"25px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"25px"}
+                loading={"lazy"}
+                src={{
+                  src: coachIconPhonepngTaMtTfOnP,
+                  fullWidth: 61,
+                  fullHeight: 62,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__v6RKc
+                )}
+              >
+                {"+38923113953"}
+              </div>
+            </p.Stack>
+          ) : null}
+
+          {true ? (
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__nKaUn)}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__kw5Db)}
+                displayHeight={"25px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"25px"}
+                loading={"lazy"}
+                src={{
+                  src: coachIconMailpngBBTUyKpo,
+                  fullWidth: 61,
+                  fullHeight: 62,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__is6Gk
+                )}
+              >
+                {"contact@konceptiva.com"}
+              </div>
+            </p.Stack>
+          ) : null}
+
+          {true ? (
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__jKJa)}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__ff0Xe)}
+                displayHeight={"25px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"25px"}
+                loading={"lazy"}
+                src={{
+                  src: coachIconCompanypngZ6KRu6UKx,
+                  fullWidth: 61,
+                  fullHeight: 62,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__rczg8
+                )}
+              >
+                {"11 Oktomvri 24, 1000 Skopje, North Macedonia"}
+              </div>
+            </p.Stack>
+          ) : null}
         </p.Stack>
       </p.Stack>
     </div>

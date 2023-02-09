@@ -190,13 +190,15 @@ function PlasmicHomepage__RenderFunc(props) {
                       </p.Stack>
 
                       <p.Stack
-                        as={"button"}
+                        as={"a"}
                         hasGap={true}
                         className={classNames(
                           projectcss.all,
-                          projectcss.button,
-                          sty.button__y1Ot5
+                          projectcss.a,
+                          sty.link__y1Ot5
                         )}
+                        href={"https://calendly.com/kalina-t/30min"}
+                        target={"_blank"}
                       >
                         <div
                           className={classNames(
@@ -984,6 +986,7 @@ function PlasmicHomepage__RenderFunc(props) {
                               />
                             ) : null
                           }
+                          link={"https://calendly.com/kalina-t/30min"}
                           showEndIcon={true}
                         >
                           {true ? (
@@ -1320,7 +1323,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       "__wab_instance",
                       sty.showcaseComponentMobile
                     )}
-                    isLight={false}
+                    isLight={true}
                   />
                 ) : null}
 
@@ -2049,13 +2052,15 @@ function PlasmicHomepage__RenderFunc(props) {
                   className={classNames(projectcss.all, sty.freeBox__j39Oy)}
                 >
                   <p.Stack
-                    as={"button"}
+                    as={"a"}
                     hasGap={true}
                     className={classNames(
                       projectcss.all,
-                      projectcss.button,
-                      sty.button__x0RG
+                      projectcss.a,
+                      sty.link__x0RG
                     )}
+                    href={"https://calendly.com/kalina-t/30min"}
+                    target={"_blank"}
                   >
                     <div
                       className={classNames(

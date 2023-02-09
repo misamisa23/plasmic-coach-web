@@ -56,6 +56,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
@@ -161,13 +162,13 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                         {"Deliver exceptional customer service and"}
                       </span>
 
-                      <React.Fragment>{""}</React.Fragment>
+                      <React.Fragment>{"\n"}</React.Fragment>
 
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
                       >
-                        {" drive sales"}
+                        {"drive sales"}
                       </span>
                     </React.Fragment>
                   </h1>
@@ -186,13 +187,15 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                 </div>
 
                 <p.Stack
-                  as={"button"}
+                  as={"a"}
                   hasGap={true}
                   className={classNames(
                     projectcss.all,
-                    projectcss.button,
-                    sty.button__wkefu
+                    projectcss.a,
+                    sty.link__wkefu
                   )}
+                  href={"https://calendly.com/kalina-t/30min"}
+                  target={"_blank"}
                 >
                   <div
                     className={classNames(
@@ -689,13 +692,15 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
               className={classNames(projectcss.all, sty.freeBox__jMSx2)}
             >
               <p.Stack
-                as={"button"}
+                as={"a"}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
-                  projectcss.button,
-                  sty.button__p2Fmg
+                  projectcss.a,
+                  sty.link__p2Fmg
                 )}
+                href={"https://calendly.com/kalina-t/30min"}
+                target={"_blank"}
               >
                 <div
                   className={classNames(

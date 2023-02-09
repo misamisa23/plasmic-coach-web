@@ -56,6 +56,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
@@ -169,13 +170,15 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                   </div>
 
                   <p.Stack
-                    as={"button"}
+                    as={"a"}
                     hasGap={true}
                     className={classNames(
                       projectcss.all,
-                      projectcss.button,
-                      sty.button__pNrD5
+                      projectcss.a,
+                      sty.link__pNrD5
                     )}
+                    href={"https://calendly.com/kalina-t/30min"}
+                    target={"_blank"}
                   >
                     <div
                       className={classNames(
@@ -545,13 +548,15 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.freeBox__aSuoZ)}
                   >
                     <p.Stack
-                      as={"button"}
+                      as={"a"}
                       hasGap={true}
                       className={classNames(
                         projectcss.all,
-                        projectcss.button,
-                        sty.button__qBw3R
+                        projectcss.a,
+                        sty.link__qBw3R
                       )}
+                      href={"https://calendly.com/kalina-t/30min"}
+                      target={"_blank"}
                     >
                       <div
                         className={classNames(

@@ -24,6 +24,7 @@ import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicAboutUs.module.css"; // plasmic-import: BXPGlJBTJGj/css
+import aboutusbannerimgpng2KubWkeWcd from "./images/aboutusbannerimgpng2.png"; // plasmic-import: kubWKEWcd/picture
 import group937Svg2IgFnzRrg from "./images/group937Svg.svg"; // plasmic-import: 2IgFnzRrg/picture
 import frame910JpgJ81OyBp4Q from "./images/frame910Jpg.jpeg"; // plasmic-import: j81oyBP4Q/picture
 import frame909JpgEFUNZso from "./images/frame909Jpg.jpeg"; // plasmic-import: e_fU-nZso/picture
@@ -179,11 +180,31 @@ function PlasmicAboutUs__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.freeBox__zoqxp)}
                   />
                 ) : null}
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__dIJiC)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"65%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: aboutusbannerimgpng2KubWkeWcd,
+                    fullWidth: 1064,
+                    fullHeight: 904,
+                    aspectRatio: undefined
+                  }}
+                />
               </div>
             </div>
           </p.Stack>
 
-          {true ? (
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
             <div className={classNames(projectcss.all, sty.freeBox__glAfq)} />
           ) : null}
 
@@ -236,9 +257,59 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.h1__iFwkQ
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Our journey started in 2018 when we partnered with top names in the automotive industry -Maserati and Mercedes, to enhance and digitalize their employee training processes. \n\nWe saw firsthand that even big names in the industry struggled to effectively assess their employees' knowledge and the traditional training methods of attending seminars and assessments were inefficient, boring and often resulted in knowledge gaps.\n\nWith this realization, we set out to create a solution that would address these challenges and deliver results that drive success. \n\nThe result was Coach, a platform designed to detect knowledge gaps and continuously improve employee performance.\nOur platform transforms learning from a one-time event into a continuous process, providing real-time insights into employee performance and improving overall organizational efficiency.\n\nAt Konceptiva, we are dedicated to helping companies solve their employee training challenges and deliver exceptional results."
-                    : "Our journey started in 2018 when we partnered with top names in the automotive industry -Maserati and Mercedes, to enhance and digitalize their employee training processes. \n\nWe saw firsthand that even big names in the industry struggled to effectively assess their employees' knowledge and the traditional training methods of attending seminars and assessments were inefficient, boring and often resulted in knowledge gaps.\n\nWith this realization, we set out to create a solution that would address these challenges and deliver results that drive success. \n\nThe result was Coach, a platform designed to detect knowledge gaps and continuously improve employee performance.\nOur platform transforms learning from a one-time event into a continuous process, providing real-time insights into employee performance and improving overall organizational efficiency.\n\nAt Konceptiva, we are dedicated to helping companies solve their employee training challenges and deliver exceptional results."}
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    "Our journey started in 2018 when we partnered with top names in the automotive industry -Maserati and Mercedes, to enhance and digitalize their employee training processes. \n\nWe saw firsthand that even big names in the industry struggled to effectively assess their employees' knowledge and the traditional training methods of attending seminars and assessments were inefficient, boring and often resulted in knowledge gaps.\n\nWith this realization, we set out to create a solution that would address these challenges and deliver results that drive success. \n\nThe result was Coach, a platform designed to detect knowledge gaps and continuously improve employee performance.\nOur platform transforms learning from a one-time event into a continuous process, providing real-time insights into employee performance and improving overall organizational efficiency.\n\nAt Konceptiva, we are dedicated to helping companies solve their employee training challenges and deliver exceptional results."
+                  ) : (
+                    <React.Fragment>
+                      <React.Fragment>
+                        {"Our journey started in 2018 when we partnered with "}
+                      </React.Fragment>
+
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"top names in the automotive industry"}
+                      </span>
+
+                      <React.Fragment>{" - "}</React.Fragment>
+
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"Maserati"}
+                      </span>
+
+                      <React.Fragment>{" and "}</React.Fragment>
+
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"Mercedes"}
+                      </span>
+
+                      <React.Fragment>
+                        {
+                          ", to enhance and digitalize their employee training processes. \n\nWe saw firsthand that even big names in the industry struggled to effectively assess their employees' knowledge and the traditional training methods of attending seminars and assessments were inefficient, boring and often resulted in knowledge gaps.\n\nWith this realization, we set out to create a solution that would address these challenges and deliver results that drive success. \n\nThe result was "
+                        }
+                      </React.Fragment>
+
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"Coach"}
+                      </span>
+
+                      <React.Fragment>
+                        {
+                          ", a platform designed to detect knowledge gaps and continuously improve employee performance.\nOur platform transforms learning from a one-time event into a continuous process, providing real-time insights into employee performance and improving overall organizational efficiency.\n\nAt Konceptiva, we are dedicated to helping companies solve their employee training challenges and deliver exceptional results."
+                        }
+                      </React.Fragment>
+                    </React.Fragment>
+                  )}
                 </h1>
               </p.Stack>
             </div>
@@ -457,15 +528,13 @@ function PlasmicAboutUs__RenderFunc(props) {
               className={classNames(projectcss.all, sty.freeBox__ukDK)}
             >
               <p.Stack
-                as={"button"}
-                data-plasmic-name={"button"}
-                data-plasmic-override={overrides.button}
+                as={"a"}
+                data-plasmic-name={"link"}
+                data-plasmic-override={overrides.link}
                 hasGap={true}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.button,
-                  sty.button
-                )}
+                className={classNames(projectcss.all, projectcss.a, sty.link)}
+                href={"https://calendly.com/kalina-t/30min"}
+                target={"_blank"}
               >
                 <div
                   className={classNames(
@@ -518,7 +587,7 @@ const PlasmicDescendants = {
     "ctaBlog2",
     "section11",
     "cta",
-    "button",
+    "link",
     "footer"
   ],
 
@@ -527,8 +596,8 @@ const PlasmicDescendants = {
   copy: ["copy"],
   ctaBlog2: ["ctaBlog2", "section11"],
   section11: ["section11"],
-  cta: ["cta", "button"],
-  button: ["button"],
+  cta: ["cta", "link"],
+  link: ["link"],
   footer: ["footer"]
 };
 
@@ -572,7 +641,7 @@ export const PlasmicAboutUs = Object.assign(
     ctaBlog2: makeNodeComponent("ctaBlog2"),
     section11: makeNodeComponent("section11"),
     cta: makeNodeComponent("cta"),
-    button: makeNodeComponent("button"),
+    link: makeNodeComponent("link"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicAboutUs
     internalVariantProps: PlasmicAboutUs__VariantProps,

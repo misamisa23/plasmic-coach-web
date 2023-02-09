@@ -260,7 +260,7 @@
     margin-bottom: 25px;
   }
 }
-.button__y1Ot5 {
+.link__y1Ot5 {
   flex-direction: row;
   position: relative;
   background: var(--token-iLnjQLjs5);
@@ -273,17 +273,17 @@
   border-width: 1px;
   border-style: none;
 }
-.button__y1Ot5 > :global(.__wab_flex-container) {
+.link__y1Ot5 > :global(.__wab_flex-container) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-left: calc(0px - 20px);
   width: calc(100% + 20px);
 }
-.button__y1Ot5 > :global(.__wab_flex-container) > *,
-.button__y1Ot5 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.button__y1Ot5 > :global(.__wab_flex-container) > picture > img,
-.button__y1Ot5
+.link__y1Ot5 > :global(.__wab_flex-container) > *,
+.link__y1Ot5 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.link__y1Ot5 > :global(.__wab_flex-container) > picture > img,
+.link__y1Ot5
   > :global(.__wab_flex-container)
   > :global(.__wab_slot)
   > picture
@@ -291,7 +291,7 @@
   margin-left: 20px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .button__y1Ot5 {
+  .link__y1Ot5 {
     align-self: flex-start;
   }
 }
@@ -3800,7 +3800,7 @@
   > img {
   margin-left: 15px;
 }
-.button__x0RG {
+.link__x0RG {
   flex-direction: row;
   position: relative;
   background: var(--token-iLnjQLjs5);
@@ -3812,17 +3812,17 @@
   border-width: 1px;
   border-style: none;
 }
-.button__x0RG > :global(.__wab_flex-container) {
+.link__x0RG > :global(.__wab_flex-container) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-left: calc(0px - 20px);
   width: calc(100% + 20px);
 }
-.button__x0RG > :global(.__wab_flex-container) > *,
-.button__x0RG > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.button__x0RG > :global(.__wab_flex-container) > picture > img,
-.button__x0RG
+.link__x0RG > :global(.__wab_flex-container) > *,
+.link__x0RG > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.link__x0RG > :global(.__wab_flex-container) > picture > img,
+.link__x0RG
   > :global(.__wab_flex-container)
   > :global(.__wab_slot)
   > picture
@@ -3830,7 +3830,7 @@
   margin-left: 20px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .button__x0RG {
+  .link__x0RG {
     align-self: flex-start;
   }
 }

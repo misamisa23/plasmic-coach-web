@@ -36,9 +36,7 @@ import webSoftskillsTrainingpngNrfAsd9HE from "./images/webSoftskillsTrainingpng
 
 export const PlasmicIndustryConsumerElectronics__VariantProps = new Array();
 
-export const PlasmicIndustryConsumerElectronics__ArgProps = new Array(
-  "children"
-);
+export const PlasmicIndustryConsumerElectronics__ArgProps = new Array();
 
 const __wrapUserFunction =
   globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
@@ -57,6 +55,7 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
@@ -150,56 +149,27 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                     className={classNames(
                       projectcss.all,
                       projectcss.h1,
+                      projectcss.__wab_text,
                       sty.h1
                     )}
                   >
-                    {p.renderPlasmicSlot({
-                      defaultContents: (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___7W7TF
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#000000" }}
-                            >
-                              {"Effortlessly master"}
-                            </span>
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {"Effortlessly master"}
+                      </span>
 
-                            <React.Fragment>{""}</React.Fragment>
+                      <React.Fragment>{"\n"}</React.Fragment>
 
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#3E7CB1" }}
-                            >
-                              {" "}
-                            </span>
-
-                            <React.Fragment>{"\n"}</React.Fragment>
-
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#3E7CB1" }}
-                            >
-                              {"1000's of products"}
-                            </span>
-                          </React.Fragment>
-                        </div>
-                      ),
-
-                      value: args.children,
-                      className: classNames(sty.slotTargetChildren)
-                    })}
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#3E7CB1" }}
+                      >
+                        {"1000's of products"}
+                      </span>
+                    </React.Fragment>
                   </h1>
                 </p.Stack>
 
@@ -216,13 +186,15 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
                 </div>
 
                 <p.Stack
-                  as={"button"}
+                  as={"a"}
                   hasGap={true}
                   className={classNames(
                     projectcss.all,
-                    projectcss.button,
-                    sty.button__fl2Iw
+                    projectcss.a,
+                    sty.link__fl2Iw
                   )}
+                  href={"https://calendly.com/kalina-t/30min"}
+                  target={"_blank"}
                 >
                   <div
                     className={classNames(
@@ -641,13 +613,15 @@ function PlasmicIndustryConsumerElectronics__RenderFunc(props) {
               className={classNames(projectcss.all, sty.freeBox__uyLLo)}
             >
               <p.Stack
-                as={"button"}
+                as={"a"}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
-                  projectcss.button,
-                  sty.button__m2Oaf
+                  projectcss.a,
+                  sty.link__m2Oaf
                 )}
+                href={"https://calendly.com/kalina-t/30min"}
+                target={"_blank"}
               >
                 <div
                   className={classNames(
