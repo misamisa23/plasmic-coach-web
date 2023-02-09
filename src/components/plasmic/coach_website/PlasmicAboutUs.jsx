@@ -24,12 +24,10 @@ import { useScreenVariants as useScreenVariantsaAzWhvm6PjSv1 } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicAboutUs.module.css"; // plasmic-import: BXPGlJBTJGj/css
-import group58PngCtEPsrnJc from "./images/group58Png.png"; // plasmic-import: CtEPsrnJc/picture
 import group937Svg2IgFnzRrg from "./images/group937Svg.svg"; // plasmic-import: 2IgFnzRrg/picture
 import frame910JpgJ81OyBp4Q from "./images/frame910Jpg.jpeg"; // plasmic-import: j81oyBP4Q/picture
 import frame909JpgEFUNZso from "./images/frame909Jpg.jpeg"; // plasmic-import: e_fU-nZso/picture
 import frame908JpgI2W0HOkea from "./images/frame908Jpg.jpeg"; // plasmic-import: i2W0HOkea/picture
-import _287StartupFlatlinesvgD9Kazplxb from "./images/_287StartupFlatlinesvg.svg"; // plasmic-import: d9Kazplxb/picture
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
 
 export const PlasmicAboutUs__VariantProps = new Array();
@@ -53,6 +51,7 @@ function PlasmicAboutUs__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
@@ -60,6 +59,7 @@ function PlasmicAboutUs__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -79,11 +79,109 @@ function PlasmicAboutUs__RenderFunc(props) {
             sty.root2
           )}
         >
+          <div className={classNames(projectcss.all, sty.freeBox__pcY23)} />
+
           <ReusableHeader
             data-plasmic-name={"reusableHeader"}
             data-plasmic-override={overrides.reusableHeader}
             className={classNames("__wab_instance", sty.reusableHeader)}
           />
+
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"section1"}
+            data-plasmic-override={overrides.section1}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.section1)}
+          >
+            <div className={classNames(projectcss.all, sty.columns__mreRl)}>
+              <div className={classNames(projectcss.all, sty.column___0Ic6W)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__rvGe3)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"copy"}
+                    data-plasmic-override={overrides.copy}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.copy)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___62WhD
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__aJ7Hz
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+
+                          {
+                            <h1
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h1,
+                                projectcss.__wab_text,
+                                sty.h1__fci11
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>
+                                  {"Our mission is to "}
+                                </React.Fragment>
+
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ color: "#3E7CB1" }}
+                                >
+                                  {"revolutionize"}
+                                </span>
+
+                                <React.Fragment>
+                                  {" the way companies "}
+                                </React.Fragment>
+
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ color: "#3E7CB1" }}
+                                >
+                                  {"train their employees."}
+                                </span>
+                              </React.Fragment>
+                            </h1>
+                          }
+
+                          <React.Fragment>{""}</React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </p.Stack>
+                  </p.Stack>
+                </p.Stack>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column__aqPtq)}>
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__zoqxp)}
+                  />
+                ) : null}
+              </div>
+            </div>
+          </p.Stack>
 
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__glAfq)} />
@@ -94,74 +192,6 @@ function PlasmicAboutUs__RenderFunc(props) {
             data-plasmic-override={overrides.ctaBlog2}
             className={classNames(projectcss.all, sty.ctaBlog2)}
           >
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"section12"}
-              data-plasmic-override={overrides.section12}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.section12)}
-            >
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2__d9DAg
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                  <React.Fragment>
-                    <React.Fragment>{"Our mission is to "}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#3E7CB1" }}
-                    >
-                      {"revolutionize"}
-                    </span>
-                    <React.Fragment>{" employee training"}</React.Fragment>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment>
-                    <React.Fragment>{"Our mission is to "}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#3E7CB1" }}
-                    >
-                      {"revolutionize"}
-                    </span>
-                    <React.Fragment>{" the way companies "}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#3E7CB1" }}
-                    >
-                      {"train their employees"}
-                    </span>
-                    <React.Fragment>{". "}</React.Fragment>
-                  </React.Fragment>
-                )}
-              </h2>
-
-              <div className={classNames(projectcss.all, sty.freeBox__ozVJo)} />
-            </p.Stack>
-
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__sDqbx)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"135px"}
-              loading={"lazy"}
-              src={{
-                src: group58PngCtEPsrnJc,
-                fullWidth: 406,
-                fullHeight: 328,
-                aspectRatio: undefined
-              }}
-            />
-
             {(
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
             ) ? (
@@ -231,6 +261,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 >
                   <React.Fragment>
                     <React.Fragment>{"Our latest \n"}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -245,6 +276,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 />
               </p.Stack>
             ) : null}
+
             {true ? (
               <div className={classNames(projectcss.all, sty.columns__nhvw5)}>
                 <div className={classNames(projectcss.all, sty.column__pfvQd)}>
@@ -388,329 +420,83 @@ function PlasmicAboutUs__RenderFunc(props) {
             ) : null}
           </div>
 
+          <div className={classNames(projectcss.all, sty.freeBox__qnehu)} />
+
           <p.Stack
             as={"div"}
-            data-plasmic-name={"section8"}
-            data-plasmic-override={overrides.section8}
+            data-plasmic-name={"cta"}
+            data-plasmic-override={overrides.cta}
             hasGap={true}
-            className={classNames(projectcss.all, sty.section8)}
+            className={classNames(projectcss.all, sty.cta)}
           >
-            <h2
+            <div
               className={classNames(
                 projectcss.all,
-                projectcss.h2,
                 projectcss.__wab_text,
-                sty.h2__fO3SX
+                sty.text___7QKLz
               )}
             >
-              {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                <React.Fragment>
-                  <React.Fragment>{"Our "}</React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#3E7CB1" }}
-                  >
-                    {"Team"}
-                  </span>
-                </React.Fragment>
-              ) : (
-                <React.Fragment>
-                  <React.Fragment>{"Our "}</React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#3E7CB1" }}
-                  >
-                    {"Team"}
-                  </span>
-                </React.Fragment>
-              )}
-            </h2>
-
-            <div className={classNames(projectcss.all, sty.freeBox___47CMi)} />
-          </p.Stack>
-
-          <div
-            data-plasmic-name={"ctaBlog"}
-            data-plasmic-override={overrides.ctaBlog}
-            className={classNames(projectcss.all, sty.ctaBlog)}
-          >
-            <div className={classNames(projectcss.all, sty.columns__lgqXp)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__vt83A)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__edXLi
-                  )}
-                >
-                  {"READY TO START?"}
-                </div>
-
-                <h1
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1___1EnPc
-                  )}
-                >
-                  {
-                    "See the full power of Coach in action, and find out how it can help you reach your goals."
-                  }
-                </h1>
-
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__jLiBv)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"310px"}
-                    loading={"lazy"}
-                    src={{
-                      src: _287StartupFlatlinesvgD9Kazplxb,
-                      fullWidth: 173,
-                      fullHeight: 150,
-                      aspectRatio: 1.155172
-                    }}
-                  />
-                ) : null}
-
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__umdp6)}
-                >
-                  <p.Stack
-                    as={"button"}
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.button,
-                      sty.button
-                    )}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__z7Tnw
-                      )}
-                    >
-                      {"BOOK A DEMO"}
-                    </div>
-
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__wiUiR)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"15px"}
-                      loading={"lazy"}
-                      src={{
-                        src: buttonCaretWhitesvg2S5Jbv6HmTb,
-                        fullWidth: 108,
-                        fullHeight: 150,
-                        aspectRatio: 0.722222
-                      }}
-                    />
-                  </p.Stack>
-                </p.Stack>
-              </p.Stack>
+              {"READY TO START?"}
             </div>
 
-            {true ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__ahIbs
+              )}
+            >
+              {
+                "Experience the full power of Coach in action, and see why microlearning is your company’s future."
+              }
+            </div>
+
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__ukDK)}
+            >
               <p.Stack
-                as={"div"}
-                data-plasmic-name={"section9"}
-                data-plasmic-override={overrides.section9}
+                as={"button"}
+                data-plasmic-name={"button"}
+                data-plasmic-override={overrides.button}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.section9)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.button,
+                  sty.button
+                )}
               >
-                <h1
+                <div
                   className={classNames(
                     projectcss.all,
-                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h1__u9Sp2
+                    sty.text__li9BD
                   )}
                 >
-                  <React.Fragment>
-                    <React.Fragment>{"Our latest \n"}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#3E7CB1" }}
-                    >
-                      {"news and resources"}
-                    </span>
-                  </React.Fragment>
-                </h1>
+                  {"GET STARTED"}
+                </div>
 
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___5HnmO)}
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__ypfCb)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"15px"}
+                  loading={"lazy"}
+                  src={{
+                    src: buttonCaretWhitesvg2S5Jbv6HmTb,
+                    fullWidth: 108,
+                    fullHeight: 150,
+                    aspectRatio: 0.722222
+                  }}
                 />
               </p.Stack>
-            ) : null}
-            {true ? (
-              <div className={classNames(projectcss.all, sty.columns__vZic6)}>
-                <div className={classNames(projectcss.all, sty.column__bDuId)}>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__fn3I)}
-                  >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__cRgLw)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: frame910JpgJ81OyBp4Q,
-                        fullWidth: 323,
-                        fullHeight: 203,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___5Ekzs
-                      )}
-                    >
-                      {"PRESS ARTICLE"}
-                    </div>
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___5VXqv
-                      )}
-                    >
-                      {"Konceptiva: startup of the month January ’22!"}
-                    </div>
-                  </p.Stack>
-                </div>
-
-                <div className={classNames(projectcss.all, sty.column__eJk9)}>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__hhB5F)}
-                  >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__f5C5Y)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: frame909JpgEFUNZso,
-                        fullWidth: 323,
-                        fullHeight: 203,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__jyZjc
-                      )}
-                    >
-                      {"EVENT"}
-                    </div>
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__vGNp
-                      )}
-                    >
-                      {"Gamification of Corporate\nTraining - #Session1"}
-                    </div>
-                  </p.Stack>
-                </div>
-
-                <div className={classNames(projectcss.all, sty.column__d7Ie)}>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__nweQg)}
-                  >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__w1Nc2)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: frame908JpgI2W0HOkea,
-                        fullWidth: 323,
-                        fullHeight: 203,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__dcXmC
-                      )}
-                    >
-                      {"BLOG"}
-                    </div>
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__do3Zh
-                      )}
-                    >
-                      {"Here are 5 tips for creating\nan effective course"}
-                    </div>
-                  </p.Stack>
-                </div>
-              </div>
-            ) : null}
-          </div>
-
-          <div className={classNames(projectcss.all, sty.freeBox__qnehu)} />
+            </p.Stack>
+          </p.Stack>
 
           <Footer
             data-plasmic-name={"footer"}
@@ -727,24 +513,22 @@ const PlasmicDescendants = {
   root2: [
     "root2",
     "reusableHeader",
+    "section1",
+    "copy",
     "ctaBlog2",
-    "section12",
     "section11",
-    "section8",
-    "ctaBlog",
+    "cta",
     "button",
-    "section9",
     "footer"
   ],
 
   reusableHeader: ["reusableHeader"],
-  ctaBlog2: ["ctaBlog2", "section12", "section11"],
-  section12: ["section12"],
+  section1: ["section1", "copy"],
+  copy: ["copy"],
+  ctaBlog2: ["ctaBlog2", "section11"],
   section11: ["section11"],
-  section8: ["section8"],
-  ctaBlog: ["ctaBlog", "button", "section9"],
+  cta: ["cta", "button"],
   button: ["button"],
-  section9: ["section9"],
   footer: ["footer"]
 };
 
@@ -758,6 +542,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicAboutUs__ArgProps,
           internalVariantPropNames: PlasmicAboutUs__VariantProps
         }),
+
       [props, nodeName]
     );
 
@@ -782,13 +567,12 @@ export const PlasmicAboutUs = Object.assign(
   {
     // Helper components rendering sub-elements
     reusableHeader: makeNodeComponent("reusableHeader"),
+    section1: makeNodeComponent("section1"),
+    copy: makeNodeComponent("copy"),
     ctaBlog2: makeNodeComponent("ctaBlog2"),
-    section12: makeNodeComponent("section12"),
     section11: makeNodeComponent("section11"),
-    section8: makeNodeComponent("section8"),
-    ctaBlog: makeNodeComponent("ctaBlog"),
+    cta: makeNodeComponent("cta"),
     button: makeNodeComponent("button"),
-    section9: makeNodeComponent("section9"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicAboutUs
     internalVariantProps: PlasmicAboutUs__VariantProps,

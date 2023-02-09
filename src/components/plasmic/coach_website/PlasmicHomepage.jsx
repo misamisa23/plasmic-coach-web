@@ -20,6 +20,7 @@ import {
 } from "@plasmicapp/react-web";
 import ReusableHeader from "../../ReusableHeader"; // plasmic-import: OcmELIHcZf/component
 import Button from "../../Button"; // plasmic-import: i2u7Uturkgt/component
+import { ShowcaseComponentMobile } from "components/Showcase/ShowcaseComponentMobile"; // plasmic-import: o1aWQ1hXH0/codeComponent
 import { ShowcaseComponent } from "components/Showcase/ShowcaseComponent"; // plasmic-import: MpmSfV-HL-/codeComponent
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import IndustryCard from "../../IndustryCard"; // plasmic-import: lNCO1zQqfc/component
@@ -74,6 +75,7 @@ function PlasmicHomepage__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
@@ -248,7 +250,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__mqe8C)}
-                    displayHeight={"100%"}
+                    displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
                     displayMinHeight={"340px"}
@@ -289,6 +291,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                   <React.Fragment>
                     <React.Fragment>{"What is "}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -299,6 +302,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 ) : (
                   <React.Fragment>
                     <React.Fragment>{"What is "}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -333,6 +337,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 }}
               />
             ) : null}
+
             {(
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
             ) ? (
@@ -402,6 +407,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 >
                   <React.Fragment>
                     <React.Fragment>{"Our latest \n"}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -416,6 +422,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 />
               </p.Stack>
             ) : null}
+
             {true ? (
               <div className={classNames(projectcss.all, sty.columns__k4C3U)}>
                 <div className={classNames(projectcss.all, sty.column__xEyLc)}>
@@ -1010,13 +1017,13 @@ function PlasmicHomepage__RenderFunc(props) {
                 displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "372px"
-                    : "550px"
+                    : "100%"
                 }
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"520px"}
+                displayWidth={"100%"}
                 loading={"lazy"}
                 src={{
                   src: _3TrackAndImprovepng2NywMcMIbC,
@@ -1230,6 +1237,7 @@ function PlasmicHomepage__RenderFunc(props) {
                           <React.Fragment>
                             {"Ivana Dojchinovska-Stojanovikj\n"}
                           </React.Fragment>
+
                           <span
                             className={
                               "plasmic_default__all plasmic_default__span"
@@ -1246,58 +1254,149 @@ function PlasmicHomepage__RenderFunc(props) {
               </p.Stack>
             </div>
 
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"section10"}
-              data-plasmic-override={overrides.section10}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.section10)}
-            >
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2__u6CcL
-                )}
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"section10"}
+                data-plasmic-override={overrides.section10}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.section10)}
               >
-                {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {"By utilizing Coach, we make sure your training sticks."}
-                    </span>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {"By utilizing Coach, we make sure\n "}
-                    </span>
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__u6CcL
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {
+                          "By utilizing Coach, we make sure your training sticks."
+                        }
+                      </span>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {"By utilizing Coach, we make sure\n "}
+                      </span>
 
-                    <React.Fragment>{"\n"}</React.Fragment>
+                      <React.Fragment>{"\n"}</React.Fragment>
 
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#FFFFFF" }}
-                    >
-                      {"your training sticks."}
-                    </span>
-                  </React.Fragment>
-                )}
-              </h2>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {"your training sticks."}
+                      </span>
+                    </React.Fragment>
+                  )}
+                </h2>
 
-              <div className={classNames(projectcss.all, sty.freeBox__oumKv)} />
-            </p.Stack>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__oumKv)}
+                />
+
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <ShowcaseComponentMobile
+                    data-plasmic-name={"showcaseComponentMobile"}
+                    data-plasmic-override={overrides.showcaseComponentMobile}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.showcaseComponentMobile
+                    )}
+                    isLight={false}
+                  />
+                ) : null}
+
+                <Button
+                  data-plasmic-name={"featuresButton"}
+                  data-plasmic-override={overrides.featuresButton}
+                  className={classNames("__wab_instance", sty.featuresButton)}
+                  link={`/features`}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__o1Lqv
+                    )}
+                  >
+                    {"SEE ALL FEATURES"}
+                  </div>
+                </Button>
+              </p.Stack>
+            ) : null}
 
             {(
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
             ) ? (
-              <div className={classNames(projectcss.all, sty.freeBox__f8XUc)}>
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"section13"}
+                data-plasmic-override={overrides.section13}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.section13)}
+              >
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__hkIut
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {
+                          "By utilizing Coach, we make sure your training sticks."
+                        }
+                      </span>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {"By utilizing Coach, we make sure\n "}
+                      </span>
+
+                      <React.Fragment>{"\n"}</React.Fragment>
+
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {"your training sticks."}
+                      </span>
+                    </React.Fragment>
+                  )}
+                </h2>
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__i4Ue5)}
+                />
+
                 <ShowcaseComponent
                   data-plasmic-name={"showcaseComponent"}
                   data-plasmic-override={overrides.showcaseComponent}
@@ -1310,7 +1409,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   onClickNavigateToString={"features"}
                   showButton={true}
                 />
-              </div>
+              </p.Stack>
             ) : null}
           </div>
 
@@ -2196,6 +2295,9 @@ const PlasmicDescendants = {
     "section5",
     "whiteblueButton3",
     "section10",
+    "showcaseComponentMobile",
+    "featuresButton",
+    "section13",
     "showcaseComponent",
     "section6",
     "section7",
@@ -2215,9 +2317,21 @@ const PlasmicDescendants = {
   section3: ["section3"],
   section4: ["section4", "whiteblueButton2"],
   whiteblueButton2: ["whiteblueButton2"],
-  section5: ["section5", "whiteblueButton3", "section10", "showcaseComponent"],
+  section5: [
+    "section5",
+    "whiteblueButton3",
+    "section10",
+    "showcaseComponentMobile",
+    "featuresButton",
+    "section13",
+    "showcaseComponent"
+  ],
+
   whiteblueButton3: ["whiteblueButton3"],
-  section10: ["section10"],
+  section10: ["section10", "showcaseComponentMobile", "featuresButton"],
+  showcaseComponentMobile: ["showcaseComponentMobile"],
+  featuresButton: ["featuresButton"],
+  section13: ["section13", "showcaseComponent"],
   showcaseComponent: ["showcaseComponent"],
   section6: ["section6"],
   section7: ["section7"],
@@ -2274,6 +2388,9 @@ export const PlasmicHomepage = Object.assign(
     section5: makeNodeComponent("section5"),
     whiteblueButton3: makeNodeComponent("whiteblueButton3"),
     section10: makeNodeComponent("section10"),
+    showcaseComponentMobile: makeNodeComponent("showcaseComponentMobile"),
+    featuresButton: makeNodeComponent("featuresButton"),
+    section13: makeNodeComponent("section13"),
     showcaseComponent: makeNodeComponent("showcaseComponent"),
     section6: makeNodeComponent("section6"),
     section7: makeNodeComponent("section7"),

@@ -29,6 +29,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_coach_website.module.css"; // plasmic-import: uu5v5CefeBFWJ3g58RuWZW/projectcss
 import sty from "./PlasmicFeatures.module.css"; // plasmic-import: O4MESrAuYA/css
 import buttonCaretWhitesvg2S5Jbv6HmTb from "./images/buttonCaretWhitesvg2.svg"; // plasmic-import: S5jbv6HmTb/picture
+import featuresbanner1Png2U95Ylhhpv from "./images/featuresbanner1Png2.png"; // plasmic-import: u95Ylhhpv/picture
 import crookedBg4SvgXJa9D6Q77 from "./images/crookedBg4Svg.svg"; // plasmic-import: xJA9D6q77/picture
 
 export const PlasmicFeatures__VariantProps = new Array();
@@ -52,6 +53,7 @@ function PlasmicFeatures__RenderFunc(props) {
     ...args,
     ...variants
   };
+
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
@@ -217,6 +219,24 @@ function PlasmicFeatures__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.freeBox__oBfS)}
                   />
                 ) : null}
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___0O2Nx)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"80%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: featuresbanner1Png2U95Ylhhpv,
+                    fullWidth: 1437,
+                    fullHeight: 1411,
+                    aspectRatio: undefined
+                  }}
+                />
               </div>
             </div>
           </p.Stack>

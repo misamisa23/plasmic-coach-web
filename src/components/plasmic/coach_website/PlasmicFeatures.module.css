@@ -317,6 +317,7 @@
   width: 50%;
   background: var(--token-YwVAFL3GU);
   border-bottom-right-radius: 150px;
+  justify-content: flex-end;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .column__zglE2 {
@@ -333,6 +334,17 @@
   width: auto;
   height: auto;
   display: none;
+}
+.img___0O2Nx {
+  position: relative;
+  object-fit: cover;
+  max-width: 80%;
+}
+.img___0O2Nx > picture > img {
+  object-fit: cover;
+}
+.img___0O2Nx > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
 }
 .freeBox__hRn9 {
   flex-direction: column;
