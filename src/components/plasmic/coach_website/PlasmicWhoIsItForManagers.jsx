@@ -55,6 +55,8 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
@@ -93,25 +95,29 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
             className={classNames(projectcss.all, sty.hero)}
           >
             <div className={classNames(projectcss.all, sty.columns__nmdft)}>
-              <div className={classNames(projectcss.all, sty.column___5UgaU)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__e5B5Q)}
-                  displayHeight={"280px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: whoitsforBg1PngUn0YXaAyX,
-                    fullWidth: 507,
-                    fullHeight: 667,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.column___5UgaU)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__e5B5Q)}
+                    displayHeight={"280px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: whoitsforBg1PngUn0YXaAyX,
+                      fullWidth: 507,
+                      fullHeight: 667,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
 
               <div className={classNames(projectcss.all, sty.column__i9SaE)}>
                 <p.Stack
@@ -202,25 +208,29 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                 </p.Stack>
               </div>
 
-              <div className={classNames(projectcss.all, sty.column__iq6FF)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___9S8Qq)}
-                  displayHeight={"280px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: whoitsforBg2Png6Ezsola4F,
-                    fullWidth: 482,
-                    fullHeight: 667,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.column__iq6FF)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___9S8Qq)}
+                    displayHeight={"280px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: whoitsforBg2Png6Ezsola4F,
+                      fullWidth: 482,
+                      fullHeight: 667,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
             </div>
 
             <p.PlasmicImg
@@ -231,7 +241,11 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"285px"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "240px"
+                  : "310px"
+              }
               loading={"lazy"}
               src={{
                 src: coachManagerssvgRqDhaxaBv,
@@ -247,6 +261,8 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
+            <div className={classNames(projectcss.all, sty.freeBox__izkR4)} />
+
             <div className={classNames(projectcss.all, sty.columns__eUk4D)}>
               <div className={classNames(projectcss.all, sty.column__pYmSj)}>
                 <div
@@ -280,8 +296,6 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                 </div>
               </div>
             </div>
-
-            <div className={classNames(projectcss.all, sty.freeBox__izkR4)} />
 
             <p.Stack
               as={"div"}
@@ -319,7 +333,7 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                       sty.text__tpEui
                     )}
                   >
-                    {"Save time on training creation"}
+                    {"Easily save time on training creation"}
                   </div>
 
                   <div
@@ -436,7 +450,7 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Building a fun working environment that is also productive is a challenge. A fun one, though! \nCoach lets you tap into the power of play and stimulate employees’ learning retention to improve company culture."
+                      "Building a fun working environment that is also productive is a challenge. A fun one, though! Coach lets you tap into the power of play and stimulate employees’ learning retention to improve company culture."
                     }
                   </div>
                 </p.Stack>
@@ -477,7 +491,7 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                       sty.text__wQxxo
                     )}
                   >
-                    {"Insights and reports like flashlights"}
+                    {"View insights and reports like flashlights"}
                   </div>
 
                   <div
@@ -488,7 +502,7 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Create beautiful custom reports that executives don't need a Ph.D. to understand. \nAnalyze your training reports and assign additional lessons to employees with knowledge gaps. \nBecause knowledgeable teams make happy clients."
+                      "Create beautiful custom reports that executives don't need a Ph.D. to understand. Analyze your training reports and assign additional lessons to employees with knowledge gaps. Because knowledgeable teams make happy clients."
                     }
                   </div>
                 </p.Stack>
@@ -496,7 +510,11 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
             </p.Stack>
           </div>
 
-          <div className={classNames(projectcss.all, sty.freeBox__x63Ij)} />
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__x63Ij)} />
+          ) : null}
 
           <div className={classNames(projectcss.all, sty.freeBox__cOaT0)}>
             <div className={classNames(projectcss.all, sty.freeBox__ezw91)}>
@@ -579,7 +597,11 @@ function PlasmicWhoIsItForManagers__RenderFunc(props) {
                     className={classNames(sty.img__xi1OZ)}
                     displayHeight={"100%"}
                     displayMaxHeight={"100%"}
-                    displayMaxWidth={"220px"}
+                    displayMaxWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "180px"
+                        : "220px"
+                    }
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={"100%"}

@@ -237,7 +237,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1 {
-    font-size: 28px;
+    font-size: 32px;
     margin-top: calc(0px + 10px) !important;
   }
 }
@@ -1031,6 +1031,11 @@
   font-weight: 600;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .text___9ACmT {
+    font-size: 16px;
+  }
+}
 .text__kKfme {
   position: relative;
   width: 100%;
@@ -1077,6 +1082,11 @@
   > picture
   > img {
   margin-left: 15px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___729Fe {
+    padding-top: 50px;
+  }
 }
 .button__hZwyz {
   flex-direction: row;

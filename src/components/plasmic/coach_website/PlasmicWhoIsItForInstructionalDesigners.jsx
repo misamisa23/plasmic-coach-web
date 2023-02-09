@@ -56,6 +56,8 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
@@ -94,25 +96,29 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
             className={classNames(projectcss.all, sty.hero)}
           >
             <div className={classNames(projectcss.all, sty.columns__jqVHk)}>
-              <div className={classNames(projectcss.all, sty.column__o8UB)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___48Sp8)}
-                  displayHeight={"280px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: whoitsforBg1PngUn0YXaAyX,
-                    fullWidth: 507,
-                    fullHeight: 667,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.column__o8UB)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___48Sp8)}
+                    displayHeight={"280px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: whoitsforBg1PngUn0YXaAyX,
+                      fullWidth: 507,
+                      fullHeight: 667,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
 
               <div className={classNames(projectcss.all, sty.column___0FDEq)}>
                 <p.Stack
@@ -201,25 +207,29 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                 </p.Stack>
               </div>
 
-              <div className={classNames(projectcss.all, sty.column__vViCg)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__mwSd)}
-                  displayHeight={"280px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: whoitsforBg2Png6Ezsola4F,
-                    fullWidth: 482,
-                    fullHeight: 667,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.column__vViCg)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__mwSd)}
+                    displayHeight={"280px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: whoitsforBg2Png6Ezsola4F,
+                      fullWidth: 482,
+                      fullHeight: 667,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
             </div>
 
             <p.PlasmicImg
@@ -230,7 +240,11 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"285px"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "240px"
+                  : "310px"
+              }
               loading={"lazy"}
               src={{
                 src: coachIdssvgXKnk6Mzl8,
@@ -246,6 +260,8 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
+            <div className={classNames(projectcss.all, sty.freeBox__sQ6WX)} />
+
             <div className={classNames(projectcss.all, sty.columns__jfBx)}>
               <div className={classNames(projectcss.all, sty.column__kCfDx)}>
                 <div
@@ -270,8 +286,6 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                 </div>
               </div>
             </div>
-
-            <div className={classNames(projectcss.all, sty.freeBox__sQ6WX)} />
 
             <p.Stack
               as={"div"}
@@ -371,9 +385,9 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                       sty.text__aadYo
                     )}
                   >
-                    {
-                      "Get feedback from learners to continuously improve your training. Coach’s integrated feedback system allows each employee to leave feedback regards the training you’ve built. \nThe more you know, the better your training will become!"
-                    }
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Get feedback from learners to continuously improve your training. Coach’s integrated feedback system allows each employee to leave feedback regards the training you’ve built. The more you know, the better your training will become!"
+                      : "Get feedback from learners to continuously improve your training. Coach’s integrated feedback system allows each employee to leave feedback regards the training you’ve built. \nThe more you know, the better your training will become!"}
                   </div>
                 </p.Stack>
               </p.Stack>
@@ -477,16 +491,20 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                       sty.text__pnhU2
                     )}
                   >
-                    {
-                      "Knowledgeable employees work better - which ultimately means better results and bigger profits. \nAnd who doesn’t love profits? \nI bet CEOs do 😉 "
-                    }
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Knowledgeable employees work better - which ultimately means better results and bigger profits. \nAnd who doesn’t love profits? I bet CEOs do 😉 "
+                      : "Knowledgeable employees work better - which ultimately means better results and bigger profits. \nAnd who doesn’t love profits? \nI bet CEOs do 😉 "}
                   </div>
                 </p.Stack>
               </p.Stack>
             </p.Stack>
           </div>
 
-          <div className={classNames(projectcss.all, sty.freeBox__akNe)} />
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__akNe)} />
+          ) : null}
 
           <div className={classNames(projectcss.all, sty.freeBox__rpcId)}>
             <div className={classNames(projectcss.all, sty.freeBox__lUh5O)}>
@@ -515,7 +533,7 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "Don’t just take our word.\nExperience the power of Coach yourself, and see the possibilities."
-                      : "Get in on the action today, and see\nwhy Coach will become your go-to\ntool for building effective trainings."}
+                      : "Get in on the action today, and see why Coach will become your go-to tool for building effective trainings."}
                   </div>
 
                   <p.Stack
@@ -569,7 +587,11 @@ function PlasmicWhoIsItForInstructionalDesigners__RenderFunc(props) {
                     className={classNames(sty.img__ifSla)}
                     displayHeight={"100%"}
                     displayMaxHeight={"100%"}
-                    displayMaxWidth={"220px"}
+                    displayMaxWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "180px"
+                        : "220px"
+                    }
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={"100%"}

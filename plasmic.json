@@ -470,6 +470,19 @@
           "cssFilePath": "plasmic/coach_website/PlasmicReusableHeader.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "BXPGlJBTJGj",
+          "name": "AboutUs",
+          "type": "managed",
+          "projectId": "uu5v5CefeBFWJ3g58RuWZW",
+          "renderModuleFilePath": "plasmic/coach_website/PlasmicAboutUs.jsx",
+          "importSpec": {
+            "modulePath": "AboutUs.jsx"
+          },
+          "cssFilePath": "plasmic/coach_website/PlasmicAboutUs.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -1134,6 +1147,26 @@
           "id": "xJA9D6q77",
           "name": "CrookedBg4.svg",
           "filePath": "plasmic/coach_website/images/crookedBg4Svg.svg"
+        },
+        {
+          "id": "OziH8-Brv",
+          "name": "testimonialimg-ivana.png",
+          "filePath": "plasmic/coach_website/images/testimonialimgIvanapng.png"
+        },
+        {
+          "id": "7fWIz0aVn",
+          "name": "testimonial-logo-springwell.png",
+          "filePath": "plasmic/coach_website/images/testimonialLogoSpringwellpng.png"
+        },
+        {
+          "id": "CtEPsrnJc",
+          "name": "Group 58.png",
+          "filePath": "plasmic/coach_website/images/group58Png.png"
+        },
+        {
+          "id": "Is63lHkAn",
+          "name": "Group 88.png",
+          "filePath": "plasmic/coach_website/images/group88Png.png"
         }
       ],
       "indirect": false,

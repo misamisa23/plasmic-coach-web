@@ -55,6 +55,8 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
@@ -93,25 +95,29 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
             className={classNames(projectcss.all, sty.hero)}
           >
             <div className={classNames(projectcss.all, sty.columns__vCrVl)}>
-              <div className={classNames(projectcss.all, sty.column__mnRrs)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__aXge6)}
-                  displayHeight={"280px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: whoitsforBg1PngUn0YXaAyX,
-                    fullWidth: 507,
-                    fullHeight: 667,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.column__mnRrs)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__aXge6)}
+                    displayHeight={"280px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: whoitsforBg1PngUn0YXaAyX,
+                      fullWidth: 507,
+                      fullHeight: 667,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
 
               <div className={classNames(projectcss.all, sty.column__aewV)}>
                 <p.Stack
@@ -157,9 +163,9 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                       sty.text___4JYh
                     )}
                   >
-                    {
-                      "Give your employees the knowledge they need\nto excel at their jobs."
-                    }
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Give your employees the knowledge they need to excel at their jobs."
+                      : "Give your employees the knowledge they need\nto excel at their jobs."}
                   </div>
 
                   <p.Stack
@@ -202,25 +208,29 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                 </p.Stack>
               </div>
 
-              <div className={classNames(projectcss.all, sty.column__kiYib)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__xwShF)}
-                  displayHeight={"280px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: whoitsforBg2Png6Ezsola4F,
-                    fullWidth: 482,
-                    fullHeight: 667,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.column__kiYib)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__xwShF)}
+                    displayHeight={"280px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: whoitsforBg2Png6Ezsola4F,
+                      fullWidth: 482,
+                      fullHeight: 667,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
             </div>
 
             <p.PlasmicImg
@@ -231,7 +241,11 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"285px"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "240px"
+                  : "310px"
+              }
               loading={"lazy"}
               src={{
                 src: coachSeossvgXSpyNpbVc,
@@ -247,6 +261,8 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
             data-plasmic-override={overrides.section2}
             className={classNames(projectcss.all, sty.section2)}
           >
+            <div className={classNames(projectcss.all, sty.freeBox__kn13O)} />
+
             <div className={classNames(projectcss.all, sty.columns__tnKvp)}>
               <div className={classNames(projectcss.all, sty.column__nKx7)}>
                 <div
@@ -276,8 +292,6 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                 </div>
               </div>
             </div>
-
-            <div className={classNames(projectcss.all, sty.freeBox__kn13O)} />
 
             <p.Stack
               as={"div"}
@@ -315,7 +329,7 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                       sty.text__r66Qm
                     )}
                   >
-                    {"Drive discovery\n with insights"}
+                    {"Drive discovery\n with valuable insights"}
                   </div>
 
                   <div
@@ -326,7 +340,7 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                     )}
                   >
                     {
-                      "You used to have ideas about the efficiency of your training. Now you have proof. \nWith data-driven insights, Coach shows whether your expectations match reality. \nBecause we only like surprises on birthdays!"
+                      "You used to have ideas about the efficiency of your training. Now you have proof. With data-driven insights, Coach shows whether your expectations match reality. \nBecause we only like surprises on birthdays!"
                     }
                   </div>
                 </p.Stack>
@@ -432,7 +446,7 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Knowledgeable employees = happy & motivated employees. \nAnd the word of mouth spreads fast - almost as fast as creating training in Coach. "
+                      "Knowledgeable employees = happy & motivated employees.  And the word of mouth spreads fast - almost as fast as creating a training in Coach. "
                     }
                   </div>
                 </p.Stack>
@@ -492,7 +506,11 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
             </p.Stack>
           </div>
 
-          <div className={classNames(projectcss.all, sty.freeBox__ni6Qg)} />
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__ni6Qg)} />
+          ) : null}
 
           <div className={classNames(projectcss.all, sty.freeBox___4JFhM)}>
             <div className={classNames(projectcss.all, sty.freeBox__io0Et)}>
@@ -575,7 +593,11 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                     className={classNames(sty.img__kthjm)}
                     displayHeight={"100%"}
                     displayMaxHeight={"100%"}
-                    displayMaxWidth={"220px"}
+                    displayMaxWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "140px"
+                        : "220px"
+                    }
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={"100%"}

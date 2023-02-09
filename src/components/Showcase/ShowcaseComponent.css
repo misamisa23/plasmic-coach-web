@@ -23,6 +23,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .showcase--items {
@@ -159,5 +160,6 @@ h5 {
 .showcase--item-content-minimized {
   text-align: start;
   color: #11253e;
+  width: 90%;
   padding: 10px 40px;
 }

@@ -56,6 +56,8 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
@@ -611,16 +613,16 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
 
           <p.Stack
             as={"div"}
-            data-plasmic-name={"cta"}
-            data-plasmic-override={overrides.cta}
+            data-plasmic-name={"cta2"}
+            data-plasmic-override={overrides.cta2}
             hasGap={true}
-            className={classNames(projectcss.all, sty.cta)}
+            className={classNames(projectcss.all, sty.cta2)}
           >
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__ocsCo
+                sty.text__zxdS
               )}
             >
               {"READY TO START?"}
@@ -630,7 +632,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__jsal
+                sty.text__spS2
               )}
             >
               {
@@ -641,7 +643,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__p0IZn)}
+              className={classNames(projectcss.all, sty.freeBox__phMxr)}
             >
               <p.Stack
                 as={"button"}
@@ -649,14 +651,14 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
                 className={classNames(
                   projectcss.all,
                   projectcss.button,
-                  sty.button__mTWfh
+                  sty.button__cqglB
                 )}
               >
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__utVj
+                    sty.text___6W0Re
                   )}
                 >
                   {"GET STARTED"}
@@ -664,7 +666,7 @@ function PlasmicIndustryTelecommunication__RenderFunc(props) {
 
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__w6ETc)}
+                  className={classNames(sty.img__xxL5Q)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -705,7 +707,7 @@ const PlasmicDescendants = {
     "section3",
     "section4",
     "section5",
-    "cta",
+    "cta2",
     "footer"
   ],
 
@@ -717,7 +719,7 @@ const PlasmicDescendants = {
   section3: ["section3"],
   section4: ["section4"],
   section5: ["section5"],
-  cta: ["cta"],
+  cta2: ["cta2"],
   footer: ["footer"]
 };
 
@@ -763,7 +765,7 @@ export const PlasmicIndustryTelecommunication = Object.assign(
     section3: makeNodeComponent("section3"),
     section4: makeNodeComponent("section4"),
     section5: makeNodeComponent("section5"),
-    cta: makeNodeComponent("cta"),
+    cta2: makeNodeComponent("cta2"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicIndustryTelecommunication
     internalVariantProps: PlasmicIndustryTelecommunication__VariantProps,

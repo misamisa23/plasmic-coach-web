@@ -41,7 +41,8 @@ function PlasmicReusableHeader__RenderFunc(props) {
     ...args,
     ...variants
   };
-
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
   return (
@@ -64,7 +65,6 @@ function PlasmicReusableHeader__RenderFunc(props) {
             }
           ]
         },
-
         {
           itemTitle: "How Coach helps",
           subMenuItems: [
@@ -75,20 +75,17 @@ function PlasmicReusableHeader__RenderFunc(props) {
                   title: "Consumer Electronics",
                   link: "/industry-consumer-electronics"
                 },
-
                 { title: "Manufacturing", link: "/industry-manufacturing" },
                 {
                   title: "Telecommunications",
                   link: "/industry-telecommunication"
                 },
-
                 { title: "Pharmaceuticals", link: "/industry-pharmaceuticals" },
                 { title: "Luxury Goods", link: "/industry-luxury-goods" }
               ]
             }
           ]
         },
-
         {
           itemTitle: "Who it's for",
           subMenuItems: [
@@ -99,7 +96,6 @@ function PlasmicReusableHeader__RenderFunc(props) {
                   title: "For Managers (L&D, HR, People)",
                   link: "/who-is-it-for-managers"
                 },
-
                 { title: "For Employees", link: "/who-is-it-for-employees" },
                 { title: "For CEOs", link: "/who-is-it-for-ceos" },
                 {
@@ -110,8 +106,7 @@ function PlasmicReusableHeader__RenderFunc(props) {
             }
           ]
         },
-
-        { itemTitle: "Blog", link: "/blog" }
+        { itemTitle: "About Us", link: "/about-us" }
       ]}
       isDark={false}
     />
@@ -132,7 +127,6 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicReusableHeader__ArgProps,
           internalVariantPropNames: PlasmicReusableHeader__VariantProps
         }),
-
       [props, nodeName]
     );
 

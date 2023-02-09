@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   position: relative;
+  background: linear-gradient(0deg, #f5f6f6 43%, #f5f6f600 100%);
   min-width: 0;
   padding: 100px 134px;
   border-top: 80% solid #c7d8ee;

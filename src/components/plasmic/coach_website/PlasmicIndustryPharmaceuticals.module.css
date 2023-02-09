@@ -237,7 +237,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1 {
-    font-size: 28px;
+    font-size: 32px;
     margin-top: calc(0px + 10px) !important;
   }
 }
@@ -1179,6 +1179,11 @@
   font-weight: 600;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__y9OzO {
+    font-size: 16px;
+  }
+}
 .text__rUu4 {
   position: relative;
   width: 100%;
@@ -1225,6 +1230,11 @@
   > picture
   > img {
   margin-left: 15px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__ebv9V {
+    padding-top: 50px;
+  }
 }
 .button__x9Vdz {
   flex-direction: row;
