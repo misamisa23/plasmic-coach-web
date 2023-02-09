@@ -63,6 +63,7 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -159,7 +160,9 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                       >
                         {"Deliver exceptional customer service and"}
                       </span>
+
                       <React.Fragment>{""}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
@@ -282,12 +285,14 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                           "Luxury goods companies have a reputation to uphold - one of sophistication, quality, and exceptional customer service. At the core of delivering this experience is a team of well-trained employees.\n\n"
                         }
                       </React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
                       >
                         {"Coach"}
                       </span>
+
                       <React.Fragment>
                         {
                           " provides comprehensive training platform for employees, that can cover everything from product knowledge to customer service etiquette. \n\nOur goal is to arm your team with the skills and confidence they need to deliver the ultimate luxury experience."
@@ -301,12 +306,14 @@ function PlasmicIndustryLuxuryGoods__RenderFunc(props) {
                           "Luxury goods companies have a reputation to uphold - one of sophistication, quality, and exceptional customer service. At the core of delivering this experience is a team of well-trained employees.\n\n"
                         }
                       </React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
                       >
                         {"Coach"}
                       </span>
+
                       <React.Fragment>
                         {
                           " provides comprehensive training platform for employees, that can cover everything from product knowledge to customer service etiquette. \n\nOur goal is to arm your team with the skills and confidence they need to deliver the ultimate luxury experience."
@@ -769,6 +776,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryLuxuryGoods__ArgProps,
           internalVariantPropNames: PlasmicIndustryLuxuryGoods__VariantProps
         }),
+
       [props, nodeName]
     );
 

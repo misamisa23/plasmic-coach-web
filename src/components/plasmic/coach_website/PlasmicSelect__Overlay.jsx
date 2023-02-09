@@ -69,6 +69,7 @@ function PlasmicSelect__Overlay__RenderFunc(props) {
   const superContexts = {
     Select: React.useContext(SUPER__PlasmicSelect.Context)
   };
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -172,6 +173,7 @@ function useBehavior(props, ref) {
       contentSlot: "children",
       root: "root"
     },
+
     ref
   );
 }
@@ -196,6 +198,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicSelect__Overlay__ArgProps,
           internalVariantPropNames: PlasmicSelect__Overlay__VariantProps
         }),
+
       [props, nodeName]
     );
 

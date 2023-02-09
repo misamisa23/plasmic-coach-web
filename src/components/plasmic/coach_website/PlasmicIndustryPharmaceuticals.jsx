@@ -63,6 +63,7 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -159,7 +160,9 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                       >
                         {"Stay up to date with "}
                       </span>
+
                       <React.Fragment>{""}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
@@ -375,12 +378,14 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                         "Pharmaceutical sales reps play a crucial role in connecting your company with physicians. It's essential to equip them with the latest and most accurate product knowledge to stay compliant with FDA regulations, market demands, and legal guidelines.\n\nWith "
                       }
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"Coach"}
                     </span>
+
                     <React.Fragment>
                       {
                         ", you can create and deliver training programs that keep your team's product knowledge up-to-date. \n\nThe easy-to-use content creation tool lets you design lessons for specific products and deploy them to your team with ease. Tailor your training programs to suit the needs of individual positions, departments, or your entire company."
@@ -448,12 +453,14 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                         "Workplace safety training gets quickly forgotten and it is not being refreshed enough for both new and current employees. (It is scientifically proven that 70% of the knowledge we learn, gets forgotten after a week).\n\n"
                       }
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"Coach"}
                     </span>
+
                     <React.Fragment>
                       {
                         "'s scientifically proven methods increases knowledge retention makes sure that safety training is remembered at all times. \n\nEveryone will be up to date with the latest safety standards, and their knowledge will be refreshed by spending short amounts of time playing fun games!"
@@ -615,12 +622,14 @@ function PlasmicIndustryPharmaceuticals__RenderFunc(props) {
                         "Employees working in the R&D department need to be knowledgeable about the latest drug therapies, how to develop new drugs and how to bring them through clinical trials.\n\n\n\nWith "
                       }
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"Coach"}
                     </span>
+
                     <React.Fragment>
                       {
                         ", your R&D employees will receive targeted, relevant, and up-to-date training that will boost their performance and drive innovation. \n\nWith the ability to constantly update training programs and the short and engaging microlearning lessons, your employees will be well equipped to tackle the challenges of drug development and clinical trials."
@@ -774,6 +783,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryPharmaceuticals__ArgProps,
           internalVariantPropNames: PlasmicIndustryPharmaceuticals__VariantProps
         }),
+
       [props, nodeName]
     );
 

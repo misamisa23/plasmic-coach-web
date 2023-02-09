@@ -76,18 +76,21 @@ function PlasmicSelect__RenderFunc(props) {
           ? ($props, $state, $ctx) => $props.showPlaceholder
           : undefined
       },
+
       {
         path: "isOpen",
         type: "private",
         variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.isOpen : undefined
       },
+
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
       },
+
       {
         path: "color",
         type: "private",
@@ -105,9 +108,11 @@ function PlasmicSelect__RenderFunc(props) {
     useTrigger("useFocusVisibleWithin", {
       isTextInput: false
     });
+
   const triggers = {
     focusVisibleWithin_root: isRootFocusVisibleWithin
   };
+
   return (
     <PlasmicSelectContext.Provider value={{ variants, args }}>
       <div
@@ -334,6 +339,7 @@ function PlasmicSelect__RenderFunc(props) {
                   })
                 })
               : null}
+
             {(
               hasVariant($state, "showPlaceholder", "showPlaceholder")
                 ? true
@@ -569,6 +575,7 @@ function useBehavior(props, ref) {
         group: "showPlaceholder",
         variant: "showPlaceholder"
       },
+
       isDisabledVariant: { group: "isDisabled", variant: "isDisabled" },
       triggerContentSlot: "selectedContent",
       optionsSlot: "children",
@@ -578,6 +585,7 @@ function useBehavior(props, ref) {
       overlay: "overlay",
       optionsContainer: "optionsContainer"
     },
+
     ref
   );
 }
@@ -609,6 +617,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicSelect__ArgProps,
           internalVariantPropNames: PlasmicSelect__VariantProps
         }),
+
       [props, nodeName]
     );
 

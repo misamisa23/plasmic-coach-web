@@ -62,6 +62,7 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -158,7 +159,9 @@ function PlasmicIndustryManufacturing__RenderFunc(props) {
                       >
                         {"Close the Skills Gap in Manufacturing with "}
                       </span>
+
                       <React.Fragment>{""}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#3E7CB1" }}
@@ -652,6 +655,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicIndustryManufacturing__ArgProps,
           internalVariantPropNames: PlasmicIndustryManufacturing__VariantProps
         }),
+
       [props, nodeName]
     );
 

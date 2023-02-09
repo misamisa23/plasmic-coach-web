@@ -59,6 +59,7 @@ function PlasmicFeatures__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -123,6 +124,7 @@ function PlasmicFeatures__RenderFunc(props) {
                       >
                         <React.Fragment>
                           <React.Fragment>{""}</React.Fragment>
+
                           {
                             <h1
                               className={classNames(
@@ -138,6 +140,7 @@ function PlasmicFeatures__RenderFunc(props) {
                                     "Effortlessly train your employees with our "
                                   }
                                 </React.Fragment>
+
                                 <span
                                   className={
                                     "plasmic_default__all plasmic_default__span"
@@ -283,6 +286,7 @@ function PlasmicFeatures__RenderFunc(props) {
                     />
                   </div>
                 ) : null}
+
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -365,6 +369,7 @@ function PlasmicFeatures__RenderFunc(props) {
                   />
                 </p.Stack>
               ) : null}
+
               {(
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
               ) ? (
@@ -384,6 +389,7 @@ function PlasmicFeatures__RenderFunc(props) {
                   </div>
                 </div>
               ) : null}
+
               {(
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
               ) ? (
@@ -526,6 +532,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicFeatures__ArgProps,
           internalVariantPropNames: PlasmicFeatures__VariantProps
         }),
+
       [props, nodeName]
     );
 

@@ -81,6 +81,7 @@ function PlasmicHomepage__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -149,6 +150,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         >
                           <React.Fragment>
                             <React.Fragment>{""}</React.Fragment>
+
                             {
                               <h1
                                 className={classNames(
@@ -237,6 +239,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     className={classNames(projectcss.all, sty.freeBox__w2HtN)}
                   />
                 ) : null}
+
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -1275,7 +1278,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     >
                       {"By utilizing Coach, we make sure\n "}
                     </span>
+
                     <React.Fragment>{"\n"}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#FFFFFF" }}
@@ -1334,6 +1339,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>
                       {"Train employees in a wide "}
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -1346,6 +1352,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     <React.Fragment>
                       {"Train employees in a wide\n"}
                     </React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -1660,12 +1667,14 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#11253E", fontWeight: 700 }}
                       >
                         {"Managers"}
                       </span>
+
                       <React.Fragment>{"\n(HR, L&D, Training)"}</React.Fragment>
                     </React.Fragment>
                   </div>
@@ -1712,6 +1721,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
@@ -1763,6 +1773,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
@@ -1814,6 +1825,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     <React.Fragment>
                       <React.Fragment>{"Coach for "}</React.Fragment>
+
                       <span
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 700 }}
@@ -1845,6 +1857,7 @@ function PlasmicHomepage__RenderFunc(props) {
               {hasVariant(globalVariants, "screen", "mobileOnly") ? (
                 <React.Fragment>
                   <React.Fragment>{"See how we can help you"}</React.Fragment>
+
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#3E7CB1" }}
@@ -1855,6 +1868,7 @@ function PlasmicHomepage__RenderFunc(props) {
               ) : (
                 <React.Fragment>
                   <React.Fragment>{"See how we can help you\n"}</React.Fragment>
+
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ color: "#3E7CB1" }}
@@ -1994,6 +2008,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 >
                   <React.Fragment>
                     <React.Fragment>{"Our latest \n"}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#3E7CB1" }}
@@ -2008,6 +2023,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 />
               </p.Stack>
             ) : null}
+
             {true ? (
               <div className={classNames(projectcss.all, sty.columns__uUosY)}>
                 <div className={classNames(projectcss.all, sty.column___00FKz)}>
@@ -2221,6 +2237,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicHomepage__ArgProps,
           internalVariantPropNames: PlasmicHomepage__VariantProps
         }),
+
       [props, nodeName]
     );
 

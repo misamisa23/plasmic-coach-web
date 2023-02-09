@@ -62,6 +62,7 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaAzWhvm6PjSv1()
   });
+
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -274,19 +275,23 @@ function PlasmicWhoIsItForCeOs__RenderFunc(props) {
                 >
                   <React.Fragment>
                     <React.Fragment>{"With Coach, "}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"save money and resources"}
                     </span>
+
                     <React.Fragment>{" on training and "}</React.Fragment>
+
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
                       {"maximise the potential"}
                     </span>
+
                     <React.Fragment>{" of your employees!"}</React.Fragment>
                   </React.Fragment>
                 </div>
@@ -644,6 +649,7 @@ function makeNodeComponent(nodeName) {
           internalArgPropNames: PlasmicWhoIsItForCeOs__ArgProps,
           internalVariantPropNames: PlasmicWhoIsItForCeOs__VariantProps
         }),
+
       [props, nodeName]
     );
 
