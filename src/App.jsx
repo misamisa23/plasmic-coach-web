@@ -17,6 +17,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import ScrollToTop from "./helpers/ScrollToTop";
+import AboutUs from "components/AboutUs";
 
 export default function AppRoot() {
   return (
@@ -58,7 +59,10 @@ export default function AppRoot() {
         <Route
           path="/who-is-it-for-managers"
           element={<WhoIsItForManagers />}
-        />
+        /><Route
+        path="/about-us"
+        element={<AboutUs />}
+      />
       </Routes>
     </BrowserRouter>
   );
